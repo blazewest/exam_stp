@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_category_survey_user,category.survey.user,model_question_bank,base.group_user,1,1,1,1
+access_category_survey_user1,category.survey.user,model_question_bank_answer,base.group_user,1,1,1,1
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.actions.report" id="report_survey_user_input_py3o">
+        <field name="name">Báo cáo kết quả cuộc thi</field>
+        <field name="type">ir.actions.report</field>
+        <field name="model">report.survey.user_input</field>
+        <field name="report_name">py3o_survey_user_input</field>
+        <field name="report_type">py3o</field>
+        <field name="py3o_filetype">odt</field>
+        <field name="module">report_py3o</field>
+        <field name="py3o_template_fallback">report/survey_report_template.odt</field>
+        <field
+            name="print_report_name"
+        >'bao_cao_ket_qua_cuoc_thi' + '.odt'</field>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

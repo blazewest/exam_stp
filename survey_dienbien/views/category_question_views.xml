@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <record model="ir.ui.view" id="category_question_form">
+        <field name="name">category question</field>
+        <field name="model">category.question</field>
+        <field name="arch" type="xml">
+            <form string="Survey Question" >
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="path"/>
+                        <field name="parent_id"/>
+                        <field name="child_ids" widget="many2many_tags"/>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="category_question_tree">
+        <field name="name">category question</field>
+        <field name="model">category.question</field>
+        <field name="arch" type="xml">
+            <tree string="Category Question">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="path"/>
+                <field name="parent_id"/>
+                <field name="child_ids" widget="many2many_tags"/>
+                <field name="note"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_category_question_form">
+        <field name="name">Category Questions</field>
+        <field name="res_model">category.question</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Danh mục câu hỏi"
+        id="menu_category_label_form1"
+        action="action_category_question_form"
+        parent="survey.survey_menu_questions"
+        sequence="2"/>
+</data>
+</odoo>

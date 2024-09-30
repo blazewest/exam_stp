@@ -1,0 +1,32 @@
+<style>
+    .question-tracker-container {
+        width: 200px;
+        position: fixed;
+        right: 20px;
+        top: 100px;
+    }
+
+    .question-tracker ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .question-tracker ul li {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .question-tracker .answered {
+        color: green;
+    }
+
+    .question-tracker .not-answered {
+        color: red;
+    }
+
+    .question-tracker .legend {
+        margin-top: 10px;
+    }
+</style>

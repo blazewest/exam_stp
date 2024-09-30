@@ -1,0 +1,36 @@
+<odoo>
+    <!-- Form View for PurchaseReport -->
+    <record id="view_report_survey_user_input_form" model="ir.ui.view">
+        <field name="name">report.survey.user_input.form</field>
+        <field name="model">report.survey.user_input</field>
+        <field name="arch" type="xml">
+            <form string="Báo cáo Cuộc thi">
+                <sheet>
+                    <group>
+                        <field name="name_survey" required="1"/>
+                        <field name="sort" required="1"/>
+                    </group>
+                    <footer>
+                        <button name="create_report_survey_user_input" string="In báo cáo" type="object" class="btn-primary"/>
+                        <button string="Close" class="btn-default" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for PurchaseReport -->
+    <record id="action_report_survey_user_input" model="ir.actions.act_window">
+        <field name="name">Báo cáo Cuộc thi</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">report.survey.user_input</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_report_survey_user_input"
+              name="Báo cáo Cuộc thi"
+              parent="survey.menu_survey_type_form1"
+              action="action_report_survey_user_input"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- QUESTIONS -->
+        <record model="ir.ui.view" id="bank_question_form">
+            <field name="name">Form view for survey question</field>
+            <field name="model">question.bank</field>
+            <field name="arch" type="xml">
+                <form string="Câu hỏi">
+
+                    <field name="sequence" invisible="1"/>
+                    <sheet>
+                        <div class="float-end d-flex flex-column text-center">
+                            <label for="background_image"/>
+                            <field name="background_image" widget="image" class="oe_avatar"/>
+                        </div>
+                        <div class="oe_title" style="width: 100%;">
+                            <label for="title" string="Câu hỏi"/><br/>
+                            <field name="title" placeholder="e.g. &quot;Tên câu hỏi&quot;" colspan="4"/>
+                        </div>
+                        <group>
+                            <field name="level_question"/>
+                            <field name="category_group_ids" widget="many2many_tags"/>
+                        </group>
+
+                        <group>
+                            <group>
+                                <field name="question_type" widget="radio"/>
+                            </group>
+                            <group>
+                                <div class="mx-lg-auto w-lg-50 d-none d-sm-block o_preview_questions bg-light" colspan="2">
+                                    <!-- Multiple choice: only one answer -->
+                                    <div invisible="question_type != 'simple_choice'" role="img" aria-label="Multiple choice with one answer"
+                                        title="Multiple choice with one answer">
+                                        <span>Cái nào màu vàng?</span><br/>
+                                        <div class="o_preview_questions_choice mb-2"><i class="fa fa-circle-o  fa-lg me-2"/>trả lời</div>
+                                        <div class="o_preview_questions_choice mb-2"><i class="fa fa-dot-circle-o fa-lg me-2"/>trả lời</div>
+                                        <div class="o_preview_questions_choice"><i class="fa fa-circle-o  fa-lg me-2"/>trả lời</div>
+                                    </div>
+                                    <!-- Multiple choice: multiple answers allowed -->
+                                    <div invisible="question_type != 'multiple_choice'" role="img" aria-label="Multiple choice with multiple answers"
+                                        title="Multiple choice with multiple answers">
+                                        <span>Cái nào màu vàng?</span><br/>
+                                        <div class="o_preview_questions_choice mb-2"><i class="fa fa-square-o fa-lg me-2"/>trả lời</div>
+                                        <div class="o_preview_questions_choice mb-2"><i class="fa fa-check-square-o fa-lg me-2"/>trả lời</div>
+                                        <div class="o_preview_questions_choice"><i class="fa fa-check-square-o fa-lg me-2"/>trả lời</div>
+                                    </div>
+                                    <!-- Multiple Lines Text Zone -->
+                                    <div invisible="question_type != 'text_box'">
+                                        <span>Đặt tên cho tất cả các loài động vật</span><br/>
+                                        <i class="fa fa-align-justify fa-4x" role="img" aria-label="Multiple lines" title="Multiple Lines"/>
+                                    </div>
+                                    <!-- Single Line Text Zone -->
+                                    <div invisible="question_type != 'char_box'">
+                                        <span>Hãy nêu tên một con vật</span><br/>
+                                        <i class="fa fa-minus fa-4x" role="img" aria-label="Single Line" title="Single Line"/>
+                                    </div>
+                                    <!-- Numerical Value -->
+                                    <div invisible="question_type != 'numerical_box'">
+                                        <span>Có bao nhiêu...?</span><br/>
+                                        <i class="fa fa-2x" role="img" aria-label="Numeric" title="Numeric">123&#160;</i>
+                                        <i class="fa fa-2x fa-sort" role="img" aria-label="Numeric"/>
+                                    </div>
+                                    <!-- Date -->
+                                    <div invisible="question_type != 'date'">
+                                        <span>Chiến thắng Điện Biên Phủ là khi nào?</span><br/>
+                                        <p class="o_datetime border-0" >YYYY-MM-DD
+                                            <i class="fa fa-calendar" role="img" aria-label="Calendar" title="Calendar"/>
+                                        </p>
+                                    </div>
+                                    <!-- Date and Time -->
+                                    <div invisible="question_type != 'datetime'">
+                                        <span>Khi nào thì ... bắt đầu chiến dịch?</span><br/>
+                                        <p class="o_datetime border-0">YYYY-MM-DD hh:mm:ss
+                                            <i class="fa fa-calendar" role="img" aria-label="Calendar" title="Calendar"/>
+                                        </p>
+                                    </div>
+                                    <!-- Matrix -->
+                                    <div invisible="question_type != 'matrix'">
+                                        <div class="row o_matrix_head">
+                                            <div class="col-3"></div>
+                                            <div class="col-3">trả lời</div>
+                                            <div class="col-3">trả lời</div>
+                                            <div class="col-3">trả lời</div>
+                                        </div>
+                                        <div class="row o_matrix_row">
+                                            <div class="col-3">Hàng 1</div>
+                                            <div class="col-3"><i class="fa fa-circle-o fa-lg" role="img" aria-label="Not checked" title="Not checked"/></div>
+                                            <div class="col-3"><i class="fa fa-dot-circle-o fa-lg" role="img" aria-label="Checked" title="Checked"/></div>
+                                            <div class="col-3"><i class="fa fa-circle-o fa-lg" role="img" aria-label="Not checked" title="Not checked"/></div>
+                                        </div>
+                                        <div class="row o_matrix_row">
+                                            <div class="col-3">Hàng 2</div>
+                                            <div class="col-3"><i class="fa fa-circle-o fa-lg" role="img" aria-label="Not checked" title="Not checked"/></div>
+                                            <div class="col-3"><i class="fa fa-circle-o fa-lg" role="img" aria-label="Not checked" title="Not checked"/></div>
+                                            <div class="col-3"><i class="fa fa-dot-circle-o fa-lg" role="img" aria-label="Checked" title="Checked"/></div>
+                                        </div>
+                                        <div class="row o_matrix_row">
+                                            <div class="col-3">Hàng 3</div>
+                                            <div class="col-3"><i class="fa fa-dot-circle-o fa-lg" role="img" aria-label="Checked" title="Checked"/></div>
+                                            <div class="col-3"><i class="fa fa-circle-o fa-lg" role="img" aria-label="Not checked" title="Not checked"/></div>
+                                            <div class="col-3"><i class="fa fa-circle-o fa-lg" role="img" aria-label="Not checked" title="Not checked"/></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Câu trả lời" name="answers" invisible="question_type == 'text_box' and question_type in ['numerical_box', 'date', 'datetime']">
+                                <group>
+                                    <group invisible="question_type not in ['char_box', 'numerical_box', 'date', 'datetime']">
+                                        <field name="answer_numerical_box" string="Câu trả lời đúng" class="oe_inline"
+                                            invisible="question_type != 'numerical_box'"
+                                            required="is_scored_question and question_type == 'numerical_box'" />
+                                        <field name="answer_date" string="Câu trả lời đúng"  class="oe_inline"
+                                            invisible="question_type != 'date'"
+                                            required="is_scored_question and question_type == 'date'"/>
+                                        <field name="answer_datetime" string="Câu trả lời đúng" class="oe_inline"
+                                            invisible="question_type != 'datetime'"
+                                            required="is_scored_question and question_type == 'datetime'"/>
+
+                                        <field name="validation_email" invisible="question_type != 'char_box'"/>
+                                        <field name="save_as_email" invisible="not validation_email or question_type != 'char_box'"/>
+                                        <field name="save_as_nickname" invisible="question_type != 'char_box'"/>
+                                    </group>
+
+                                    <group invisible="question_type not in ['numerical_box', 'date', 'datetime']">
+                                        <label for="is_scored_question"/>
+                                        <div name="survey_scored_question">
+                                            <field name="is_scored_question" nolabel="1"/>
+                                            <span invisible="not is_scored_question">Points</span>
+                                        </div>
+                                    </group>
+                                </group>
+                                <field name="suggested_answer_ids" context="{'default_question_id': id}" invisible="question_type not in ['simple_choice', 'multiple_choice', 'matrix']">
+                                    <tree editable="bottom">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="value" string="Lựa chọn"/>
+                                        <field name="is_correct"
+                                            column_invisible="parent.question_type == 'matrix'"/>
+                                        <field name="value_image_filename" column_invisible="True"/>
+                                        <field name="value_image" width="200px" filename="value_image_filename" options="{'accepted_file_extensions': 'image/*'}"
+                                            column_invisible="parent.question_type == 'matrix'"/>
+                                    </tree>
+                                </field>
+
+                                <field name="matrix_row_ids" context="{'default_matrix_question_id': id}"
+                                    invisible="question_type != 'matrix'">
+                                    <tree editable="bottom">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="value" string="Hàng"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Mô tả" name="survey_description">
+                                <field name="description" widget="html"
+                                       placeholder="e.g. Guidelines, instructions, picture, ... to help attendees answer"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bank_question_tree">
+            <field name="name">Tree view for survey question</field>
+            <field name="model">question.bank</field>
+            <field name="arch" type="xml">
+                <tree string="Ngân hàng câu hỏi">
+                    <field name="title"/>
+                    <field name="question_type"/>
+                    <field name="level_question"/>
+                    <field name="category_group_ids" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bank_question_search">
+            <field name="name">Search view for survey question</field>
+            <field name="model">question.bank</field>
+            <field name="arch" type="xml">
+                <search string="Search Question">
+                    <field name="title"/>
+                    <field name="question_type" string="Kiểu"/>
+                    <group expand="1" string="Nhóm theo">
+                        <filter name="group_by_type" string="Kiểu" domain="[]" context="{'group_by':'question_type'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_bank_question_form">
+            <field name="name">Questions</field>
+            <field name="res_model">question.bank</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_empty_folder">
+                Chưa có câu hỏi nào!
+              </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Ngân hàng câu hỏi"
+                id="menu_category_label_form2"
+                action="action_bank_question_form"
+                parent="survey.survey_menu_questions"
+                sequence="1"/>
+    </data>
+</odoo>

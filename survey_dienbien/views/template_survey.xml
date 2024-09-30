@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="survey_fill_header_inherit" inherit_id="survey.survey_fill_header">
+        <xpath expr="//div/div/div/div[1]/h1[1]" position="before">
+            <!-- Thêm thẻ title vào head để thay đổi tiêu đề tab -->
+            <t t-set="page_title">Bài Làm: <t t-esc="survey.title or 'Survey'"/></t>
+            <script type="text/javascript">
+                document.title = "<t t-esc='page_title'/>";
+            </script>
+        </xpath>
+    </template>
+</odoo>

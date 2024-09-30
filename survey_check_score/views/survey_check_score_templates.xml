@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- Trang tra cứu điểm -->
+        <template id="check_score_page" name="Check Score">
+            <div class="container">
+                <h2>Tra cứu điểm khảo sát</h2>
+                <form action="/check_score/result" method="POST">
+                    <label for="survey_id">Chọn khảo sát:</label>
+                    <select name="survey_id" id="survey_id" class="form-control">
+                        <t t-foreach="surveys" t-as="survey">
+                            <option t-att-value="survey.id"><t t-esc="survey.title"/></option>
+                        </t>
+                    </select>
+                    <label for="partner_email">Nhập email của bạn:</label>
+                    <input type="email" name="partner_email" class="form-control" required="1"/>
+                    <button type="submit" class="btn btn-primary mt-2">Tra cứu điểm</button>
+                </form>
+            </div>
+        </template>
+
+
+        <!-- Trang kết quả điểm -->
+        <template id="show_score_page" name="Show Score">
+            <div class="container">
+                <h2>Kết quả khảo sát</h2>
+                <t t-if="partner">
+                    <p>Xin chào <t t-esc="partner.name"/>, kết quả của bạn là:</p>
+                    <p><strong>Điểm số: <t t-esc="score"/></strong></p>
+                </t>
+                <t t-else="">
+                    <p>Không tìm thấy kết quả cho email đã nhập.</p>
+                </t>
+            </div>
+        </template>
+
+        <template id="website_menu_extension" inherit_id="website.layout">
+            <xpath expr="//header//nav/div[@class='o_main_nav container']" position="inside">
+                <li><a href="/check_score">Tra cứu điểm</a></li>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

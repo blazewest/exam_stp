@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="survey_survey_stt_form">
+            <field name="name">survey question STT</field>
+            <field name="model">survey.survey</field>
+            <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="before">
+                    <group>
+                        <field name="is_percentage_based"/>
+                        <field name="limit_question"/>
+                        <field name="bool_setting"/>
+                        <field name="category_group_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="qty_de" invisible="not bool_setting"/>
+                            <field name="qty_tb" invisible="not bool_setting"/>
+                            <field name="qty_kho" invisible="not bool_setting"/>
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//sheet/notebook" position="inside">
+                    <page string="Xếp loại điểm">
+                        <field name="classification_ids">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="min_score"/>
+                                <field name="max_score"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <!-- Hide the label for certification -->
+                <xpath expr="//label[@for='certification']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <!-- Hide the certification field and its container -->
+                <xpath expr="//field[@name='certification']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <!-- Hide the certification_mail_template_id field -->
+                <xpath expr="//field[@name='certification_mail_template_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <!-- Hide the certification_give_badge label -->
+                <xpath expr="//label[@for='certification_give_badge']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <!-- Hide the certification_give_badge field and its container -->
+                <xpath expr="//field[@name='certification_give_badge']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

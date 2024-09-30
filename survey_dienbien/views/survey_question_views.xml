@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <!-- QUESTIONS -->
+    <record model="ir.ui.view" id="survey_question_stt_form">
+        <field name="name">survey question STT</field>
+        <field name="model">survey.question</field>
+        <field name="inherit_id" ref="survey.survey_question_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes">
+                <attribute name="create">true</attribute>
+            </xpath>
+            <xpath expr="//field[@name='question_type']" position="before">
+                <field name="level_question"/>
+                <field name="category_group_ids" widget="many2many_tags"/>
+            </xpath>
+<!--            <xpath expr="//field[@name='survey_id']" position="replace">-->
+<!--                <field name="survey_id" widget="many2many_tags" readonly="1"/>-->
+<!--            </xpath>-->
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="survey_question_stt_tree">
+        <field name="name">survey question STT</field>
+        <field name="model">survey.question</field>
+        <field name="inherit_id" ref="survey.survey_question_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='constr_mandatory']" position="before">
+                <field name="category_group_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+
+</data>
+</odoo>

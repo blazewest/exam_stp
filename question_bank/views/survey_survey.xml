@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="survey_survey_stt_form1">
+            <field name="name">survey question STT</field>
+            <field name="model">survey.survey</field>
+            <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="action_check_questions_availability" type="object" string="Kiểm tra trong kho câu hỏi" class="btn-primary"/>
+                    <button name="action_add_questions_by_category" type="object" string="Tạo câu hỏi từ kho" class="btn-primary"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
