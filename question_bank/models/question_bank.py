@@ -74,6 +74,7 @@ class SurveyQuestion(models.Model):
     user_input_line_ids = fields.One2many(
         'survey.user_input.line', 'question_id', string='Câu trả lời',
         domain=[('skipped', '=', False)], groups='survey.group_survey_user')
+    link_youtube = fields.Char(string='Link nhúng video youtube', required=False)
 
 
     _sql_constraints = [
@@ -82,6 +83,41 @@ class SurveyQuestion(models.Model):
         ('scored_date_have_answers', "CHECK (is_scored_question != True OR question_type != 'date' OR answer_date is not null)",
             'All "Is a scored question = True" and "Question Type: Date" questions need an answer'),
     ]
+
+    @api.onchange('link_youtube')
+    def _onchange_interval_number(self):
+        if self.link_youtube:
+            # Chèn giá trị self.link_youtube vào chuỗi HTML
+            self.description = (
+                '<div class="text-center">'
+                '<div class="media_iframe_video" '
+                'data-oe-expression="//www.youtube.com/embed/7y4T6yv5L1k?autoplay=0&amp;rel=0" style="width: 90%;">'
+                '<div class="css_editable_mode_display"></div>'
+                '<div class="media_iframe_video_size" contenteditable="false"></div>'
+                # Dùng f-string hoặc format để chèn link_youtube vào
+                f'{self.link_youtube}'
+                '</div><br>'
+                '</div>'
+            )
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        # Duyệt qua từng bản ghi trong danh sách vals_list
+        for vals in vals_list:
+            # Nếu link_youtube không rỗng, cập nhật trường description
+            if 'link_youtube' in vals and vals['link_youtube']:
+                vals['description'] = (
+                    '<div class="text-center">'
+                    '<div class="media_iframe_video" '
+                    'data-oe-expression="//www.youtube.com/embed/7y4T6yv5L1k?autoplay=0&amp;rel=0" style="width: 90%;">'
+                    '<div class="css_editable_mode_display"></div>'
+                    '<div class="media_iframe_video_size" contenteditable="false"></div>'
+                    f'{vals["link_youtube"]}'
+                    '</div><br>'
+                    '</div>'
+                )
+        # Gọi super() để tiếp tục quy trình tạo bản ghi trong Odoo
+        return super(SurveyQuestion, self).create(vals_list)
 
     @api.constrains('category_group_ids')
     def _check_category_group_hierarchy(self):

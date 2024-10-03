@@ -4,7 +4,7 @@
     'summary': 'Module Survey dien bien',
     'category': 'Tools',
     'author': 'Duy Hung',
-    'depends': ['base','schedule_survey','schedule_survey'],
+    'depends': ['base','schedule_survey','schedule_survey','transifex'],
     'data': [
         'security/ir.model.access.csv',
         'views/category_question_views.xml',

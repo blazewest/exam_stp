@@ -5,11 +5,27 @@ from odoo.exceptions import ValidationError
 class SurveySurvey(models.Model):
     _inherit = 'survey.survey'
 
-    survey_type = fields.Selection(selection_add=[
-        ('survey', 'Survey'),
-        ('assessment', 'Kiểm tra'),
-    ],
-        string='Survey Type', required=True, default='assessment')
+    def _get_survey_type_options(self):
+        return [
+            ('survey', 'Khảo sát'),
+            ('assessment', 'Kiểm tra'),
+        ]
+
+    survey_type = fields.Selection(
+        selection=_get_survey_type_options,
+        string='Survey Type',
+        default='assessment',
+        required=True
+    )
+    questions_layout = fields.Selection([
+        ('page_per_question', 'Mỗi trang cho mỗi câu hỏi'),
+        ('page_per_section', 'mỗi phần một trang '),
+        ('one_page', 'Một trang với tất cả các câu hỏi')],
+        string="Pagination", required=True, default='one_page')
+    users_login_required = fields.Boolean('Yêu cầu đăng nhập', default=True)
+    is_attempts_limited = fields.Boolean('Hạn chế số lần làm',
+                                         compute="_compute_is_attempts_limited", store=True, readonly=False,default=True)
+    is_time_limited = fields.Boolean('Giới hạn thời gian kiểm tra', default=True)
     limit_question = fields.Integer(string='Số lượng câu hỏi')
     bool_setting = fields.Boolean('Cấu hình câu hỏi', default=False)
     qty_de = fields.Integer(string='Số lượng câu hỏi dễ')

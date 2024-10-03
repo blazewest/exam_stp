@@ -22,6 +22,9 @@
                             <field name="level_question"/>
                             <field name="category_group_ids" widget="many2many_tags"/>
                         </group>
+                        <group>
+                            <field name="link_youtube"/>
+                        </group>
 
                         <group>
                             <group>

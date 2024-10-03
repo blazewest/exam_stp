@@ -52,7 +52,35 @@
                 <xpath expr="//field[@name='certification_give_badge']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
+<!--an nut in va nut live                <>-->
+                <xpath expr="//button[@name='action_start_session']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_print_survey']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_survey_user_input_certified']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+<!--                an cac truong khac khong lien quan-->
             </field>
         </record>
+
+        <record id="survey_survey_view_stp_kanban" model="ir.ui.view">
+         <field name="name">stp.view.survey</field>
+        <field name="model">survey.survey</field>
+        <field name="inherit_id" ref="survey.survey_survey_view_kanban"/>
+         <field name="arch" type="xml">
+         <xpath expr="//button[@name='action_start_session']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+            </xpath>
+         </field>
+        </record>
+
+        <record id="survey.action_survey_form" model="ir.actions.act_window">
+            <field name="view_mode">kanban,tree,form</field> <!-- Xóa chế độ 'activity' -->
+        </record>
+
+
     </data>
 </odoo>

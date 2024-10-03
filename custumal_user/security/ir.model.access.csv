@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_donvi_user,donvi,model_donvi,base.group_user,1,1,1,1
+access_donvi_user_portal,donvi_portal,model_donvi,base.group_portal,1,1,1,0
+access_donvi_public,donvi_public,model_donvi,base.group_public,1,1,1,0
+
+

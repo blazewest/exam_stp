@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_donvi_tree" model="ir.ui.view">
+            <field name="name">donvi.tree</field>
+            <field name="model">donvi</field>
+            <field name="arch" type="xml">
+                <tree string="Tên Đơn Vị">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="dia_chi"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_donvi_form" model="ir.ui.view">
+            <field name="name">donvi.form</field>
+            <field name="model">donvi</field>
+            <field name="arch" type="xml">
+                <form string="Tên Đơn Vị">
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="dia_chi"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_donvi" model="ir.actions.act_window">
+            <field name="name">Tên Đơn Vị</field>
+            <field name="res_model">donvi</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_donvi_stt"
+                  parent="survey.menu_survey_type_form1"
+                  action="action_donvi"
+                  name="Danh Sách Đơn Vị"
+                  sequence="3"
+        />
+    </data>
+</odoo>

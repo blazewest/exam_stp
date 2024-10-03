@@ -11,7 +11,7 @@
 
                 <xpath expr="//field[@name='login']" position="after">
                     <group>
-                        <field name="name_donvi"/>
+                        <field name="name_donvi_id"/>
                         <field name="cccd"/>
                         <field name="phone"/>
                         <field name="function"/>
