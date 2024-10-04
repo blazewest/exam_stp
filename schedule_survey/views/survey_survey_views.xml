@@ -14,7 +14,7 @@
 <!--                       options="{'horizontal': true}" invisible="is_cron != True " force_save="1"/>-->
             </xpath>
             <xpath expr="//page[@name='description']" position="after">
-                <page string="Sharing Option">
+                <page string="tùy chọn chia sẻ">
                     <group>
                         <field name="access_mode" widget="radio"/>
                     </group>
