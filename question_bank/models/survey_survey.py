@@ -73,6 +73,7 @@ class SurveySurvey(models.Model):
 
         # Tạo phân đoạn (dễ, trung bình, khó)
         self.questions_selection = 'random'
+        self.access_mode = 'public'
 
         if self.bool_setting:
             if self.qty_de > 0:
