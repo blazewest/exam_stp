@@ -66,7 +66,7 @@ class PurchaseReport(models.TransientModel):
         self.sum_partner = len(records_survey_user_input)
 
         don_vi_list = list(
-            set(record.partner_id.name_donvi for record in records_survey_user_input if record.partner_id.name_donvi))
+            set(record.partner_id.name_donvi_id.name for record in records_survey_user_input if record.partner_id.name_donvi_id.name))
         if don_vi_list:
             self.don_vi = ', '.join(don_vi_list)
         else:
