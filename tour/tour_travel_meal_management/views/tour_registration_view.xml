@@ -1,0 +1,275 @@
+<odoo>
+    <!-- Inherit Sale Order Template Form View-->
+    <record id="meal_sale_order_template_form_inherit" model="ir.ui.view">
+        <field name="name">meal.sale.order.templete.form.inherit</field>
+        <field name="model">sale.order.template</field>
+        <field
+            name="inherit_id"
+            ref="tour_travel_management.tour_travel_package_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='lines']" position="after">
+                <page name="meal" string="Meals">
+                    <field
+                        name="meal_package_line_ids"
+                        context="{'default_date': arrival_date}"
+                        widget="section_and_note_one2many"
+                    >
+                        <tree editable='bottom'>
+                            <control>
+                                <create
+                                    name="add_product_control"
+                                    string="Add a meal"
+                                />
+                                <create
+                                    name="add_section_control"
+                                    string="Add a section"
+                                    context="{'default_display_type': 'line_section'}"
+                                />
+                                <create
+                                    name="add_note_control"
+                                    string="Add a note"
+                                    context="{'default_display_type': 'line_note'}"
+                                />
+                            </control>
+                            <field name="sequence" widget="handle" />
+                            <field name="display_type" column_invisible="1" />
+                            <field
+                                name="date"
+                                required = "display_type not in ['line_section','line_note'] and parent.type_of_package == 'specific'"
+                                column_invisible = "parent.type_of_package != 'specific'"
+                            />
+                            <field
+                                name="day_selection"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                                required = "display_type == False and parent.type_of_package != 'specific'"
+                                column_invisible = "parent.type_of_package == 'specific'"
+                                domain="[('code','&lt;=',parent.fixed_tour_days)]"
+                            />
+                            <field
+                                name="city_id"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="meal_id"
+                                context="{'date': date, 'city_id':city_id,'type_of_package': parent.type_of_package,
+                                        'nonspecific_date': parent.package_create_date}"
+                                domain="[('is_restaurant','=',True),('registration_type','=','hotel'),('city_id','=',city_id)]"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="meal_package_id"
+                                context="{'date': date, 'meal_id':meal_id,'type_of_package': parent.type_of_package,
+                                            'nonspecific_date': parent.package_create_date}"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="name"
+                                widget="section_and_note_text"
+                                required = "display_type != False"
+                            />
+                            <field name="qty" />
+                            <field name="cost_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="price_unit" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="price_subtotal" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="currency_id" column_invisible="1" />
+                            <field name="sale_order_templete_id" column_invisible="1" />
+                            <field name="contract_id" column_invisible="1" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+            <xpath
+                expr="//page[@name='itinerary']//field[@name='itinerary_ids']//tree[@name='itinerary']"
+                position="inside"
+            >
+                <field name="meal_ids" widget="many2many_tags" />
+            </xpath>
+        </field>
+    </record>
+    <record id="tour_registration_form" model="ir.ui.view">
+        <field name="name">tour.registration.form</field>
+        <field name="model">sale.order</field>
+        <field
+            name="inherit_id"
+            ref="tour_travel_management.tour_package_registration_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='order_lines']" position='after'>
+                <page name="meal_lines" string="Meals">
+                    <field
+                        name="meal_line_ids"
+                        widget="section_and_note_one2many"
+                        mode="tree"
+                        readonly = "state in ('done','cancel')"
+                    >
+                        <tree editable="bottom">
+                            <control>
+                                <create
+                                    name="add_product_control"
+                                    string="Add a meal"
+                                />
+                                <create
+                                    name="add_section_control"
+                                    string="Add a section"
+                                    context="{'default_display_type': 'line_section'}"
+                                />
+                                <create
+                                    name="add_note_control"
+                                    string="Add a note"
+                                    context="{'default_display_type': 'line_note'}"
+                                />
+                            </control>
+                            <field name="sequence" widget="handle" />
+                            <!-- We do not display the type because we don't want the user to be bothered with that information if he has no section or note. -->
+                            <field name="display_type" column_invisible="1" />
+                            <field
+                                name="date"
+                                context="{'sale_order_template_id': parent.sale_order_template_id}"
+                                required = "display_type == False"
+                            />
+                            <field
+                                name="city_id"
+                                context="{'sale_order_template_id': parent.sale_order_template_id}"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="meal_id"
+                                context="{'date': date, 'city_id':city_id, 'sale_order_template_id': parent.sale_order_template_id}"
+                                domain="[('is_restaurant','=',True),('registration_type','=','hotel')]"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="meal_package_id"
+                                context="{'date': date, 'meal_id':meal_id}"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field name="product_uom_category_id" column_invisible="1" />
+                            <field name="product_updatable" column_invisible="1" />
+                            <field
+                                name="product_id"
+                                column_invisible="1"
+                                readonly = "product_updatable == False"
+                                required = "display_type == False"
+                                options="{'no_open': True}"
+                                force_save="1"
+                                context="{'partner_id': parent.partner_id,'quantity': product_uom_qty,'pricelist': parent.pricelist_id,'uom':product_uom,'company_id': parent.company_id,'default_lst_price': price_unit,'default_description_sale': name}"
+                                domain="[('sale_ok', '=', True), '|', ('company_id', '=', False), ('company_id', '=', parent.company_id)]"
+                                widget="product_configurator"
+                            />
+                            <field
+                                name="product_template_id"
+                                string="Product"
+                                column_invisible="1"
+                                readonly = "product_updatable == False"
+                                required = "display_type == False"
+                                options="{'no_open': True}"
+                                context="{'partner_id': parent.partner_id,'quantity': product_uom_qty,'pricelist': parent.pricelist_id,'uom':product_uom,'company_id': parent.company_id,'default_list_price': price_unit,'default_description_sale': name}"
+                                domain="[('sale_ok', '=', True), '|', ('company_id', '=', False), ('company_id', '=', parent.company_id)]"
+                                widget="product_configurator"
+                            />
+                            <field
+                                name="name"
+                                widget="section_and_note_text"
+                                optional="show"
+                            />
+                            <field
+                                name="analytic_distribution"
+                                widget="analytic_distribution"
+                                groups="analytic.group_analytic_accounting"
+                                options="{'product_field': 'product_id', 'business_domain': 'sale_order'}"
+                            />
+                            <field name="meal_qty" />
+                            <field
+                                name="product_uom_qty"
+                                column_invisible="1"
+                                readonly="True"
+                                force_save="True"
+                                context="{'partner_id': parent.partner_id,'quantity': product_uom_qty,'pricelist': parent.pricelist_id,'uom': product_uom,'company_id': parent.company_id}"
+                            />
+                            <field name="adults" />
+                            <field name="children" />
+                            <field name="infants" />
+                            <field
+                                name="qty_delivered"
+                                string="Delivered"
+                                column_invisible = "parent.state not in ['sale', 'done']"
+                                readonly = "qty_delivered_method != 'manual'"
+                                optional="show"
+                            />
+                            <field name="qty_delivered_method" column_invisible="1" />
+                            <field
+                                name="qty_invoiced"
+                                string="Invoiced"
+                                column_invisible = "parent.state not in ['sale', 'done']"
+                                optional="show"
+                            />
+                            <field name="qty_to_invoice" column_invisible="1" />
+                            <field
+                                name="product_uom"
+                                column_invisible="1"
+                                groups="!uom.group_uom"
+                            />
+                            <field
+                                name="product_uom"
+                                force_save="1"
+                                string="UoM"
+                                readonly = "state in ('sale','done', 'cancel')"
+                                required = "display_type == False"
+                                context="{'company_id': parent.company_id}"
+                                groups="uom.group_uom"
+                                options="{&quot;no_open&quot;: True}"
+                                optional="show"
+                            />
+                            <field
+                                name="customer_lead"
+                                optional="hide"
+                                readonly = "parent.state not in ['draft', 'sent']"
+                            />
+                            <field name="purchase_price" string="Cost Price" />
+                            <field
+                                name="price_unit"
+                                readonly = "qty_invoiced &gt; 0"
+                            />
+                            <field
+                                name="tax_id"
+                                widget="many2many_tags"
+                                options="{'no_create': True}"
+                                domain="[('type_tax_use','=','sale'),('company_id','=',parent.company_id)]"
+                                readonly = "qty_invoiced &gt; 0"
+                                optional="show"
+                            />
+                            <field
+                                name="discount"
+                                string="Disc.%"
+                                groups="product.group_discount_per_so_line"
+                                optional="show"
+                            />
+                            <field
+                                name="price_subtotal"
+                                widget="monetary"
+                                options="{'currency_field': 'currency_id'}"
+                            />
+                            <field
+                                name="price_total"
+                                widget="monetary"
+                                options="{'currency_field': 'currency_id'}"
+                            />
+                            <field name="state" column_invisible="1" />
+                            <field name="invoice_status" column_invisible="1" />
+                            <field name="currency_id" column_invisible="1" />
+                            <field name="price_tax" column_invisible="1" />
+                            <field name="company_id" column_invisible="1" />
+                            <field name="contract_id" column_invisible="1" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

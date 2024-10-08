@@ -1,0 +1,640 @@
+<odoo>
+    <template id="package_inquiry" name="Packages Inquiry">
+        <t t-call="website.layout">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+            <section
+                class="oe_structure"
+                style="background: linear-gradient(to right, #ededed, #dbb85b, #f5a7a9, #e5cdb7, #8ec5fc)"
+            >
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-10 mt64 mb64">
+                            <div
+                                class="col-12 form_booking"
+                                style="background-color: #fff;"
+                            >
+                                <h3 style="color:black;" class="text-center">
+                                    <t t-esc="template.name" />
+                                </h3>
+                                <p
+                                    class="mb16 text-center"
+                                    style="color:gray;"
+                                >Enter your details to get expert advise</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 mb64 v_form_div pt16 pb16">
+                                        <form
+                                            role="form"
+                                            action="/submit_inquiry"
+                                            method="post"
+                                            class="inquiry_form"
+                                            enctype="multipart/form-data"
+                                        >
+                                            <input
+                                                type="hidden"
+                                                id="package_id"
+                                                name="name"
+                                                t-attf-value="Package: #{template.name}"
+                                            />
+                                            <input
+                                                type="hidden"
+                                                id="order_id"
+                                                name="package_id"
+                                                t-attf-value="#{template.id}"
+                                            />
+                                            <input
+                                                type="hidden"
+                                                name="csrf_token"
+                                                t-att-value="request.csrf_token()"
+                                            />
+                                            <div class="form-row">
+                                                <div class="row">
+
+                                                    <div
+                                                    class="form-group o_website_form_required_custom col-md-6"
+                                                >
+                                                    <label for="name">Name</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        name="contact_name"
+                                                        required="true"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="form-group o_website_form_required_custom col-md-6"
+                                                >
+                                                    <label for="mobile">Mobile</label>
+                                                    <input
+                                                    type="text"
+                                                    class="form-control number"
+                                                    name="mobile"
+                                                    required="true"
+                                                    />
+                                                    <span class="errmsg" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                            
+                                                <div class="form-group col-md-6">
+                                                    <label for="email">Email</label>
+                                                    <input
+                                                        type="email"
+                                                        class="form-control"
+                                                        name="email_from"
+                                                        required="true"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="form-group o_website_form_required_custom col-md-6"
+                                                    >
+                                                    <label
+                                                        for="country_id"
+                                                    >Country</label>
+                                                    <select
+                                                        name="country_id"
+                                                        class="form-control"
+                                                        required=""
+                                                    >
+                                                        <option value="" />
+                                                        <t
+                                                            t-foreach="countries"
+                                                            t-as="country"
+                                                        >
+                                                            <option
+                                                                t-att-value="country.id"
+                                                            >
+                                                                <t
+                                                                    t-esc="country.name"
+                                                                />
+                                                            </option>
+                                                        </t>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                            
+                                                <div class="form-group col-md-6">
+                                                    <label for="startdate">
+                                                        Travel Date
+                                                    </label>
+                                                    <div class="date">
+                                                        <div
+                                                            class="input-group input-append"
+                                                            id="StartdatePicker"
+                                                        >
+                                                            <input
+                                                                type="date"
+                                                                class="form-control piker-date travel_date"
+                                                                name="date_of_arrival"
+                                                                required="true"
+                                                            />
+                                                            <span
+                                                                class="input-group-addon add-on"
+                                                            >
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="startdate">
+                                                        Return Date
+                                                    </label>
+                                                    <div class="date">
+                                                        <div
+                                                            class="input-group input-append"
+                                                            id="ReturndatePicker"
+                                                        >
+                                                            <input
+                                                                type="date"
+                                                                class="form-control piker-date return_date"
+                                                                name="date_of_return"
+                                                                required="true"
+                                                            />
+                                                            <span
+                                                                class="input-group-addon add-on"
+                                                            >
+                                                            
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                            
+                                                <div class="form-group col-md-6">
+                                                    <label
+                                                        for="days"
+                                                    >No of Children</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control number"
+                                                        name="children"
+                                                        required="true"
+                                                    />
+                                                    <span class="errmsg" />
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label
+                                                        for="participents"
+                                                    >No of Adults</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control number"
+                                                        name="adult"
+                                                        required="true"
+                                                    />
+                                                    <span class="errmsg" />
+                                                </div>
+                                            </div>
+                                                <div class="form-group col-md-12">
+                                                    <label for="notes">Message</label>
+                                                    <textarea
+                                                        type="text"
+                                                        rows="3"
+                                                        class="form-control"
+                                                        name="description"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="form-group col-md-12 mt16 text-center"
+                                                    style=""
+                                                >
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-black"
+                                                    >Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+    <template id="package_booking" name="Packages Booking">
+        <t t-call="website.layout">
+            <section
+                class="oe_structure"
+                style="background: linear-gradient(to right, #ededed, #dbb85b, #f5a7a9, #e5cdb7, #8ec5fc)"
+            >
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-10 mt64 mb64">
+                            <div
+                                class="col-12 form_booking"
+                                style="background-color: #fff;"
+                            >
+                            <h3 class="tour-title">
+                                <t t-esc="template.name" />
+                            </h3>
+                            <h6 class="tour-duration">(<t t-esc="template.package_total_days" />)</h6>
+                            <p class="tour-message">Book your tour Now</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 mb-5 v_form_div pt-3 pb-3">
+                                        <form role="form" action="/book_package" method="post"
+                                            class="booking_form" enctype="multipart/form-data">
+                                            <!-- Hidden Fields -->
+                                            <input type="hidden" id="package_id" name="name"
+                                                t-attf-value="Package: #{template.name}" />
+                                            <input type="hidden" id="order_id" name="package_id"
+                                                t-attf-value="#{template.id}" />
+                                            <input type="hidden" name="travellers_ids"
+                                                class="travellers" />
+
+                                            <!-- Form Rows -->
+                                            <div class="form-row">
+                                                <div class="row mb-2">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="name">Name*</label>
+                                                        <input type="text" class="form-control"
+                                                            name="contact_name" required="true" />
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="mobile">Mobile*</label>
+                                                        <input type="text"
+                                                            class="form-control number"
+                                                            name="mobile" required="true" />
+                                                        <span class="errmsg"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="email">Email*</label>
+                                                        <input
+                                                            type="email"
+                                                            class="form-control"
+                                                            name="email_from"
+                                                            required="true"
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="form-group o_website_form_required_custom col-md-6"
+                                                    >
+                                                        <label
+                                                            for="country_id"
+                                                        >Country</label>
+                                                        <select
+                                                            name="country_id"
+                                                            class="form-control"
+                                                            required=""
+                                                        >
+                                                            <option value="" />
+                                                            <t
+                                                                t-foreach="countries"
+                                                                t-as="country"
+                                                            >
+                                                                <option
+                                                                    t-att-value="country.id"
+                                                                >
+                                                                    <t
+                                                                        t-esc="country.name"
+                                                                    />
+                                                                </option>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="date_of_arrival">
+                                                            Travel Date*
+                                                        </label>
+                                                        <div class="date">
+                                                            <div
+                                                                class="input-group input-append"
+                                                                id="StartdatePicker"
+                                                            >
+                                                                <t
+                                                                    t-if="template.type_of_package == 'specific' ">
+                                                                    <input
+                                                                        type="text"
+                                                                        class="form-control travel_date"
+                                                                        readonly="readonly"
+                                                                        t-att-value="template.arrival_date"
+                                                                        required="true"
+                                                                        placeholder="DD/MM/YYYY"
+                                                                    />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <input
+                                                                        type="date"
+                                                                        class="form-control piker-date travel_date get_return_dt"
+                                                                        name="date_of_arrival"
+                                                                        t-att-data-package="template.id"
+                                                                        required="true"
+                                                                        placeholder="DD/MM/YYYY"
+                                                                    />
+                                                                    <span
+                                                                        class="input-group-addon add-on">
+                                                                    </span>
+                                                                </t>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="date_of_return">
+                                                            Return Date*
+                                                        </label>
+                                                        <div class="date">
+                                                            <div
+                                                                class="input-group input-append"
+                                                                id="ReturndatePicker"
+                                                            >
+                                                                <t
+                                                                    t-if="template.type_of_package == 'specific' ">
+                                                                    <input
+                                                                        type="text"
+                                                                        class="form-control return_date"
+                                                                        readonly="readonly"
+                                                                        t-att-value="template.return_date"
+                                                                        required="true"
+                                                                        placeholder="DD/MM/YYYY"
+                                                                    />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <input
+                                                                        type="date"
+                                                                        class="form-control piker-date return_date pe-none"
+                                                                        name="date_of_return"
+                                                                        readonly="readonly"
+                                                                        required="true"
+                                                                        placeholder="DD/MM/YYYY"
+                                                                    />
+                                                                    <span
+                                                                        class="input-group-addon add-on">
+                                                                    </span>
+                                                                </t>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-12 mb-1">
+                                                    <span>Package Price <b class="package_price">
+                                                            <t t-esc="template.sell_per_person" />
+                                                        </b>
+                                                        per person*</span>
+                                                </div>
+                                                <div class="form-group col-md-12 bg-black p-2 mb-2">
+                                                    <span>
+                                                        <b>Traveller's Details</b>
+                                                    </span>
+                                                </div>
+                                                <div class="form-group col-md-12 mb-2">
+                                                    <label for="package_group">Select Group Package*</label>
+                                                    <select name="group_costing_id"
+                                                        t-att-data-package="template.id"
+                                                        class="form-control group_costing"
+                                                        required="true">
+                                                        <option value=" " selected="selected"
+                                                            readonly="readonly"></option>
+                                                            <t
+                                                            t-foreach="template.sudo().group_costing_ids"
+                                                            t-as="group">
+                                                            <option t-att-value="group.sudo().id">
+                                                                <t t-esc="group.sudo().name" />
+                                                            </option>
+                                                        </t>
+                                                    </select>
+                                                </div>
+                                                <div class="row mb-2">
+
+                                                    <div class="form-group col-md-4 pe-none">
+                                                        <label
+                                                            for="children"
+                                                        >No of Children*</label>
+                                                        <input
+                                                            type="text"
+                                                            class="form-control number child_count"
+                                                            name="children"
+                                                            required="true"
+                                                        />
+                                                        <span class="errmsg" />
+                                                    </div>
+                                                    <div class="form-group col-md-4 pe-none">
+                                                        <label
+                                                            for="adult"
+                                                        >No of Adults*</label>
+                                                        <input
+                                                            type="text"
+                                                            class="form-control number child_count"
+                                                            name="adult"
+                                                            required="true"
+                                                        />
+                                                        <span class="errmsg" />
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label
+                                                            for="infants"
+                                                        >No of Infants*</label>
+                                                        <input
+                                                            type="text"
+                                                            class="form-control number child_count"
+                                                            name="infants"
+                                                            value="0"
+                                                            required="true"
+                                                        />
+                                                        <span class="errmsg" />
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <div class="form-group col-md-12">
+                                                    <span>Total Price: <b class="total_price">0.0</b></span>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <table class="table table-hover tarveler_table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">Age in Years</th>
+                                                                <th scope="col">Gender</th>
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody></tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="form-group col-md-12">
+                                                    <a class="btn btn-dark add_tarveler"><i
+                                                            class="fa fa-plus" /> Add Traveller</a>
+                                                </div>
+
+                                                <hr />
+
+                                                <div class="form-group col-md-12">
+                                                    <label for="notes">Message</label>
+                                                    <textarea type="text" rows="3"
+                                                        class="form-control" name="description"></textarea>
+                                                </div>
+
+                                                <div class="form-group col-md-12 mt-3 text-center">
+                                                    <button type="submit"
+                                                        class="btn btn-dark submit_inquiry">Confirm
+                                                        &amp; Apply</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div id="travellers_modal_new"
+                                        class="modal fade travellers_modal" role="dialog">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Traveller's
+                                                        Detail</h5>
+                                                    <button type="button" class="btn btn-close"
+                                                        data-bs-dismiss="modal">
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form role="form" action="/save_traveller"
+                                                        method="post"
+                                                        class="visitor_form"
+                                                        enctype="multipart/form-data">
+                                                        <div class="row">
+                                                            <div
+                                                                class="form-group col-md-6 col-sm-12 col-xs-6">
+                                                                <label for="name">
+                                                                    Name*
+                                                                </label>
+                                                                <input type="text"
+                                                                    name="name"
+                                                                    class="form-control"
+                                                                    required="true"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                class="form-group col-md-6 col-sm-12 col-xs-6">
+                                                                <label for="gender">
+                                                                    Gender*
+                                                                </label>
+                                                                <select name="gender"
+                                                                    class="form-control"
+                                                                    required="true">
+                                                                    <option value="male">Male</option>
+                                                                    <option value="female">Female</option>
+                                                                    <option value="other">Other</option>
+                                                                </select>
+                                                            </div>
+                                                            <div
+                                                                class="form-group col-md-6 col-sm-12 col-xs-6">
+                                                                <label for="dob">
+                                                                    Age In Years
+                                                                </label>
+                                                                <input type="text"
+                                                                    name="age"
+                                                                    class="form-control number"
+                                                                />
+
+                                                            </div>
+                                                            <!-- <div class="form-group col-md-6
+                                                            col-sm-12 col-xs-6">
+									                    <label for="gender">
+									                        ID Type
+									                    </label>
+									                    <select name="identity_type" class="form-control">
+									                        <option value="voter_id">Voter ID</option>
+									                        <option value="driving license" >Driving License</option>
+									                        <option value="passport">Passport Number</option>
+									                    </select>
+									                </div> -->
+                                                            <!-- <div class="form-group col-md-6
+                                                            col-sm-12 col-xs-6">
+                                                            <label for="id_number">
+                                                                Identity Proof number
+                                                            </label>
+                                                            <input type="text"
+                                                                name="identity_number"
+                                                                class="form-control"
+                                                            />
+                                                        </div> -->
+                                                            <!-- <div class="form-group col-md-12
+                                                            col-sm-12 col-xs-12">
+									                    <label for="id_number">
+									                        Identity Proof
+									                    </label>
+									                    <input type="file" class="multiple_image form-control" multiple="true"
+                                                            onchange="handle_picture(this.files,
+                                                            this)"/>
+									                    <input type="hidden" name="file_name" class="img_name"/>
+									                    <input type="hidden" name="img_data" class="img_data"/>
+									                </div> -->
+                                                            <!-- <div class="form-group col-md-12
+                                                            col-sm-12 col-xs-12">
+									                    <div class="divFiles"></div>
+									                </div> -->
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-black"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button"
+                                                        class="btn btn-black save_travellers"
+                                                        data-bs-dismiss="modal">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal fade del_travellers_modal" tabindex="-1"
+                                        role="dialog" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Delete Traveller's
+                                                        Detail</h5>
+                                                    <button type="button" class="close btn-close"
+                                                        data-bs-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&amp;times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-12"> Are you sure you want
+                                                            to delete this record? <input
+                                                                type="hidden"
+                                                                name="travell_input_id" value=""></input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button"
+                                                        class="btn btn-black btn-close"
+                                                        data-bs-dismiss="modal">No</button>
+                                                    <button type="button"
+                                                        class="btn btn-black delete_traveller"
+                                                        data-bs-dismiss="modal">Yes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+</odoo>

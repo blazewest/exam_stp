@@ -1,0 +1,97 @@
+<odoo>
+    <!-- Inherit Sale Order Template Form View-->
+    <record id="transportation_sale_order_template_form_inherit" model="ir.ui.view">
+        <field name="name">transportation.sale.order.templete.form.inherit</field>
+        <field name="model">sale.order.template</field>
+        <field
+            name="inherit_id"
+            ref="tour_travel_management.tour_travel_package_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='lines']" position="after">
+                <page name="transportation" string="Transportation">
+                    <field
+                        name="transportation_package_line_ids"
+                        context="{'default_from_date': arrival_date,'default_to_date': return_date, 'pax_number': pax_group}"
+                        widget="section_and_note_one2many"
+                    >
+                        <tree editable='bottom'>
+                            <control>
+                                <create
+                                    name="add_product_control"
+                                    string="Add a transportation"
+                                />
+                                <create
+                                    name="add_section_control"
+                                    string="Add a section"
+                                    context="{'default_display_type': 'line_section'}"
+                                />
+                                <create
+                                    name="add_note_control"
+                                    string="Add a note"
+                                    context="{'default_display_type': 'line_note'}"
+                                />
+                            </control>
+                            <field name="sequence" widget="handle" />
+                            <field name="display_type" column_invisible="1" />
+                            <field
+                                name="journey_date"
+                                required = "display_type == False and parent.type_of_package == 'specific'"
+                                column_invisible = "parent.type_of_package != 'specific'"
+                            />
+                            <field
+                                name="day_selection"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                                required = "display_type == False and parent.type_of_package != 'specific'"
+                                column_invisible = "parent.type_of_package == 'specific'"
+                                domain="[('code','&lt;=',parent.fixed_tour_days)]"
+                            />
+                            
+                            <field
+                                name="source_id"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="destination_id"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="transportation_id"
+                                context="{'journey_date':journey_date, 'source_id':source_id,
+                                        'package_create_date': parent.package_create_date,
+                                        'type_of_package': parent.type_of_package}"
+                                domain="[('registration_type','=','transportation')]"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="vehicle_id"
+                                context="{'journey_date':journey_date, 'transportation_id':transportation_id}"
+                                required = "display_type == False"
+                                options="{'no_create': True, 'no_create_edit':True,'no_open':True}"
+                            />
+                            <field
+                                name="name"
+                                widget="section_and_note_text"
+                                required = "display_type in ['line_section','line_note']"
+                            />
+                            <field name="qty" />
+                            <field name="cost_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <field name="price_unit" widget="monetary" options="{'currency_field': 'currency_id'}" />
+                            <field name="price_subtotal" widget="monetary" options="{'currency_field': 'currency_id'}" />
+                            <field name="currency_id" column_invisible="1" />
+                            <field name="sale_order_templete_id" column_invisible="1" />
+                            <field name="contract_id" column_invisible="1" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+            <xpath
+                expr="//page[@name='itinerary']//field[@name='itinerary_ids']//tree[@name='itinerary']"
+                position="inside"
+            >
+                <field name="transport_ids" widget="many2many_tags" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

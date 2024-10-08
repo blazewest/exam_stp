@@ -51,3 +51,37 @@ class SurveyClassification(models.Model):
                     )
                 )
 
+    @api.model_create_multi
+    def create(self, vals_list):
+        records = super(SurveyClassification, self).create(vals_list)
+        for record in records:
+            self._create_or_update_tong_hop_diem(record)
+        return records
+
+    def write(self, vals):
+        res = super(SurveyClassification, self).write(vals)
+        for record in self:
+            self._create_or_update_tong_hop_diem(record)
+        return res
+
+    def _create_or_update_tong_hop_diem(self, record):
+        # Kiểm tra xem có bản ghi 'tong.hop.diem' nào tương ứng với 'survey.classification' hiện tại hay không
+        tong_hop_diem = self.env['tong.hop.diem'].search([
+            ('name', '=', record.name),
+            ('cuoc_thi', '=', record.survey_id.id)
+        ], limit=1)
+
+        # Nếu tồn tại bản ghi 'tong.hop.diem', cập nhật nó
+        if tong_hop_diem:
+            tong_hop_diem.write({
+                'name': record.name,
+                'cuoc_thi': record.survey_id.id,
+                'ghi_chu': f'{record.min_score} - {record.max_score}'
+            })
+        else:
+            # Nếu chưa tồn tại, tạo mới
+            self.env['tong.hop.diem'].create({
+                'name': record.name,
+                'cuoc_thi': record.survey_id.id,
+                'ghi_chu': f'{record.min_score} - {record.max_score}'
+            })

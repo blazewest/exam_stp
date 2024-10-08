@@ -1,0 +1,3223 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tour_travel_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 02:36+0000\n"
+"PO-Revision-Date: 2024-10-08 02:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "), are you sure to create a new one?"
+msgstr "), bạn có chắc chắn muốn tạo một cái mới không?"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ",<br/>"
+msgstr ""
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ".<br/>"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.visa_product_template
+msgid "15 days visa"
+msgstr "thị thực 15 ngày"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.visa2_product_template
+msgid "30 days visa"
+msgstr "thị thực 30 ngày"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.visa3_product_template
+msgid "90 days visa"
+msgstr "thị thực 90 ngày"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_kanban
+msgid "<i class=\"fa fa fa-calendar\" title=\"Arrival Date\"/>"
+msgstr "<i class=\"fa fa fa-calendar\" title=\"Ngày đến\"/>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registrations_kanban_view
+msgid "<i class=\"fa fa-address-card\" title=\"street\" style=\"color:#7C7BAD\"/>"
+msgstr "<i class=\"fa fa-address-card\" title=\"đường phố\" style=\"color:#7C7BAD\"/>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registrations_kanban_view
+msgid "<i class=\"fa fa-envelope\" title=\"email\" style=\"color:#7C7BAD\"/>"
+msgstr "<i class=\"fa fa-envelope\" title=\"email\" style=\"color:#7C7BAD\"/>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_kanban
+msgid "<i class=\"fa fa-fighter-jet\" title=\"Return Date\"/>"
+msgstr "<i class=\"fa fa-fighter-jet\" title=\"Ngày về\"/>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.renew_contract_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.wizzard_passenger_list_form
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registrations_kanban_view
+msgid "<i class=\"fa fa-phone\" title=\"phone\" style=\"color:#7C7BAD\"/>"
+msgstr ""
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid ""
+"<span class=\"fa fa-plus-square\"/>\n"
+"                                       Create company"
+msgstr ""
+"<span class=\"fa fa-plus-square\"/>\n"
+"                                       Tạo công ty"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b invisible=\"type != 'contact'\">Company Address</b>\n"
+"                                <b invisible=\"type != 'invoice'\">Invoice Address</b>\n"
+"                                <b invisible=\"type != 'delivery'\">Delivery Address</b>\n"
+"                                <b invisible=\"type != 'other'\">Other Address</b>\n"
+"                                <b invisible=\"type != 'private'\">Private Address</b>\n"
+"                                <b invisible=\"type != False\">Address</b>\n"
+"                            </span>"
+msgstr ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b invisible=\"type != 'contact'\">Địa chỉ công ty</b>\n"
+"                                <b invisible=\"type != 'invoice'\">Địa chỉ hóa đơn</b>\n"
+"                                <b invisible=\"type != 'delivery'\">Địa chỉ giao hàng</b>\n"
+"                                <b invisible=\"type != 'other'\">Địa chỉ khác</b>\n"
+"                                <b invisible=\"type != 'private'\">Địa chỉ riêng</b>\n"
+"                                <b invisible=\"type != False\">Địa chỉ</b>\n"
+"                            </span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid ""
+"<span class=\"o_stat_text\">Customer</span>\n"
+"                                <span class=\"o_stat_text\">Preview</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Khách hàng</span>\n"
+"                                <span class=\"o_stat_text\">Xem trước</span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "<span class=\"oe_inline\" style=\"margin-right: 50%;\">%</span>"
+msgstr "<span class=\"oe_inline\" style=\"margin-right: 50%;\">%</span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "<span class=\"oe_inline\">Years</span>"
+msgstr "<span class=\"oe_inline\">Năm</span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_itinerary
+msgid ""
+"<span>\n"
+"                                        <b>Itinerary</b>\n"
+"                                    </span>"
+msgstr ""
+"<span>\n"
+"                                        <b>Hành trình</b>\n"
+"                                    </span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ""
+"<span>\n"
+"                                        <b>Other Services</b>\n"
+"                                    </span>"
+msgstr ""
+"<span>\n"
+"                                        <b>Các dịch vụ khác</b>\n"
+"                                    </span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_total_passenger_list
+msgid ""
+"<span>\n"
+"                                        <b>Passenger List</b>\n"
+"                                    </span>"
+msgstr ""
+"<span>\n"
+"                                        <b>Danh sách hành khách</b>\n"
+"                                    </span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_itinerary
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ""
+"<span>\n"
+"                                        <b>Terms And Conditions</b>\n"
+"                                    </span>"
+msgstr ""
+"<span>\n"
+"                                        <b>Điều khoản và điều kiện</b>\n"
+"                                    </span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ""
+"<span>\n"
+"                                        <b>Tour Cost</b>\n"
+"                                    </span>"
+msgstr ""
+"<span>\n"
+"                                        <b>Chi phí tham quan</b>\n"
+"                                    </span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_kanban
+msgid "<span>Days</span>"
+msgstr "<span>Ngày</span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_kanban
+msgid "<span>Nights</span>"
+msgstr "<span>Đêm</span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_invoice_document_inherit_pcm_sale
+msgid "<span>Quantity</span>"
+msgstr "<span>Số lượng</span>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "<strong style=\"margin-left:36px\">Untaxed Amount  :</strong>"
+msgstr "<strong style=\"margin-left:36px\">Số tiền chưa đánh thuế  :</strong>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ""
+"<strong style=\"margin-left:73px;\">Service Tax :\n"
+"                                        </strong>"
+msgstr ""
+"<strong style=\"margin-left:73px;\">Thuế dịch vụ :\n"
+"                                        </strong>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_kanban
+msgid ""
+"<strong> Travellers</strong>\n"
+"                                        <br/>"
+msgstr ""
+"<strong> Du khách</strong>\n"
+"                                        <br/>"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid ""
+"<strong>Total Amount Payable :\n"
+"                                        </strong>"
+msgstr ""
+"<strong>Tổng số tiền phải trả :\n"
+"                                        </strong>"
+
+#. module: tour_travel_management
+#: model:mail.template,body_html:tour_travel_management.email_template_7_day_before
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <!-- CONTENT -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                                            <p>Dear <strong>\n"
+"                                                            <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"                                                            </strong>,</p>\n"
+"                                                            <p>\n"
+"                                                            <t t-out=\"object.city_id.name or ''\"></t>.\n"
+"                                                            </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                     Thank you for participating in our <t t-out=\"object.company_id.name or ''\"></t> for your valuation services needs.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    This is a friendly reminder that your service agreement expired soon.The agreement details are below\n"
+"                                                </p>\n"
+"                                                            <p>\n"
+"                                                    <strong>Name: </strong> <t t-out=\"object.name or ''\"></t>.<br>\n"
+"                                                    <strong>Duration: </strong> <t t-out=\"object.date_start or ''\"></t> -&gt; <t t-out=\"object.date_end or ''\"></t>.<br>\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    For renew service agreement please contact us\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Again, thank you for choosing <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Sincerely,\n"
+"                                                    <br>\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- FOOTER -->\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <!-- CONTENT -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                                            <p>Dear <strong>\n"
+"                                                            <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"                                                            </strong>,</p>\n"
+"                                                            <p>\n"
+"                                                            <t t-out=\"object.city_id.name or ''\"></t>.\n"
+"                                                            </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                     Cảm ơn bạn đã tham gia vào <t t-out=\"object.company_id.name or ''\"></t> cho nhu cầu dịch vụ định giá của bạn.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Đây là lời nhắc nhở thân thiện rằng thỏa thuận dịch vụ của bạn sắp hết hạn. Chi tiết thỏa thuận như bên dưới\n"
+"                                                </p>\n"
+"                                                            <p>\n"
+"                                                    <strong>Tên: </strong> <t t-out=\"object.name or ''\"></t>.<br>\n"
+"                                                    <strong>Khoảng thời gian: </strong> <t t-out=\"object.date_start or ''\"></t> -&gt; <t t-out=\"object.date_end or ''\"></t>.<br>\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Để gia hạn hợp đồng dịch vụ vui lòng liên hệ với chúng tôi\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Một lần nữa, cảm ơn bạn đã lựa chọn <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Trân trọng,\n"
+"                                                    <br>\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- FOOTER -->\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+
+#. module: tour_travel_management
+#: model:mail.template,body_html:tour_travel_management.mail_template_package_contract_receipt
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                                            <p>Dear <strong>\n"
+"                                                                <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"                                                                </strong>,</p>\n"
+"                                                            <p><t t-out=\"object.city_id.name or ''\"></t>.</p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Thank you for choosing <t t-out=\"object.company_id.name or ''\"></t> for your valuation services needs. We confident that you will be very satisfied with the services that we offer.\n"
+"                                                    Enclosed please find our Agreement for Services. If this Agreement is acceptable to you, please sign and return to our office via fax/email. Once we receive the signed Agreement from you, we will expedite your request.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    If you have questions, please don’t hesitate to contact us.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Again, thank you for choosing <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Sincerely,\n"
+"                                                    <br>\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                                            <p>Kính gửi <strong>\n"
+"                                                                <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"                                                                </strong>,</p>\n"
+"                                                            <p><t t-out=\"object.city_id.name or ''\"></t>.</p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Cảm ơn bạn đã lựa chọn <t t-out=\"object.company_id.name or ''\"></t> cho nhu cầu dịch vụ định giá của bạn. Chúng tôi tin rằng bạn sẽ rất hài lòng với các dịch vụ mà chúng tôi cung cấp.\n"
+"                                                    Đính kèm, vui lòng tìm Thỏa thuận dịch vụ của chúng tôi. Nếu bạn chấp nhận Thỏa thuận này, vui lòng ký và gửi lại cho văn phòng của chúng tôi qua fax/email. Sau khi chúng tôi nhận được Thỏa thuận đã ký từ bạn, chúng tôi sẽ đẩy nhanh yêu cầu của bạn.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Nếu bạn có thắc mắc, vui lòng liên hệ với chúng tôi.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Một lần nữa, cảm ơn bạn đã lựa chọn <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Trân trọng,\n"
+"                                                    <br>\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+
+#. module: tour_travel_management
+#: model:mail.template,body_html:tour_travel_management.email_template_expire_package_contract
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                                            <p>Dear <strong>\n"
+"                                                                <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"                                                            </strong>,</p>\n"
+"                                                            <p>\n"
+"                                                            <t t-out=\"object.city_id.name or ''\"></t>.</p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Thank you for choosing <t t-out=\"object.company_id.name or ''\"></t> for your valuation services. We would like to inform to you that your service agreement expired today.\n"
+"                                                </p>\n"
+"                                                            <p>\n"
+"                                                    For renew service agreement please contact us.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Again, thank you for choosing <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Sincerely,\n"
+"                                                    <br>\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                                            <p>Kính gửi <strong>\n"
+"                                                                <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"                                                            </strong>,</p>\n"
+"                                                            <p>\n"
+"                                                            <t t-out=\"object.city_id.name or ''\"></t>.</p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Cảm ơn bạn đã lựa chọn <t t-out=\"object.company_id.name or ''\"></t> cho dịch vụ định giá của bạn. Chúng tôi muốn thông báo với bạn rằng hợp đồng dịch vụ của bạn đã hết hạn vào hôm nay.\n"
+"                                                </p>\n"
+"                                                            <p>\n"
+"                                                    Để gia hạn hợp đồng dịch vụ, vui lòng liên hệ với chúng tôi.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Một lần nữa, cảm ơn bạn đã lựa chọn <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                            <br>\n"
+"                                                            <p>\n"
+"                                                    Trân trọng,\n"
+"                                                    <br>\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>.\n"
+"                                                </p>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid ""
+"A partner with the same <span>\n"
+"                        <span class=\"o_vat_label\">Tax ID</span>\n"
+"                    </span> already exists ("
+msgstr ""
+"Một đối tác có cùng <span>\n"
+"                        <span class=\"o_vat_label\">Mã số thuế</span>\n"
+"                    </span> đã tồn tại ("
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__product_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"Sản phẩm có thể lưu trữ là sản phẩm mà bạn quản lý kho. Ứng dụng Hàng tồn kho phải được cài đặt.\n"
+"Sản phẩm tiêu dùng là sản phẩm mà kho không được quản lý.\n"
+"Dịch vụ là sản phẩm phi vật chất mà bạn cung cấp."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__qty_delivered_method
+msgid ""
+"According to product configuration, the delivered quantity can be automatically computed by mechanism:\n"
+"  - Manual: the quantity is set manually on the line\n"
+"  - Analytic From expenses: the quantity is the quantity sum from posted expenses\n"
+"  - Timesheet: the quantity is the sum of hours recorded on tasks linked to this sale line\n"
+"  - Stock Moves: the quantity comes from confirmed pickings\n"
+msgstr ""
+"Theo cấu hình sản phẩm, số lượng giao hàng có thể được tính toán tự động theo cơ chế:\n"
+" - Thủ công: số lượng được thiết lập thủ công trên dòng\n"
+" - Phân tích Từ chi phí: số lượng là tổng số lượng từ chi phí đã ghi\n"
+" - Bảng chấm công: số lượng là tổng số giờ được ghi lại trên các nhiệm vụ được liên kết với dòng bán hàng này\n"
+" - Di chuyển kho: số lượng đến từ các lần hái đã xác nhận\n"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_account_move
+msgid "Account Move"
+msgstr "Bút toán"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_needaction
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_ids
+msgid "Activities"
+msgstr "Các hoạt động"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_exception_decoration
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Hoạt động Ngoại lệ Trang trí"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_state
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_type_icon
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/tour_registration.py:0
+#, python-format
+msgid "Add Traveller Details."
+msgstr "Thêm thông tin chi tiết về khách du lịch."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Add a Extra Service Information"
+msgstr "Thêm thông tin dịch vụ bổ sung"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Add a itinerary"
+msgstr "Thêm hành trình"
+
+#. module: tour_travel_management
+#: model_terms:ir.actions.act_window,help:tour_travel_management.package_category_action
+msgid "Add a new Package Category"
+msgstr "Thêm một danh mục gói mới"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Add a note"
+msgstr "Thêm một ghi chú"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Add a product"
+msgstr "Thêm một sản phẩm"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Add a section"
+msgstr "Thêm một phần"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__number_of_adult
+msgid "Adult"
+msgstr "Người lớn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__adults
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__adults
+msgid "Adults"
+msgstr "Người lớn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__age
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_total_passenger_list
+msgid "Age"
+msgstr "Tuổi"
+
+#. module: tour_travel_management
+#: model:mail.template,name:tour_travel_management.mail_template_package_contract_receipt
+#: model:mail.template,subject:tour_travel_management.mail_template_package_contract_receipt
+msgid "Agreement for Services"
+msgstr "Thỏa thuận về dịch vụ"
+
+#. module: tour_travel_management
+#: model:mail.template,name:tour_travel_management.email_template_7_day_before
+msgid "Agreement for Services Reminder: 7 Day Before"
+msgstr "Thỏa thuận về dịch vụ Nhắc nhở: 7 ngày trước"
+
+#. module: tour_travel_management
+#: model:mail.template,name:tour_travel_management.email_template_expire_package_contract
+msgid "Agreement for Services:Expire "
+msgstr "Thỏa thuận dịch vụ:Hết hạn "
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__services__airport
+msgid "Airport Pickup & Drop off"
+msgstr "Đón & Trả tại Sân bay"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "Phân phối phân tích"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__analytic_distribution_search
+msgid "Analytic Distribution Search"
+msgstr "Phân tích tìm kiếm phân phối"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__analytic_precision
+msgid "Analytic Precision"
+msgstr "Độ chính xác phân tích"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__analytic_line_ids
+msgid "Analytic lines"
+msgstr "Dòng phân tích"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__date_of_anniversary
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__date_of_anniversary
+msgid "Anniversary Date"
+msgstr "Ngày kỷ niệm"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/supplier_registration.py:0
+#, python-format
+msgid "Anniversary Date should be smaller than Current Date."
+msgstr "Ngày kỷ niệm phải nhỏ hơn Ngày hiện tại."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Archived"
+msgstr "Đã lưu trữ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Are you sure you want to cancel this package?"
+msgstr "Bạn có chắc chắn muốn hủy gói này không?"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid ""
+"Are you sure you want to void the authorized transaction? This action can't "
+"be undone."
+msgstr ""
+"Bạn có chắc chắn muốn hủy giao dịch đã được ủy quyền không? Hành động này không thể "
+"hoàn tác được."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__arrival_date
+msgid "Arrival Date"
+msgstr "Ngày đến"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/tour_registration.py:0
+#, python-format
+msgid "Arrival date should be greater than the Current Date."
+msgstr "Ngày đến phải lớn hơn Ngày hiện tại."
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Arrival date should be greater than the current date."
+msgstr "Ngày đến phải lớn hơn ngày hiện tại."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.renew_contract_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Arrival/Departure Date"
+msgstr "Ngày đến/ngày đi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_attachment_count
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng đính kèm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__attraction
+msgid "Attraction"
+msgstr "Sự thu hút"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_template_attribute_value_ids
+msgid "Attribute Values"
+msgstr "Giá trị thuộc tính"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Avatar"
+msgstr "Hình đại diện"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Billing Information"
+msgstr "Thông tin thanh toán"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__date_of_birth
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__date_of_birth
+msgid "Birth Date"
+msgstr "Ngày sinh"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/supplier_registration.py:0
+#, python-format
+msgid "Birth Date should be smaller than Current Date."
+msgstr "Ngày sinh phải nhỏ hơn Ngày hiện tại."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_updatable
+msgid "Can Edit Product"
+msgstr "Có thể chỉnh sửa sản phẩm"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_cancel_wiz_view_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.renew_contract_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.wizzard_passenger_list_form
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Cancel Package"
+msgstr "Hủy gói"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.package_contract_cancel_wiz_action
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__cancel_reason_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__cancel_reason_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__name
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_cancel_wiz_view_form
+msgid "Cancel Reason"
+msgstr "Hủy bỏ lý do"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__in_cancel
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract__state__cancel
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__state__cancel
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_dashboard_kanban
+msgid "Cancelled"
+msgstr "Đã hủy"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Capture Transaction"
+msgstr "Thu hồi Giao dịch"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_uom_category_id
+msgid "Category"
+msgstr "Loại"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__child_age_lower_limit
+msgid "Child Age Lower Limit"
+msgstr "Tuổi trẻ em giới hạn dưới"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__child_age_upper_limit
+msgid "Child Age Upper Limit"
+msgstr "Giới hạn độ tuổi của trẻ em"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__number_of_children
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__children
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__children
+msgid "Children"
+msgstr "Những đứa trẻ"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_city_city
+#: model:ir.model,name:tour_travel_management.model_city_city
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__city_id
+#: model:ir.ui.menu,name:tour_travel_management.menu_city_city
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.city_city_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "City"
+msgstr "Thành phố"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__code
+msgid "Code"
+msgstr "Mã"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__color
+msgid "Color Index"
+msgstr "Chỉ số màu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__discription
+msgid "Comments"
+msgstr "Bình luận"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Companies"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__company_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__company_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Company"
+msgstr "Công ty"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_13
+msgid "Components Buyer"
+msgstr "Người mua linh kiện"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cài đặt cấu hình"
+
+#. module: tour_travel_management
+#: model:ir.ui.menu,name:tour_travel_management.menu_configuration
+msgid "Configurations"
+msgstr "Cấu hình"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Confirm Package"
+msgstr "Xác nhận Gói"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Confirmation"
+msgstr "Xác nhận"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__in_confirm
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__state__confirm
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_dashboard_kanban
+msgid "Confirmed"
+msgstr "Đã xác nhận"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_12
+msgid "Consultancy Services"
+msgstr "Dịch vụ tư vấn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Contact / Address"
+msgstr "Liên hệ / Địa chỉ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Contact Name"
+msgstr "Tên liên lạc"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Contact image"
+msgstr "Hình ảnh liên hệ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Contacts & Addresses"
+msgstr "Liên hệ và Địa chỉ"
+
+#. module: tour_travel_management
+#: model:ir.actions.report,name:tour_travel_management.action_report_agreement
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__contract_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__contract_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__contract_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Contract"
+msgstr "Hợp đồng đối tác"
+
+#. module: tour_travel_management
+#: model:ir.actions.server,name:tour_travel_management.contract_auto_expiry_scheduler_ir_actions_server
+msgid "Contract Auto Expiry "
+msgstr "Hợp đồng tự động hết hạn "
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_contract_cancel_reason
+#: model:ir.ui.menu,name:tour_travel_management.menu_package_contract_cancel
+msgid "Contract Cancel Reason"
+msgstr "Lý do hủy hợp đồng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Contract Duration"
+msgstr "Thời hạn hợp đồng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__is_contract_running
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__is_contract_running
+msgid "Contract Running"
+msgstr "Hợp đồng chạy"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_search
+msgid "Contract Type"
+msgstr "Loại hợp đồng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__date_end
+#: model:ir.model.fields,help:tour_travel_management.field_renew_contract__date_end
+msgid "Contract end date"
+msgstr "Ngày kết thúc hợp đồng"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package_contract.py:0
+#, python-format
+msgid "Contract is already exists for this Supplier !"
+msgstr "Hợp đồng đã tồn tại với Nhà cung cấp này!"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__date_start
+#: model:ir.model.fields,help:tour_travel_management.field_renew_contract__date_start
+msgid "Contract start date"
+msgstr "Ngày bắt đầu hợp đồng"
+
+#. module: tour_travel_management
+#: model:ir.actions.server,name:tour_travel_management.contract_expiry_07_day_email_reminder_scheduler_ir_actions_server
+msgid "Contract: 07 Day Email Reminder "
+msgstr "Hợp đồng: Nhắc nhở qua email 07 ngày"
+
+#. module: tour_travel_management
+#: model:ir.ui.menu,name:tour_travel_management.menu_package_contract
+msgid "Contracts"
+msgstr "Hợp đồng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__product_uom_category_id
+msgid ""
+"Conversion between Units of Measure can only occur if they belong to the "
+"same category. The conversion will be made based on the ratios."
+msgstr ""
+"Việc chuyển đổi giữa các Đơn vị đo lường chỉ có thể xảy ra nếu chúng thuộc"
+"cùng một loại. Việc chuyển đổi sẽ được thực hiện dựa trên tỷ lệ."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__purchase_price
+msgid "Cost"
+msgstr "Chi phí"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__cost_per_child
+msgid "Cost Per Child"
+msgstr "Chi phí cho mỗi trẻ em"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__cost_per_person
+msgid "Cost Per Person"
+msgstr "Chi phí cho mỗi người"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__cost_percentage_child
+msgid "Cost Percentage for Child"
+msgstr "Tỷ lệ chi phí cho trẻ em"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__cost_price
+msgid "Cost Price"
+msgstr "Giá Chi Phí"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Cost Price/Person"
+msgstr "Giá thành/Người"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__country_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Create Invoice"
+msgstr "Tạo hóa đơn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Create RFQ"
+msgstr "Tạo RFQ"
+
+#. module: tour_travel_management
+#: model_terms:ir.actions.act_window,help:tour_travel_management.action_tour_travel_package
+msgid "Create a New Package"
+msgstr "Tạo một gói mới"
+
+#. module: tour_travel_management
+#: model_terms:ir.actions.act_window,help:tour_travel_management.tour_package_registration_quotations
+msgid "Create a new registration, the first step of a new sale!"
+msgstr "Tạo một đăng ký mới, bước đầu tiên của một giao dịch bán hàng mới!"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__create_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__create_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__create_date
+msgid "Created on"
+msgstr "Được tạo ra vào"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__currency_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__currency_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_custom_attribute_value_ids
+msgid "Custom Values"
+msgstr "Giá trị tùy chỉnh"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__order_partner_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Customer Signature"
+msgstr "Chữ ký của khách hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__name
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_itinerary
+msgid "Day"
+msgstr "Ngày"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_day_selection
+msgid "Day Selection"
+msgstr "Lựa chọn ngày"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__days
+msgid "Days Selection"
+msgstr "Lựa chọn ngày"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Delivered"
+msgstr "Đã giao hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Delivery"
+msgstr "Giao hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Delivery Date"
+msgstr "Ngày giao hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__qty_delivered
+msgid "Delivery Quantity"
+msgstr "Số lượng giao hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__return_date
+msgid "Departure Date"
+msgstr "Ngày khởi hành"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/tour_registration.py:0
+#, python-format
+msgid "Departure date should be greater than Arrival Date."
+msgstr "Ngày khởi hành phải lớn hơn Ngày đến."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__description
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__description
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__name
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_itinerary
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Description"
+msgstr "Mẫu báo giá"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Details"
+msgstr "Chi tiết"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Disc.%"
+msgstr "% CK"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.package_discount_product_template
+msgid "Discount"
+msgstr "Chiết khấu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template_line__discount
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__discount
+msgid "Discount (%)"
+msgstr "Chiết khấu (%)"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__display_name
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__display_sctions
+msgid "Display Sections"
+msgstr "Display Sections"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__display_type
+msgid "Display Type"
+msgstr "Kiểu hiển thị"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_0
+msgid "Distributor"
+msgstr "Nhà phân phối"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__package_type__domestic
+msgid "Domestic"
+msgstr "Nội địa"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__in_done
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__state__done
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_dashboard_kanban
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Done"
+msgstr "Hoàn tất"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__is_downpayment
+msgid ""
+"Down payments are made when creating invoices from a sales order. They are "
+"not copied when duplicating a sales order."
+msgstr ""
+"Các khoản thanh toán ban đầu được thực hiện khi tạo hóa đơn từ đơn đặt hàng bán hàng. Chúng "
+"không được sao chép khi sao chép đơn đặt hàng bán hàng."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__in_draft
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__state__draft
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_dashboard_kanban
+msgid "Draft"
+msgstr "Bản nháp"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__identity_type__driving_license
+msgid "Driving License"
+msgstr "Giấy phép lái xe"
+
+#. module: tour_travel_management
+#: model:sale.order.template,name:tour_travel_management.package1
+msgid "Dubai"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__date_end
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__date_end
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__registration_end_date
+msgid "End Date"
+msgstr "Ngày kết thúc"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.renew_contract_form
+msgid "Enter start date and end date to renew contract."
+msgstr "Nhập ngày bắt đầu và ngày kết thúc để gia hạn hợp đồng."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__arrival_date
+msgid "Expected date come to        a hotel or other location"
+msgstr "Ngày dự kiến đến khách sạn hoặc địa điểm khác"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__return_date
+msgid "Expected date to leave        a hotel or other location."
+msgstr "Ngày dự kiến rời khỏi khách sạn hoặc địa điểm khác."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Expected:"
+msgstr "Dự kiến:"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Expiration Date"
+msgstr "Ngày hết hạn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Expire"
+msgstr "Hết hạn"
+
+#. module: tour_travel_management
+#: model:mail.template,subject:tour_travel_management.email_template_expire_package_contract
+msgid "Expire: Services Agreement"
+msgstr "Hết hạn: Thỏa thuận dịch vụ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract__state__close
+msgid "Expired"
+msgstr "Hết hạn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_config_settings__product_extra_bed_id
+#: model:product.template,name:tour_travel_management.package_extra_bed_product_template
+msgid "Extra Bed"
+msgstr "Giường phụ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__extra_hour
+msgid "Extra Hours(Rate)"
+msgstr "Giờ làm thêm (Giá)"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__extra_service_id
+msgid "Extra Service"
+msgstr "Dịch vụ bổ sung"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__extra_service_ids
+msgid "Extra Services"
+msgstr "Dịch vụ bổ sung"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__extra_tickets
+msgid "Extra Tickets"
+msgstr "Vé thêm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_no_variant_attribute_value_ids
+msgid "Extra Values"
+msgstr "Giá trị bổ sung"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__gender__female
+msgid "Female"
+msgstr "Nữ giới"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__profit_type__fixed
+msgid "Fix Price"
+msgstr "Giá cố định"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__profit_amount
+msgid "Fixed Price"
+msgstr "Giá cố định"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.package_sale4_product_template
+msgid "Fixed cost"
+msgstr "Chi phí cố định"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_follower_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_partner_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__activity_type_icon
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font awesome ví dụ fa-tasks"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__services__full_day
+msgid "Full Day Use"
+msgstr "Sử dụng cả ngày"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__gender
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_total_passenger_list
+msgid "Gender"
+msgstr "Giới tính"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Generate Itinerary Plan"
+msgstr "Tạo kế hoạch hành trình"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Generate RFQ"
+msgstr "Generate RFQ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__purchase_line_ids
+msgid "Generated Purchase Lines"
+msgstr "Dòng mua hàng được tạo"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Get Group Costing"
+msgstr "Nhận Chi phí Nhóm"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_8
+msgid "Gold"
+msgstr "Vàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Group"
+msgstr "Nhóm"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_search
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__group_costing_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Group Costing"
+msgstr "Nhóm Chi phí"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_group_costing_line
+msgid "Group Costing Line"
+msgstr "Dòng nhóm chi phí"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__guide
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__guide
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__guide
+msgid "Guide"
+msgstr "Hướng dẫn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__services__half_day
+msgid "Half Day Use"
+msgstr "Sử dụng nửa ngày"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__has_message
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__res_partner__rating__2
+msgid "High"
+msgstr "Cao"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__hotel
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__hotel
+msgid "Hotel"
+msgstr "Hotel"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__hours
+msgid "Hours"
+msgstr "Giờ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__id
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__id
+msgid "ID"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__identity_type
+msgid "ID Type"
+msgstr "Loại ID"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_11_2
+msgid "IT Services"
+msgstr "Dịch vụ CNTT"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_exception_icon
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__activity_exception_icon
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng để chỉ hoạt động ngoại lệ."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__identities_images
+msgid "Identity Proof"
+msgstr "Bằng chứng nhận dạng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__identity_number
+msgid "Identity Proof number"
+msgstr "Số CMND"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__message_needaction
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, bạn sẽ cần chú ý đến tin nhắn mới."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__message_has_error
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__message_has_sms_error
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__message_has_error
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn sẽ có lỗi gửi."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "In Cancel"
+msgstr "Trong phần Hủy bỏ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "In Confirm"
+msgstr "Trong phần Xác nhận"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "In Done"
+msgstr "Trong phần hoàn tất"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "In Draft"
+msgstr "Trong phần bản nháp"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Individuals"
+msgstr "Cá nhân"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__infants
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__infants
+msgid "Infants"
+msgstr "Trẻ sơ sinh"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Internal Notes"
+msgstr "Ghi chú nội bộ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Internal note..."
+msgstr "Ghi chú nội bộ..."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Internal notes..."
+msgstr "Ghi chú nội bộ..."
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__package_type__international
+msgid "International"
+msgstr "Quốc tế"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package_contract.py:0
+#, python-format
+msgid "Invalid Cost Percentage for Child !"
+msgstr "Tỷ lệ phần trăm chi phí không hợp lệ cho trẻ em!"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__invoice_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__invoice_lines
+msgid "Invoice Lines"
+msgstr "Dòng hóa đơn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__invoice_status
+msgid "Invoice Status"
+msgstr "Trạng thái hóa đơn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Invoiced"
+msgstr "Đã xuất hóa đơn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__qty_invoiced
+msgid "Invoiced Quantity"
+msgstr "Số lượng được lập hóa đơn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Invoices"
+msgstr "Hóa đơn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Invoicing"
+msgstr "Hóa đơn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_is_follower
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_is_follower
+msgid "Is Follower"
+msgstr "Là Người Theo Dõi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__is_package
+msgid "Is Package"
+msgstr "Là Gói"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__is_registration
+msgid "Is Registration"
+msgstr "Là đăng ký"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__is_downpayment
+msgid "Is a down payment"
+msgstr "Là một khoản thanh toán ban đầu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__is_expense
+msgid "Is expense"
+msgstr "Là chi phí"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__is_configurable_product
+msgid "Is the product configurable?"
+msgstr "Sản phẩm có thể cấu hình được không?"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__is_expense
+msgid ""
+"Is true if the sales order line comes from an expense or a vendor bills"
+msgstr ""
+"Đúng nếu dòng lệnh bán hàng xuất phát từ một khoản chi phí hoặc hóa đơn của nhà cung cấp"
+
+#. module: tour_travel_management
+#: model:ir.actions.report,name:tour_travel_management.action_report_itinerary
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__itinerary_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Itinerary"
+msgstr "Hành trình"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__itinerary_date
+msgid "Itinerary Date"
+msgstr "Ngày hành trình"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__write_uid
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_cancel_wiz__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_line__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__write_date
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__customer_lead
+msgid "Lead Time"
+msgstr "Thời gian thực hiện"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Lines"
+msgstr "Dòng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Logo"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__res_partner__rating__0
+msgid "Low"
+msgstr "Thấp"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__gender__male
+msgid "Male"
+msgstr "Nam giới"
+
+#. module: tour_travel_management
+#: model:res.groups,name:tour_travel_management.group_tour_traveller_manager
+msgid "Manager"
+msgstr "Quản lý"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_14
+msgid "Manufacturer"
+msgstr "Nhà sản xuất"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__profit_margin
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__margin
+msgid "Margin"
+msgstr "Biên lợi nhuận"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__margin_percent
+msgid "Margin (%)"
+msgstr "Biên lợi nhuận (%)"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__max_pax_group
+msgid "Maximum Number of Persons participating in current package"
+msgstr "Số lượng người tham gia tối đa trong gói hiện tại"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__max_pax_group
+msgid "Maximum Travellers"
+msgstr "Số lượng du khách tối đa"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_res_partner
+msgid "Meal Registration"
+msgstr "Đăng ký suất ăn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__meals
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__meals
+msgid "Meals"
+msgstr "Bữa ăn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_has_error
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__qty_delivered_method
+msgid "Method to update delivered qty"
+msgstr "Phương pháp cập nhật số lượng đã giao"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__pax_group
+msgid "Minimum Number of Persons participating in current package"
+msgstr "Số lượng người tham gia tối thiểu trong gói hiện tại"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__pax_group
+msgid "Minimum Travellers"
+msgstr "Số lượng khách du lịch tối thiểu"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Minimum/Maximum Travellers"
+msgstr "Số lượng khách du lịch tối thiểu/tối đa"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Misc"
+msgstr "Lặt vặt"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Mobile:"
+msgstr "Di động:"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "More languages"
+msgstr "Nhiều ngôn ngữ hơn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_travellers_list__identities_images
+msgid "Multi Image upload"
+msgstr "Tải lên nhiều hình ảnh"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__my_activity_date_deadline
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_day_selection__name
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__name
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_total_passenger_list
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_tree
+msgid "Name"
+msgstr "Tên"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract__state__draft
+msgid "New"
+msgstr "Mới"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_date_deadline
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót cho hoạt động tiếp theo"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_summary
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_type_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__type_of_package__nonspecific
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__wizzard_passenger_list__type_of_package__nonspecific
+msgid "Non-Specific"
+msgstr "Không cụ thể"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__res_partner__rating__1
+msgid "Normal"
+msgstr "Bình thường"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__notes
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_needaction_counter
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Number of Persons"
+msgstr "Số lượng người"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__customer_lead
+msgid ""
+"Number of days between the order confirmation and the shipping of the "
+"products to the customer"
+msgstr ""
+"Số ngày giữa thời điểm xác nhận đơn hàng và thời điểm giao "
+"sản phẩm đến tay khách hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_has_error_counter
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__purchase_line_count
+msgid "Number of generated purchase items"
+msgstr "Số lượng mặt hàng mua được tạo ra"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid ""
+"Number of maximum travellers should be greater than minimum number of "
+"travellers"
+msgstr ""
+"Số lượng khách du lịch tối đa phải lớn hơn số lượng khách du lịch "
+"tối thiểu"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Number of maximum/minimum travellers should be greater than zero"
+msgstr "Số lượng khách du lịch tối đa/tối thiểu phải lớn hơn 0"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__message_needaction_counter
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số lượng tin nhắn yêu cầu hành động"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__message_has_error_counter
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi gửi"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_2
+msgid "Office Supplies"
+msgstr "Văn phòng phẩm"
+
+#. module: tour_travel_management
+#: model_terms:ir.actions.act_window,help:tour_travel_management.tour_package_registration_quotations
+msgid ""
+"Once the registration is confirmed by the customer, it becomes a sales order.<br>\n"
+"                 You will be able to create an invoice and collect the payment."
+msgstr ""
+"Sau khi khách hàng xác nhận đăng ký, đơn hàng sẽ trở thành đơn đặt hàng bán hàng.<br>\n"
+"                 Bạn sẽ có thể tạo hóa đơn và thu tiền."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Optional Products"
+msgstr "Sản phẩm tùy chọn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__sale_order_option_ids
+msgid "Optional Products Lines"
+msgstr "Dòng sản phẩm tùy chọn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__sale_order_id
+msgid "Order"
+msgstr "Đặt hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_tree
+msgid "Order Date"
+msgstr "Ngày đặt hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Order Lines"
+msgstr "Dòng đặt hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_tree
+msgid "Order Number"
+msgstr "Số đơn hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__order_id
+msgid "Order Reference"
+msgstr "Tham khảo đơn hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__state
+msgid "Order Status"
+msgstr "Trạng thái đơn hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__other
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__other
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__other
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__gender__other
+msgid "Other"
+msgstr "Khác"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__services__other
+msgid "Other Excursions"
+msgstr "Chuyến tham quan khác"
+
+#. module: tour_travel_management
+#: model:ir.ui.menu,name:tour_travel_management.menu_other_info
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Other Info"
+msgstr "Thông tin khác"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Other Information"
+msgstr "Thông tin khác"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__identity_type__other
+msgid "Other Proof"
+msgstr "Proof Khác"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Other Services"
+msgstr "Các dịch vụ khác"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_account_bank_statement_line__package_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_account_move__package_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_account_payment__package_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_purchase_order__package_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__package_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__package_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "Package"
+msgstr "Gói"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_itinerary
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_total_passenger_list
+msgid "Package :"
+msgstr "Gói :"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_package_category
+#: model:ir.actions.act_window,name:tour_travel_management.package_category_action
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__category_id
+#: model:ir.ui.menu,name:tour_travel_management.package_category_menu
+msgid "Package Category"
+msgstr "Thể loại gói"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_form
+msgid "Package Category Form"
+msgstr "Biểu mẫu danh mục gói"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_package_category
+msgid "Package Category Type"
+msgstr "Loại danh mục gói"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_package_contract
+#: model:ir.model,name:tour_travel_management.model_package_contract
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__package_contract_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Package Contract"
+msgstr "Hợp đồng trọn gói"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_package_contract_cancel
+msgid "Package Contract Cancel"
+msgstr "Hủy hợp đồng gói"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_package_contract_cancel_wiz
+msgid "Package Contract Cancel Wiz"
+msgstr "Gói hợp đồng hủy Wiz"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_package_contract_details
+msgid "Package Contract Details"
+msgstr "Chi tiết hợp đồng trọn gói"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_package_contract_line
+msgid "Package Contract Line"
+msgstr "Gói hợp đồng Dòng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__package_count
+msgid "Package Count"
+msgstr "Số lượng gói"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__package_create_date
+msgid "Package Creation Date"
+msgstr "Ngày tạo gói"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_config_settings__product_discount_id
+msgid "Package Discount"
+msgstr "Gói giảm giá"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_package_itinerary
+#: model:ir.model,name:tour_travel_management.model_package_itinerary
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__itinerary_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_itinerary_form
+msgid "Package Itinerary"
+msgstr "Hành trình trọn gói"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_tree
+msgid "Package Name"
+msgstr "Tên gói"
+
+#. module: tour_travel_management
+#: model:ir.actions.report,name:tour_travel_management.action_quotation_tour
+msgid "Package Quotation"
+msgstr "Báo giá trọn gói"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__tour_number
+msgid "Package Sequence"
+msgstr "Trình tự gói"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__package_type
+msgid "Package Type"
+msgstr "Loại gói"
+
+#. module: tour_travel_management
+#: model:ir.actions.server,name:tour_travel_management.non_specific_package_price_update_scheduler_ir_actions_server
+msgid "Package: Non Specific package Price Update "
+msgstr "Gói: Gói không cụ thể Cập nhật giá "
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_tour_travel_package
+#: model:ir.actions.act_window,name:tour_travel_management.done_package_action_from_dashboard
+#: model:ir.ui.menu,name:tour_travel_management.menu_package_category
+#: model:ir.ui.menu,name:tour_travel_management.menu_sale_package_child
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_dashboard_kanban
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_category_form
+msgid "Packages"
+msgstr "Gói hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_packaging_id
+msgid "Packaging"
+msgstr "Bao bì"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_packaging_qty
+msgid "Packaging Quantity"
+msgstr "Số lượng đóng gói"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_3
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__city_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__city_id
+msgid "Partner City"
+msgstr "Thành phố đối tác"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Partners"
+msgstr "Đối tác"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_account_bank_statement_line__passenger_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_account_move__passenger_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_account_payment__passenger_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__passenger_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.wizzard_passenger_list_form
+msgid "Passenger"
+msgstr "Hành khách"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__group_costing_id
+msgid "Passenger Group"
+msgstr "Nhóm hành khách"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#: model:ir.actions.act_window,name:tour_travel_management.action_wizzard_passenger_list
+#: model:ir.actions.report,name:tour_travel_management.action_total_passenger_list
+#: model:ir.model,name:tour_travel_management.model_wizzard_passenger_list
+#: model:ir.ui.menu,name:tour_travel_management.menu_report_passenger
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.passenger_list_form
+#, python-format
+msgid "Passenger List"
+msgstr "Danh sách hành khách"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_report_tour_travel_management_report_total_passenger_list
+msgid "Passenger List Parser"
+msgstr "Trình phân tích danh sách hành khách"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__identity_type__passport
+msgid "Passport Number"
+msgstr "Số hộ chiếu"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Payment Terms"
+msgstr "Điều khoản thanh toán"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__profit_type__percentage
+msgid "Percentage (discount)"
+msgstr "Phần trăm (chiết khấu)"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Phone:"
+msgstr "Điện thoại:"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Please add Group Costing before confirm the package '%s'"
+msgstr "Vui lòng thêm Chi phí nhóm trước khi xác nhận gói '%s'"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Please add itinerary lines before confirm the package '%s'."
+msgstr "Vui lòng thêm lộ trình trước khi xác nhận gói '%s'."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__price
+msgid "Price"
+msgstr "Giá"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__price_reduce_taxexcl
+msgid "Price Reduce Tax excl"
+msgstr "Giá giảm chưa bao gồm thuế"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__price_reduce_taxinc
+msgid "Price Reduce Tax incl"
+msgstr "Giá giảm Thuế bao gồm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__pricelist_item_id
+msgid "Pricelist Item"
+msgstr "Bảng giá mặt hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.wizzard_passenger_list_form
+msgid "Print"
+msgstr "In"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__product_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_product_category
+msgid "Product Category"
+msgstr "Danh mục sản phẩm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_template_id
+msgid "Product Template"
+msgstr "Mẫu sản phẩm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_type
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_uom_readonly
+msgid "Product Uom Readonly"
+msgstr "Sản phẩm Uom Chỉ đọc"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__profit_type
+msgid "Profit Type"
+msgstr "Loại lợi nhuận"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Purchase"
+msgstr "Mua"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_purchase_order
+msgid "Purchase Order"
+msgstr "Đơn mua hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_tour_registration_line__purchase_line_ids
+msgid ""
+"Purchase line generated by this Sales item on order confirmation, or when "
+"the quantity was increased."
+msgstr ""
+"Dòng mua hàng được tạo bởi Mặt hàng bán này khi xác nhận đơn hàng hoặc khi "
+"số lượng tăng lên."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_uom_qty
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__qty_to_invoice
+msgid "Quantity To Invoice"
+msgstr "Số lượng để xuất hóa đơn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Quantity:"
+msgstr "Số lượng:"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Quotation Date"
+msgstr "Ngày báo giá"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_sale_order_template_line
+msgid "Quotation Template Line"
+msgstr "Dòng mẫu báo giá"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Quotation Template Lines"
+msgstr "Dòng mẫu báo giá"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Quotation#"
+msgstr "Báo giá #"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "RFQ"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__rate
+msgid "Rate"
+msgstr "Tỷ lệ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__rating
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__rating
+msgid "Rating"
+msgstr "Xếp hạng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Reference"
+msgstr "Tham khảo"
+
+#. module: tour_travel_management
+#: model:ir.ui.menu,name:tour_travel_management.menu_tour_registration
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Registration"
+msgstr "Đăng ký"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Registration List"
+msgstr "Danh sách đăng ký"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_partner__registration_type
+#: model:ir.model.fields,field_description:tour_travel_management.field_res_users__registration_type
+msgid "Registration Type"
+msgstr "Loại đăng ký"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_travellers_list__remarks
+msgid "Remarks"
+msgstr "Nhận xét"
+
+#. module: tour_travel_management
+#: model:mail.template,subject:tour_travel_management.email_template_7_day_before
+msgid "Reminder: Agreement for Services"
+msgstr "Nhắc nhở: Thỏa thuận về dịch vụ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.renew_contract_form
+msgid "Renew"
+msgstr "Làm mới"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Renew Contract"
+msgstr "Gia hạn hợp đồng"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_renew_contract
+msgid "Renew contract"
+msgstr "Gia hạn hợp đồng"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_renew_contract
+msgid "Renew contract Wizard"
+msgstr "Gia hạn hợp đồng Wizard"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Reporting"
+msgstr "Báo cáo"
+
+#. module: tour_travel_management
+#: model:ir.ui.menu,name:tour_travel_management.menu_report
+msgid "Reports"
+msgstr "Báo cáo"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.wizzard_passenger_list_form
+msgid "Reservation Start/End Date"
+msgstr "Ngày bắt đầu/kết thúc đặt chỗ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__responsible_id
+msgid "Responsible"
+msgstr "Chịu trách nhiệm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__activity_user_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__activity_user_id
+msgid "Responsible User"
+msgstr "Người sử dụng chịu trách nhiệm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__restaurant_id
+msgid "Restaurant"
+msgstr "Nhà hàng"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package.py:0
+#, python-format
+msgid "Return date should be greater than arrival date."
+msgstr "Ngày trở về phải sau ngày đến."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__rfq_count
+msgid "Rfq Count"
+msgstr "Số lượng Rfq"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract__state__open
+msgid "Running"
+msgstr "Đang chạy"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Running Contract"
+msgstr "Hợp đồng đang chạy"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__message_has_sms_error
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi tin nhắn SMS"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__order_line_id
+msgid "Sale Order Line"
+msgstr "Dòng lệnh bán"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__sale_order_template_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__sale_order_template_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__sale_order_template_id
+msgid "Sale Order Template"
+msgstr "Mẫu lệnh bán hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Sales"
+msgstr "Bán hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Sales & Purchase"
+msgstr "Mua bán"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Sales Order"
+msgstr "Đơn đặt hàng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__sales_price
+msgid "Sales Price"
+msgstr "Giá bán"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__sales_price_adult
+msgid "Sales Price Adult"
+msgstr "Giá bán Người lớn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_group_costing_line__sales_price_child
+msgid "Sales Price Child"
+msgstr "Giá bán trẻ em"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Sales Price/Person"
+msgstr "Giá bán/Người"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__salesman_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Salesperson"
+msgstr "Nhân viên bán hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_search
+msgid "Search Contract"
+msgstr "Tìm kiếm hợp đồng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "Search Package"
+msgstr "Tìm kiếm gói"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__seasons_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_travelling_season__name
+#: model:ir.ui.menu,name:tour_travel_management.travelling_season_menu
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.travelling_season_form
+msgid "Season"
+msgstr "Mùa giải"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Section"
+msgstr "Lựa chọn"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Section Name (eg. Products, Services)"
+msgstr "Tên phần (ví dụ: Sản phẩm, Dịch vụ)"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__sell_per_child
+msgid "Sell Per Child"
+msgstr "Bán theo trẻ em"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__sell_per_person
+msgid "Sell Per Person"
+msgstr "Bán cho mỗi người"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__selling_currency_id
+msgid "Selling Currency"
+msgstr "Tiền tệ bán"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Send PRO-FORMA Invoice"
+msgstr "Gửi hóa đơn PRO-FORMA"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Send by Email"
+msgstr "Gửi qua Email"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__sequence
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__sequence
+msgid "Sequence"
+msgstr "trình tự"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Service Name"
+msgstr "Tên dịch vụ"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__services
+#: model:res.partner.category,name:tour_travel_management.cus_res_partner_category_11
+msgid "Services"
+msgstr "Dịch vụ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Set To Draft"
+msgstr "Đặt thành bản nháp"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Set to Draft"
+msgstr "Đặt thành bản nháp"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Set to Quotation"
+msgstr "Đặt thành Báo giá"
+
+#. module: tour_travel_management
+#: model:res.partner.category,name:tour_travel_management.res_partner_category_3
+msgid "Silver"
+msgstr "Bạc"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__sale_order_template__type_of_package__specific
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__wizzard_passenger_list__type_of_package__specific
+msgid "Specific"
+msgstr "Cụ thể"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_total_passenger_list
+msgid "Sr.No."
+msgstr ""
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_form
+msgid "Start"
+msgstr "Bắt đầu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__date_start
+#: model:ir.model.fields,field_description:tour_travel_management.field_renew_contract__date_start
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__registration_start_date
+msgid "Start Date"
+msgstr "Ngày bắt đầu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__state_id
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__state_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_search
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__state
+msgid "States"
+msgstr "Tỉnh/TP"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__state
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__activity_state
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Ngày đến hạn đã qua\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Đã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__state
+msgid "Status of the contract"
+msgstr "Tình trạng hợp đồng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Street 2..."
+msgstr "Đường số 2..."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Street..."
+msgstr "Đường ..."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Sub Total"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.package_contract_cancel_wiz_view_form
+msgid "Submit"
+msgstr "Nộp"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__price_subtotal
+msgid "Subtotal"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__partner_id
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_category__todo_package
+msgid "TODO"
+msgstr "CẦN LÀM"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_search_view
+msgid "Tag"
+msgstr ""
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "Tags..."
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__tax_country_id
+msgid "Tax Country"
+msgstr "Quốc gia thuế"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_tree
+msgid "Tax Total"
+msgstr "Tổng số thuế"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__tax_calculation_rounding_method
+msgid "Tax calculation rounding method"
+msgstr "Phương pháp làm tròn tính thuế"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__tax_id
+msgid "Taxes"
+msgstr "Thuế"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Terms and conditions..."
+msgstr "Điều khoản và điều kiện..."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid ""
+"The Administrator can set default Terms & Conditions in package Settings. "
+"Terms set here will show up instead if you select this quotation template."
+msgstr ""
+"Quản trị viên có thể thiết lập Điều khoản & Điều kiện mặc định trong Cài đặt gói."
+"Các điều khoản được thiết lập ở đây sẽ hiển thị thay thế nếu bạn chọn mẫu báo giá này."
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__ticketing
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__ticketing
+msgid "Ticketing"
+msgstr "Đặt vé"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__tickets
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__tickets
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__tickets
+msgid "Tickets"
+msgstr "Vé"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_itinerary__event_time
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_itinerary
+msgid "Time"
+msgstr "Thời gian"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__price_total
+msgid "Total"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__total_passenger
+msgid "Total Passenger"
+msgstr "Tổng số hành khách"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__total_passenger_all
+msgid "Total Passenger All"
+msgstr "Tổng số hành khách Tất cả"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__total_registration
+msgid "Total Registration"
+msgstr "Tổng số đăng ký"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__price_tax
+msgid "Total Tax"
+msgstr "Tổng thuế"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_tree
+msgid "Total Tax Excluded"
+msgstr "Tổng số thuế được loại trừ"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_tree
+msgid "Total Tax Included"
+msgstr "Tổng số thuế đã bao gồm"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/tour_registration.py:0
+#, python-format
+msgid "Total passengers not match."
+msgstr "Tổng số hành khách không khớp."
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__tour
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__tour
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__tour
+msgid "Tour"
+msgstr "Chuyến tham quan"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__tour_category_id
+msgid "Tour Category"
+msgstr "Thể loại Tour"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__fixed_tour_days
+msgid "Tour Days"
+msgstr "Ngày tham quan"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__type_of_package
+#: model:ir.model.fields,field_description:tour_travel_management.field_wizzard_passenger_list__type_of_package
+msgid "Tour Duration"
+msgstr "Thời gian tham quan"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__tour_end_date
+msgid "Tour End Date"
+msgstr "Ngày kết thúc chuyến tham quan"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_sale_order_template
+#: model:ir.ui.menu,name:tour_travel_management.tour_packages_menu
+msgid "Tour Package"
+msgstr "Mẫu báo giá"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.tour_package_registration_quotations
+#: model:ir.model,name:tour_travel_management.model_sale_order
+msgid "Tour Registration"
+msgstr "Đơn bán hàng"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_tour_registration_line
+msgid "Tour Registration Line"
+msgstr "Dòng đăng ký tour"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order__tour_begin_date
+msgid "Tour Start Date"
+msgstr "Ngày bắt đầu chuyến tham quan"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/tour_registration.py:0
+#, python-format
+msgid "Tour days must be less than package Tour Days."
+msgstr "Số ngày tham quan phải ít hơn số ngày tham quan theo gói."
+
+#. module: tour_travel_management
+#: model:ir.ui.menu,name:tour_travel_management.menu_sale_package_root
+msgid "Tours & Travels"
+msgstr "Chuyến tham quan & Du lịch"
+
+#. module: tour_travel_management
+#: model:ir.module.category,name:tour_travel_management.tour_travels_category
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.res_config_settings_view_form
+msgid "Tours and Travels"
+msgstr "Chuyến tham quan và du lịch"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_product_template
+msgid "Tours and Travels products"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__transportation
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__transportation
+msgid "Transportation"
+msgstr "Giao thông vận tải"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_product_product__type_travel_product
+#: model:ir.model.fields,field_description:tour_travel_management.field_product_template__type_travel_product
+msgid "Travel Product Type"
+msgstr "Loại sản phẩm du lịch"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Traveller Details"
+msgstr "Chi tiết du khách"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Travellers"
+msgstr "Người du lịch"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_travellers_list
+msgid "Travellers List"
+msgstr "Danh sách du khách"
+
+#. module: tour_travel_management
+#: model:ir.actions.act_window,name:tour_travel_management.action_travelling_season
+msgid "Travelling Seasons"
+msgstr "Mùa du lịch"
+
+#. module: tour_travel_management
+#: model:ir.model,name:tour_travel_management.model_travelling_season
+msgid "Travelling Session"
+msgstr "Phiên du lịch"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__package_contract_type
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract_details__type_travel_product
+#: model:ir.model.fields,field_description:tour_travel_management.field_product_category__type_travel_product
+msgid "Type"
+msgstr "Kiểu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__activity_exception_decoration
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ được ghi lại."
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template_line__price_unit
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__price_unit
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.report_quotation_tour
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Unit Price:"
+msgstr "Đơn giá:"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__product_uom
+msgid "Unit of Measure"
+msgstr "Đơn vị đo lường"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__untaxed_amount_to_invoice
+msgid "Untaxed Amount To Invoice"
+msgstr "Số tiền chưa đánh thuế để lập hóa đơn"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_tour_registration_line__untaxed_amount_invoiced
+msgid "Untaxed Invoiced Amount"
+msgstr "Số tiền hóa đơn chưa đánh thuế"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "UoM"
+msgstr "ĐVT"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_travel_package_form
+msgid "Update Sale/Cost Price"
+msgstr "Cập nhật giá bán/giá vốn"
+
+#. module: tour_travel_management
+#: model:res.groups,name:tour_travel_management.group_tour_traveller_user
+msgid "User"
+msgstr "Người sử dụng"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__res_partner__rating__3
+msgid "Very High"
+msgstr "Rất cao"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__package_contract_details__type_travel_product__visa
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_category__type_travel_product__visa
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__product_template__type_travel_product__visa
+msgid "Visa"
+msgstr ""
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "Void Transaction"
+msgstr "Giao dịch vô hiệu"
+
+#. module: tour_travel_management
+#: model:ir.model.fields.selection,name:tour_travel_management.selection__travellers_list__identity_type__voter_id
+msgid "Voter ID"
+msgstr "ID người bầu"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/tour_registration.py:0
+#, python-format
+msgid "Warning for %s"
+msgstr "Cảnh báo cho %s"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__website_message_ids
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,help:tour_travel_management.field_package_contract__website_message_ids
+#: model:ir.model.fields,help:tour_travel_management.field_sale_order_template__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp của trang web"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.package_sale2_product_template
+msgid "With Single Bed"
+msgstr "Có giường đơn"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.package_sale3_product_template
+msgid "With Triple Bed"
+msgstr "Có giường 3 người"
+
+#. module: tour_travel_management
+#: model:product.template,name:tour_travel_management.package_sale1_product_template
+msgid "With Twin Bed"
+msgstr "Có giường đôi"
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package_contract.py:0
+#, python-format
+msgid "You can delete only new contracts."
+msgstr "Bạn chỉ có thể xóa hợp đồng mới."
+
+#. module: tour_travel_management
+#. odoo-python
+#: code:addons/tour_travel_management/models/travel_package_contract.py:0
+#, python-format
+msgid "You can not have 2 contract that overlaps on same date!"
+msgstr "Bạn không thể có 2 hợp đồng chồng chéo vào cùng một ngày!"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "ZIP"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_city_city__zip
+msgid "Zip Code"
+msgstr "Mã bưu chính"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registrations_kanban_view
+msgid "at"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_package_contract__company_id
+msgid "company"
+msgstr "công ty"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.tour_package_registration_form
+msgid "days"
+msgstr "ngày"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "e.g. BE0477472701"
+msgstr ""
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "e.g. Mister"
+msgstr "ví dụ như Ông"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "e.g. Mr."
+msgstr "ví dụ: Ông."
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "e.g. Sales Director"
+msgstr "ví dụ: Giám đốc bán hàng"
+
+#. module: tour_travel_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_management.supplier_registration_form
+msgid "e.g. https://www.odoo.com"
+msgstr ""
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__days
+msgid "package Days"
+msgstr "Gói Ngày"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__package_total_days
+msgid "package Days/Nights"
+msgstr "Gói Ngày/Đêm"
+
+#. module: tour_travel_management
+#: model:ir.model.fields,field_description:tour_travel_management.field_sale_order_template__nights
+msgid "package Nights"
+msgstr "gói Đêm"

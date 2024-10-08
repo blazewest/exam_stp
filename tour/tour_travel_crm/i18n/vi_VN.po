@@ -1,0 +1,348 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tour_travel_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 01:16+0000\n"
+"PO-Revision-Date: 2024-10-08 01:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__visa_assistance__no
+msgid " No"
+msgstr " KHÔNG"
+
+#. module: tour_travel_crm
+#: model_terms:ir.ui.view,arch_db:tour_travel_crm.tour_travel_crm_lead_view_form_inherit
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__applied_country_id
+msgid "Applied Visa For"
+msgstr ""
+
+#. module: tour_travel_crm
+#: model_terms:ir.ui.view,arch_db:tour_travel_crm.tour_travel_crm_lead_view_form_inherit
+msgid "Arrival/Departure Date"
+msgstr "Ngày đến/ngày đi"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,help:tour_travel_crm.field_crm_lead__infants
+msgid "Below 2 years"
+msgstr "Dưới 2 tuổi"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_7
+msgid "Booked Online"
+msgstr "Đặt trực tuyến"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_4
+msgid "Booked their own"
+msgstr "Đã đặt chỗ của riêng họ"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_2
+msgid "Booked with others"
+msgstr "Đã đặt chỗ với những người khác"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__city_id
+msgid "City"
+msgstr "Thành phố"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_1
+msgid "Converted"
+msgstr "Đã chuyển đổi"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_6
+msgid "Could not match Price"
+msgstr "Không thể khớp giá"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__country_id
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__create_uid
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__create_uid
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__create_uid
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__create_date
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__create_date
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__create_date
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__create_date
+msgid "Created on"
+msgstr "Được tạo ra vào"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__date_of_arrival
+msgid "Date Of Arrival"
+msgstr "Ngày Đến"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__date_of_return
+msgid "Date Of Return"
+msgstr "Ngày trả lại"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__display_name
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__display_name
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__display_name
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__tour_type__domestic
+msgid "Domestic"
+msgstr "Nội địa"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__stay_duration
+msgid "Duration of Stay"
+msgstr "Thời gian lưu trú"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__hotel_id
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__order_id
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__name
+msgid "Hotel Type"
+msgstr "Loại khách sạn"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__id
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__id
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__id
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__id
+msgid "ID"
+msgstr ""
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__infants
+msgid "Infants"
+msgstr "Trẻ sơ sinh"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__tour_type__international
+msgid "International"
+msgstr "Quốc tế"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__visa_assistance
+msgid "Is Visa Assistance Required"
+msgstr "Có cần hỗ trợ xin thị thực không"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__write_uid
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__write_uid
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__write_uid
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_hotel_type__write_date
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__write_date
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__write_date
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__lead_id
+msgid "Lead"
+msgstr "Lead"
+
+#. module: tour_travel_crm
+#: model:ir.model,name:tour_travel_crm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/Cơ hội"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__meal_type
+msgid "Meal Type"
+msgstr "Loại bữa ăn"
+
+#. module: tour_travel_crm
+#: model:ir.actions.act_window,name:tour_travel_crm.action_transportation_mode
+#: model:ir.model,name:tour_travel_crm.model_transportation_mode
+#: model:ir.ui.menu,name:tour_travel_crm.menu_transportation_mode
+msgid "Mode of Transportation"
+msgstr "Phương thức vận chuyển"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__name_on_passport
+msgid "Name On Passport"
+msgstr "Tên trên hộ chiếu"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__assistanece_not_required
+msgid "No"
+msgstr ""
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__adult
+msgid "No of Adults"
+msgstr "Số người lớn"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__children
+msgid "No of Children"
+msgstr "Số lượng trẻ em"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__meal_type__nonveg
+msgid "Non Veg"
+msgstr "Không ăn chay"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__type_of_package__nonspecific
+msgid "Non-Specific"
+msgstr "Không cụ thể"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__package_id
+msgid "Package"
+msgstr "Bưu kiện"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__passport_number
+msgid "Passport Number"
+msgstr "Số hộ chiếu"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visit_purpose__name
+msgid "Purpose of Visit"
+msgstr "Mục đích của chuyến thăm"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__purpose_to_visit_id
+msgid "Purpose to Visit"
+msgstr "Mục đích đến thăm"
+
+#. module: tour_travel_crm
+#: model:ir.actions.act_window,name:tour_travel_crm.sale_action_quotations_new
+msgid "Quotation"
+msgstr "Trích dẫn"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_5
+msgid "Service Unavailable"
+msgstr "Dịch vụ không khả dụng"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__type_of_package__specific
+msgid "Specific"
+msgstr "Cụ thể"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__state_id
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__type_of_package
+msgid "Tour Duration"
+msgstr "Thời gian tham quan"
+
+#. module: tour_travel_crm
+#: model:ir.ui.menu,name:tour_travel_crm.menu_tour_travel_crm_config
+msgid "Tour Travel Configuration"
+msgstr "Cấu hình du lịch tour"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__tour_type
+msgid "Tour Type"
+msgstr "Loại Tour"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__transportation_id
+#: model:ir.model.fields,field_description:tour_travel_crm.field_transportation_mode__name
+msgid "Transportation Mode"
+msgstr ""
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_3
+msgid "Trip Cancelled"
+msgstr "Chuyến đi bị hủy"
+
+#. module: tour_travel_crm
+#: model:crm.lost.reason,name:tour_travel_crm.lead_lost_reason_8
+msgid "Trip Postponed "
+msgstr "Chuyến đi bị hoãn "
+
+#. module: tour_travel_crm
+#: model:ir.actions.act_window,name:tour_travel_crm.action_hotel_type
+#: model:ir.model,name:tour_travel_crm.model_hotel_type
+#: model:ir.ui.menu,name:tour_travel_crm.menu_hotel_type
+msgid "Type of Hotel"
+msgstr "Loại khách sạn"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__meal_type__veg
+msgid "Veg"
+msgstr "Ăn chay"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__visa_id
+msgid "Visa Type"
+msgstr "Loại thị thực"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_visiting_location__name
+msgid "Visit Location"
+msgstr "Ghé thăm địa điểm"
+
+#. module: tour_travel_crm
+#: model:ir.actions.act_window,name:tour_travel_crm.action_visit_purpose
+msgid "Visit Purpose"
+msgstr "Mục đích thăm quan"
+
+#. module: tour_travel_crm
+#: model:ir.model,name:tour_travel_crm.model_visiting_location
+#: model_terms:ir.ui.view,arch_db:tour_travel_crm.tour_travel_crm_lead_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_crm.visiting_location_form
+msgid "Visiting Location"
+msgstr "Địa điểm tham quan"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__visiting_location_ids
+msgid "Visiting Location Information"
+msgstr "Thông tin địa điểm tham quan"
+
+#. module: tour_travel_crm
+#: model:ir.model,name:tour_travel_crm.model_visit_purpose
+msgid "Visiting Purpose"
+msgstr "Mục đích tham quan"
+
+#. module: tour_travel_crm
+#: model:ir.ui.menu,name:tour_travel_crm.menu_visiting_reason
+msgid "Visiting Reason"
+msgstr "Lý do tham quan"
+
+#. module: tour_travel_crm
+#: model:ir.model.fields,field_description:tour_travel_crm.field_crm_lead__assistanece_required
+#: model:ir.model.fields.selection,name:tour_travel_crm.selection__crm_lead__visa_assistance__yes
+msgid "Yes"
+msgstr "Đúng"

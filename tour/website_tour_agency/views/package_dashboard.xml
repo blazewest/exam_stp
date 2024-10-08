@@ -1,0 +1,63 @@
+<odoo>
+    <template id="dashboard_package" name="Package Dashboard">
+        <t t-call="website.layout">
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <form t-att-action="keep('/package/dashboard', search=0,)" method="get" class="filter-bar m-3 mx-5">
+                <input type="hidden" name="token" t-att-value="token"/>
+                <input type="hidden" class="passanger_graph_names" t-att-value="passanger_graph_x"/>
+                <input type="hidden" class="passanger_graph_total_number" t-att-value="passanger_graph_y"/>
+                <div class="filter-dropdown">
+                    <label for="time-period">Time Period:</label>
+                    <select id="time-period" name="period">
+                        <option value="all">All</option>
+                        <option value="today">Ongoing</option>
+                        <option value="last-week">Last Week</option>
+                        <option value="last-month">Last Month</option>
+                        <option value="custom-period">Custom Period</option>
+                    </select>
+                </div>
+        
+                <div id="custom-dates" style="display: none; " class="date-inputs">
+                    <input type="date" id="from-date" class='from-date' name="from-date"/>
+                    <p>To</p>
+                    <input type="date" id="to-date" class='to-date' name="to-date"/>
+                </div>
+        
+                <div class="filter-dropdown">
+                    <label for="guide-names">Guide Names:</label>
+                    <select id="guide-names" name="guide">
+                        <option value=""></option>
+                        <t t-foreach="guide_ids" t-as="guide">
+                            <option t-att-value="guide.id">
+                                <t t-esc="guide.name" />
+                            </option>
+                        </t>
+                    </select>
+                </div>
+        
+                <div class="filter-dropdown">
+                    <label for="package-selection">Package Selection:</label>
+                    <select id="package-selection" name="package">
+                        <option value=""></option>
+                        <t t-foreach="package_ids" t-as="package">
+                            <option t-att-value="package.id">
+                                <t t-esc="package.name" />
+                            </option>
+                        </t>
+                    </select>
+                </div>
+        
+                <div>
+                    <button type="submit" class="apply-button">Apply</button>
+                    <a class="remove-filters filter_href" href='/package/dashboard'>Remove Filters</a>
+                </div>
+            </form>
+        
+            <div class="chart_container">
+                <canvas id="barChart" ></canvas>
+            </div>
+
+        
+        </t>
+    </template>
+</odoo>

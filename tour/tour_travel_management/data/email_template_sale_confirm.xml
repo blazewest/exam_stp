@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+                eval="[('name','=','email_template_edi_sale'),('module','=','sale')]"
+            />
+        </function>
+        <value eval=" {'noupdate': False} " />
+    </function>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+                eval="[('name','=','mail_template_sale_confirmation'),('module','=','sale')]"
+            />
+        </function>
+        <value eval=" {'noupdate': False} " />
+    </function>
+
+    <record id="sale.mail_template_sale_confirmation" model="mail.template">
+        <field name="report_template_ids" eval="[(4, ref('tour_travel_management.action_quotation_tour'))]"/>
+    </record>
+    <record id="sale.email_template_edi_sale" model="mail.template">
+        <field name="report_template_ids" eval="[(4, ref('tour_travel_management.action_quotation_tour'))]"/>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+                eval="[('name', '=', 'mail_template_sale_confirmation'),('module','=','sale')] "
+            />
+        </function>
+        <value eval=" {'noupdate': True} " />
+    </function>
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+                eval="[('name', '=', 'email_template_edi_sale'),('module','=','sale')] "
+            />
+        </function>
+        <value eval=" {'noupdate': True} " />
+    </function>
+</odoo>

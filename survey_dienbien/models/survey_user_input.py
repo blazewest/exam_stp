@@ -1,5 +1,6 @@
 
 from odoo import fields, models, api
+from itertools import groupby
 
 class SurveyUserInput(models.Model):
     _inherit = 'survey.user_input'
@@ -60,6 +61,38 @@ class SurveyUserInput(models.Model):
             else:
                 record.xep_loai = 'Chưa xếp loại'
 
+            # Nếu bản ghi test_entry là False thì tiếp tục
+            if not record.test_entry:
+                # Tìm tất cả bản ghi `survey.user_input` có test_entry là False và có survey_id tương ứng
+                all_user_inputs = self.env['survey.user_input'].search([
+                    ('survey_id', '=', record.survey_id.id),
+                    ('test_entry', '=', False)
+                ])
+
+                # Sắp xếp `all_user_inputs` theo `partner_id` để dùng `groupby`
+                all_user_inputs_sorted = sorted(all_user_inputs, key=lambda r: r.partner_id.id)
+
+                # Lấy một bản ghi duy nhất cho mỗi `partner_id`
+                unique_user_inputs = [next(g) for _, g in
+                                      groupby(all_user_inputs_sorted, key=lambda r: r.partner_id.id)]
+
+                # Tìm tất cả bản ghi `tong.hop.diem` tương ứng với `cuoc_thi`
+                tong_hop_diems = self.env['tong.hop.diem'].search([
+                    ('cuoc_thi', '=', record.survey_id.id)
+                ])
+
+                # Cập nhật `tong` cho tất cả các bản ghi `tong.hop.diem`
+                tong_hop_diems.write({'tong': len(unique_user_inputs)})
+
+                # Cập nhật `so_lieu1` và `so_lieu2` cho các bản ghi phù hợp với `xep_loai`
+                for tong_hop_diem in tong_hop_diems:
+                    matching_user_inputs = filter(lambda r: r.xep_loai == tong_hop_diem.name, unique_user_inputs)
+                    so_lieu1_count = len(list(matching_user_inputs))
+                    tong_hop_diem.write({
+                        'so_lieu1': so_lieu1_count,
+                        'so_lieu2': (so_lieu1_count / tong_hop_diem.tong * 100) if tong_hop_diem.tong > 0 else 0
+                    })
+
     @api.depends('partner_id', 'survey_id')
     def _compute_so_lan_lam(self):
         for record in self:
@@ -83,3 +116,36 @@ class SurveyUserInput(models.Model):
     def _compute_name(self):
         for record in self:
             record.name = record.survey_id.title
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        records = super(SurveyUserInput, self).create(vals_list)
+        return records
+
+    def write(self, vals):
+        res = super(SurveyUserInput, self).write(vals)
+        return res
+
+    def _update_tong_hop_diem(self):
+        for record in self:
+            # Chỉ tiếp tục nếu bản ghi `survey.user_input` có `state` là `done` và `test_entry` khác `False`
+            if record.test_entry is False and record.xep_loai:
+                # Tìm tất cả bản ghi `tong.hop.diem` tương ứng với `cuoc_thi`
+                tong_hop_diems = self.env['tong.hop.diem'].search([
+                    ('cuoc_thi', '=', record.survey_id.id)
+                ])
+
+                # Tìm bản ghi tương ứng với `xep_loai`
+                matched_tong_hop_diem = tong_hop_diems.filtered(lambda r: r.name == record.xep_loai)
+
+                # Tăng trường `tong` lên 1 cho tất cả bản ghi `tong.hop.diem`
+                tong_hop_diems.write({'tong': tong_hop_diems.mapped('tong')[0] + 1})
+
+                # Tăng trường `so_lieu1` và cập nhật `so_lieu2` cho bản ghi phù hợp
+                if matched_tong_hop_diem:
+                    matched_tong_hop_diem.write({
+                        'so_lieu1': matched_tong_hop_diem.so_lieu1 + 1,
+                        'so_lieu2': (matched_tong_hop_diem.so_lieu1 + 1) / matched_tong_hop_diem.tong * 100
+                    })
+
+

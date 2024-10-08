@@ -1,0 +1,68 @@
+<odoo>
+    <record id="wizzard_passenger_list_form" model="ir.ui.view">
+        <field name="name">passenger.list.form</field>
+        <field name="model">wizzard.passenger.list</field>
+        <field name="arch" type="xml">
+            <form string="Passenger">
+                <group>
+                    <group>
+                        <field name="type_of_package" />
+                        <label
+                            for="registration_start_date"
+                            string="Reservation Start/End Date"
+                            invisible = "type_of_package == 'specific'"
+                        />
+                        <div
+                            class="o_row"
+                            invisible = "type_of_package == 'specific'"
+                        >
+                            <field
+                                name="registration_start_date"
+                                widget="daterange"
+                                nolabel="1"
+                                class="oe_inline"
+                                options="{'related_end_date': 'registration_end_date'}"
+                                required = "type_of_package != 'specific'"
+                            />
+                            <i
+                                class="fa fa-long-arrow-right mx-2"
+                                aria-label="Arrow icon"
+                                title="Arrow"
+                            />
+                            <field
+                                name="registration_end_date"
+                                widget="daterange"
+                                nolabel="1"
+                                class="oe_inline"
+                                options="{'related_start_date': 'registration_start_date'}"
+                                required = "type_of_package != 'specific'"
+                            />
+                        </div>
+                    </group>
+                    <group>
+                        <field
+                            name="package_id"
+                            domain="[('is_package','=',True),('state','=','confirm'), ('type_of_package', '=', type_of_package)]"
+                        />
+                    </group>
+                </group>
+                <footer>
+                    <button
+                        name="package_passenger_list"
+                        type="object"
+                        string="Print"
+                        class="oe_highlight"
+                    />
+                    <button string="Cancel" class="oe_highlight" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_wizzard_passenger_list" model="ir.actions.act_window">
+        <field name="name">Passenger List</field>
+        <field name="res_model">wizzard.passenger.list</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

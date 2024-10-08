@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Non specific package price update Scheduler-->
+    <record
+        model="ir.cron"
+        forcecreate="True"
+        id="non_specific_package_price_update_scheduler"
+    >
+        <field name="name">Package: Non Specific package Price Update </field>
+        <field name="model_id" ref="model_sale_order_template" />
+        <field name="state">code</field>
+        <field name="code">model._cron_non_specific_price_update()</field>
+        <field name="user_id" ref="base.user_root" />
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False" />
+    </record>\
+</odoo>

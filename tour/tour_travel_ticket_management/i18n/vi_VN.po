@@ -1,0 +1,403 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tour_travel_ticket_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 07:25+0000\n"
+"PO-Revision-Date: 2024-10-08 07:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid ""
+"<span>\n"
+"                            <b>Ticket Details</b>\n"
+"                        </span>"
+msgstr ""
+"<span>\n"
+"                            <b>Chi tiết vé</b>\n"
+"                        </span>"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+msgid "Add a Ticket Information"
+msgstr "Thêm thông tin vé"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Add a note"
+msgstr "Thêm một ghi chú"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+msgid "Add a product"
+msgstr "Thêm một sản phẩm"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Add a section"
+msgstr "Thêm một Lựa chọn"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Add a ticket information"
+msgstr "Thêm thông tin vé"
+
+#. module: tour_travel_ticket_management
+#: model:product.template,name:tour_travel_ticket_management.ticketing3_product_template
+msgid "Business-Class"
+msgstr "Hạng thương gia"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__cost_price
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__cost_price
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Cost Price"
+msgstr "Giá thành"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__create_uid
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__create_uid
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__create_date
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__create_date
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__currency_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Delivered"
+msgstr "Đã giao hàng"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__name
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__description
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__destination_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__destination_id
+msgid "Destination"
+msgstr "Điểm đến"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Disc.%"
+msgstr "% CK"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__display_name
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__display_name
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__display_type
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__display_type
+msgid "Display Type"
+msgstr "Loại hiển thị"
+
+#. module: tour_travel_ticket_management
+#: model:product.template,name:tour_travel_ticket_management.ticketing4_product_template
+msgid "Economy-Class"
+msgstr "Hạng phổ thông"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+msgid "Fare Price"
+msgstr "Giá vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.actions.act_window,name:tour_travel_ticket_management.action_fare_type
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__name
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__fare_type_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__fare_type_id
+#: model:ir.ui.menu,name:tour_travel_ticket_management.menu_fare_type
+msgid "Fare Type"
+msgstr "Loại giá vé"
+
+#. module: tour_travel_ticket_management
+#: model:product.template,name:tour_travel_ticket_management.ticketing1_product_template
+msgid "First Class"
+msgstr "Hạng nhất"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__id
+msgid "ID"
+msgstr ""
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Invoiced"
+msgstr "Đã xuất hóa đơn"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__issue_date
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__issue_date
+msgid "Issue Date"
+msgstr "Ngày phát hành"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__write_uid
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__write_uid
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_fare_type__write_date
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__write_date
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields.selection,name:tour_travel_ticket_management.selection__ticket_package_line__display_type__line_note
+#: model:ir.model.fields.selection,name:tour_travel_ticket_management.selection__visa_package_line__display_type__line_note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "PNR No"
+msgstr "Số PNR"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__passenger_id
+msgid "Passenger"
+msgstr "Hành khách"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__qty
+msgid "Qty"
+msgstr "Số lượng"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__sale_order_templete_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__sale_order_templete_id
+msgid "Sale Order"
+msgstr "Đơn bán hàng"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Dòng đơn bán hàng"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.view_ticket_tree
+msgid "Sales Price"
+msgstr "Giá bán"
+
+#. module: tour_travel_ticket_management
+#: model:product.template,name:tour_travel_ticket_management.ticketing2_product_template
+msgid "Second Class"
+msgstr "Hạng nhì"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields.selection,name:tour_travel_ticket_management.selection__ticket_package_line__display_type__line_section
+#: model:ir.model.fields.selection,name:tour_travel_ticket_management.selection__visa_package_line__display_type__line_section
+msgid "Section"
+msgstr "Lựa chọn"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__sequence
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__sequence
+msgid "Sequence"
+msgstr "Trình tự"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__source_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__source_id
+msgid "Source"
+msgstr "Nguồn"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Sub Total"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__price_subtotal
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+msgid "Subtotal"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__supplier_id
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,help:tour_travel_ticket_management.field_ticket_package_line__display_type
+#: model:ir.model.fields,help:tour_travel_ticket_management.field_visa_package_line__display_type
+msgid "Technical field for UX purpose."
+msgstr "Lĩnh vực kỹ thuật dành cho mục đích UX."
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_ticket_package_line
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_sale_order_line__ticket_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__product_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__ticket_product_id
+#: model:ir.ui.menu,name:tour_travel_ticket_management.menu_tickets
+msgid "Ticket"
+msgstr "Vé"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Ticket Name"
+msgstr "Tên vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__ticket_no
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__ticket_no
+msgid "Ticket No"
+msgstr "Số vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__ticket_sale_id
+msgid "Ticket Order"
+msgstr "Đặt vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_sale_order_template__ticket_package_line_ids
+msgid "Ticket Package Lines"
+msgstr "Các tuyến gói vé"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Ticket Price"
+msgstr "Giá vé"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Ticket Quantity"
+msgstr "Số lượng vé"
+
+#. module: tour_travel_ticket_management
+#: model:ticket.package.line,name:tour_travel_ticket_management.package_ticket_line_01
+msgid ""
+"Ticket type : Economy-Class Journey : New York -> Dubai\n"
+"Fare Type: Air Flight"
+msgstr ""
+"Loại vé: Hạng phổ thông Hành trình: New York -> Dubai\n"
+"Loại giá vé: Chuyến bay hàng không"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "Ticketing"
+msgstr "Bán vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.actions.act_window,name:tour_travel_ticket_management.action_tickets
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_sale_order__ticket_line_ids
+msgid "Tickets"
+msgstr "Vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.ui.menu,name:tour_travel_ticket_management.menu_ticket_configuration
+msgid "Tickets Configuration"
+msgstr "Cấu hình vé"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_sale_order_template
+msgid "Tour Package"
+msgstr "Gói du lịch"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_sale_order
+msgid "Tour Registration"
+msgstr "Đăng ký tham quan"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_tour_registration_line
+msgid "Tour Registration Line"
+msgstr "Dòng đăng ký tour"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Transport Type"
+msgstr "Loại hình vận chuyển"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_fare_type
+msgid "Travel Fare type"
+msgstr "Loại giá vé du lịch"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Travel From"
+msgstr "Du lịch từ"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.report_quotation_tour_ticket_inherit
+msgid "Travel To"
+msgstr "Du lịch đến"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_ticket_package_line__unit_price
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__unit_price
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: tour_travel_ticket_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.tour_registration_ticketing_form
+msgid "UoM"
+msgstr "ĐVT"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model,name:tour_travel_ticket_management.model_visa_package_line
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_sale_order_line__visa_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_tour_registration_line__visa_id
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__product_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_ticket_management.ticket_sale_order_template_form_inherit
+msgid "Visa"
+msgstr ""
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_sale_order_template__visa_package_line_ids
+msgid "Visa Package Lines"
+msgstr "Dòng Gói Visa"
+
+#. module: tour_travel_ticket_management
+#: model:ir.model.fields,field_description:tour_travel_ticket_management.field_visa_package_line__visa_status
+msgid "Visa Status"
+msgstr "Tình trạng thị thực"

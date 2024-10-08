@@ -1,0 +1,176 @@
+<odoo>
+    <template id="package_details" name="Packages Details">
+        <t t-call="website.layout">
+            <section class="oe_structure gray-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-10 mt32">
+                            <h2 class="text-yellow" style="font-weight:bold">
+                                <t t-esc="template.name" />
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pb64">
+                        <div class="col-md-7 col-10 mt32">
+                            <img
+                                class="img-responsive"
+                                t-att-src="website.image_url(template, 'image_medium')"
+                                style="width:100%;"
+                            />
+                        </div>
+                        <div
+                            class="col-md-5 col-10 mt32"
+                            style="background-color: #fff;"
+                        >
+                            <div class="text-center small_box_h3">
+                                <h4 style="color:black;font-weight: 800;">
+                                    <t t-esc="template.package_total_days" />
+                                </h4>
+                                <span class="text-yellow">
+                                    <span t-if="template.type_of_package == 'specific'">
+                                        <t t-if="template.sell_per_person > 0">
+                                            <t
+                                                t-esc="request.env.ref('base.main_company').currency_id.symbol"
+                                            />
+                                            <span t-esc="round(template.sell_per_person,2)" ><span>per person*</span></span>
+                                        </t>
+                                    </span> 
+                                    <span t-if="template.type_of_package == 'nonspecific'">
+                                        <t t-set="amount" t-value="template.get_updated_package_price()"/>
+                                        <t t-if="amount > 0">
+                                            <t
+                                                t-esc="request.env.ref('base.main_company').currency_id.symbol"
+                                            />
+                                            <span t-esc="amount" ><span>per person*</span></span>
+                                        </t>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="text-container col-12 mt-2">
+                                <div
+                                    class="wpb_wrapper text-content short-text"
+                                    style="line-height: 25px;"
+                                >
+                                    <div t-field="template.discription" />
+                                </div>
+                                <div class="show-more pt16 pb16">
+                                    <a href="#">Show more</a>
+                                </div>
+                            </div>
+                            <div class="mb32 text-center col-12">
+                                <a
+                                    t-attf-href="/package/details/#{ slug(template)}/inquiry"
+                                    class="btn btn-black"
+                                >  Enquire Now</a>
+                                <t t-if="template.sell_per_person > 0">
+                                    <t t-if="template.type_of_package != 'nonspecific'">
+
+                                        <p class="mb0 p-2">or</p>
+                                        <a
+                                        t-attf-href="/package/details/#{ slug(template)}/book"
+                                        class="btn btn-black"
+                                        >  Request for Package</a>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+        
+                        <div class="pricing-section col-md-12 col-10 mt-32" t-if="template.sudo().group_costing_ids">
+                            <h4 style="color: black;font-weight:bold;">Charges Summary</h4>
+                        </div>
+                        
+                        <div t-if="template.sudo().group_costing_ids" class="pricing-table col-md-12 col-10 mt-8">
+                            <div class="col-12 mt-32 mb-16">
+                                <table class="funky-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Pax</th>
+                                            <th>Price/Pax</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="template.sudo().group_costing_ids" t-as="line">
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0" t-field="line.name" />
+                                                </td>
+                                                <td>
+                                                    <span>
+                                                        <t t-if="line.number_of_adult > 0">
+                                                            <t t-esc="line.number_of_adult" /> Adult
+                                                        </t>
+                                                        <t t-if="line.number_of_children > 0">
+                                                            , <t t-esc="line.number_of_children" /> Child
+                                                        </t>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span>
+                                                        <t t-esc='template.selling_currency_id.name' />
+                                                        <t t-esc="line.sales_price_adult" />
+                                                        <t t-if="line.sales_price_child > 0">
+                                                            / <t t-esc='template.selling_currency_id.name' /> <t t-esc="line.sales_price_child" />
+                                                        </t>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="pricing-section mt-3 mb-3 col-md-12 col-10" t-if="template.sudo().group_costing_ids">
+                            <h4 style="color: black; font-weight:bold;">Itinerary</h4>
+                        </div>
+                        <ul class="itinerary-list">
+                            <t t-foreach="sorted(template.itinerary_ids, key=lambda x: x['itinerary_date'], reverse=False)" t-as="line">
+                                <li class="itinerary-item">
+                                    <div class="itinerary-info">
+                                        <i class="itinerary-icon fa fa-clock-o" aria-hidden="true"></i>
+                                        <div class="day-date"><span><t t-esc="line.name" /></span></div>
+                                    </div>
+                                    <ul class="activity-list">
+                                        <li class="activity-item"><p t-field="line.description" /></li>
+                                    </ul>                
+                                </li>
+                            </t>
+                        </ul>
+
+<!--                         
+                        <div class="pricing-section mt-3 mb-3 col-md-12 col-10" t-if="template.itinerary_ids">
+                            <h4 style="color: #5C3458;">Itinerary</h4>
+                        </div>
+                        
+                        <div t-if="template.itinerary_ids" class="col-md-12 col-10 mt-8">
+                            <div class="col-12 mt-32 mb-16">
+                                <table class="unique-funky-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 15%;">Date</th>
+                                            <th style="width: 85%;">Program</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="template.itinerary_ids" t-as="line">
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0" t-field="line.itinerary_date" t-options='{"widget": "date"}' />
+                                                </td>
+                                                <td>
+                                                    <t t-esc="line.name" />
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

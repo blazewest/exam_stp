@@ -1,0 +1,167 @@
+<odoo noupdate="1">
+    <record id="tickets1" model="product.product">
+        <field name="name">Zoo</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tickets2" model="product.product">
+        <field name="name">Safari Park</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tickets3" model="product.product">
+        <field name="name">Scuba diving</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tickets4" model="product.product">
+        <field name="name">Dance Show</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tour1" model="product.product">
+        <field name="name">City Tour</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tour2" model="product.product">
+        <field name="name">Museum Tour</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tour3" model="product.product">
+        <field name="name">Castle Tour</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <record id="tour4" model="product.product">
+        <field name="name">Zoo Tour</field>
+        <field name="type_travel_product">attraction</field>
+        <field name="type">service</field>
+        <field name="standard_price">1000</field>
+        <field name="list_price">2000</field>
+    </record>
+    <!-- Attraction Registration -->
+    <record id="attraction_registration_01" model="res.partner">
+        <field name="name">Dubai Tourist Attraction</field>
+        <field name="company_id" eval="None" />
+        <field name="is_company" eval="False" />
+        <field name="street">2nd December Street, Al Jafiliya</field>
+        <field name="zip">119444</field>
+        <field name="phone" />
+        <field name="city_id" ref="tour_travel_management.city4" />
+        <field name="state_id" ref="base.state_ae_du" />
+        <field name="registration_type">attraction</field>
+    </record>
+    <record id="attraction_registration_02" model="res.partner">
+        <field name="name">New York Tourist Attraction</field>
+        <field name="company_id" eval="None" />
+        <field name="is_company" eval="False" />
+        <field name="street">870 7TH AVENUE NEW YORK</field>
+        <field name="zip">10019-4038</field>
+        <field name="phone" />
+        <field name="city_id" ref="tour_travel_management.city11" />
+        <field name="state_id" ref="base.state_us_27" />
+        <field name="registration_type">attraction</field>
+    </record>
+    <!-- Attraction Registration Service Line -->
+    <record
+        id="attraction_registration_service_line_01"
+        model="attraction.service.line"
+    >
+        <field name="attraction_id" ref="attraction_registration_01" />
+        <field name="service_id" ref="tickets1" />
+        <field name="cost_price">500</field>
+        <field name="unit_price">1000</field>
+    </record>
+    <record
+        id="attraction_registration_service_line_02"
+        model="attraction.service.line"
+    >
+        <field name="attraction_id" ref="attraction_registration_01" />
+        <field name="service_id" ref="tickets2" />
+        <field name="cost_price">1000</field>
+        <field name="unit_price">2000</field>
+    </record>
+    <record
+        id="attraction_registration_service_line_03"
+        model="attraction.service.line"
+    >
+        <field name="attraction_id" ref="attraction_registration_01" />
+        <field name="service_id" ref="tickets3" />
+        <field name="cost_price">2000</field>
+        <field name="unit_price">3000</field>
+    </record>
+    <record
+        id="attraction_registration_service_line_04"
+        model="attraction.service.line"
+    >
+        <field name="attraction_id" ref="attraction_registration_02" />
+        <field name="service_id" ref="tickets1" />
+        <field name="cost_price">500</field>
+        <field name="unit_price">1000</field>
+    </record>
+    <record
+        id="attraction_registration_service_line_05"
+        model="attraction.service.line"
+    >
+        <field name="attraction_id" ref="attraction_registration_02" />
+        <field name="service_id" ref="tickets2" />
+        <field name="cost_price">1000</field>
+        <field name="unit_price">2000</field>
+    </record>
+    <record
+        id="attraction_registration_service_line_06"
+        model="attraction.service.line"
+    >
+        <field name="attraction_id" ref="attraction_registration_02" />
+        <field name="service_id" ref="tickets3" />
+        <field name="cost_price">2000</field>
+        <field name="unit_price">3000</field>
+    </record>
+    <!--Package Attraction Line -->
+    <record id="package_attraction_line_01" model="attraction.package.line">
+        <field name="sale_order_templete_id" ref="tour_travel_management.package1" />
+        <field name="date" eval="(DateTime.now()+ relativedelta(days=1))" />
+        <field name="city_id" ref="tour_travel_management.city4" />
+        <field name="attraction_id" ref="attraction_registration_01" />
+        <field name="service_id" ref="tickets1" />
+        <field name="name">Attraction for City Tour</field>
+        <field name="cost_price">500</field>
+        <field name="price_unit">1000</field>
+    </record>
+    <record id="package_attraction_line_02" model="attraction.package.line">
+        <field name="sale_order_templete_id" ref="tour_travel_management.package1" />
+        <field name="date" eval="(DateTime.now()+ relativedelta(days=2))" />
+        <field name="city_id" ref="tour_travel_management.city4" />
+        <field name="attraction_id" ref="attraction_registration_01" />
+        <field name="service_id" ref="tickets2" />
+        <field name="name">Attraction for Zoo</field>
+        <field name="cost_price">1000</field>
+        <field name="price_unit">2000</field>
+    </record>
+    <record id="package_attraction_line_03" model="attraction.package.line">
+        <field name="sale_order_templete_id" ref="tour_travel_management.package1" />
+        <field name="date" eval="(DateTime.now()+ relativedelta(days=3))" />
+        <field name="city_id" ref="tour_travel_management.city4" />
+        <field name="attraction_id" ref="attraction_registration_01" />
+        <field name="service_id" ref="tickets3" />
+        <field name="name">Attraction for Scuba diving</field>
+        <field name="cost_price">2000</field>
+        <field name="price_unit">3000</field>
+    </record>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template
+        id="report_invoice_document_inherit_pcm_sale"
+        inherit_id="account.report_invoice_document"
+        priority="99"
+    >
+        <xpath expr="//th[@name='th_quantity']" position="replace">
+            <th style="display:none;" name="th_quantity" class="text-right"><span
+                >Quantity</span></th>
+        </xpath>
+        <xpath expr="//td[@name='td_quantity']" position="replace">
+            <td class="text-right" style="display:none;">
+                <span t-field="line.quantity" />
+                <span t-field="line.product_uom_id" groups="uom.group_uom" />
+            </td>
+        </xpath>
+    </template>
+
+</odoo>

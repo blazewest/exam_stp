@@ -1,0 +1,122 @@
+<odoo>
+    <record id="attraction_supplier_registration_form_inherit" model="ir.ui.view">
+        <field name="name">attraction.registration.form</field>
+        <field name="model">res.partner</field>
+        <field
+            name="inherit_id"
+            ref="tour_travel_management.supplier_registration_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales_purchases']" position="after">
+                <page
+                    name="attraction_service"
+                    string="Services"
+                    invisible = "registration_type != 'attraction'"
+                >
+                    <field name="attraction_line_ids">
+                        <tree editable='bottom'>
+                            <field
+                                name="service_id"
+                                required="1"
+                                context="{'default_type_travel_product':'attraction'}"
+                                domain="[('type_travel_product','=','attraction')]"
+                            />
+                            <field name="cost_price" />
+                            <field name="unit_price" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_attraction_registration" model="ir.actions.act_window">
+        <field name="name">Attraction Registration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field
+            name="view_id"
+            ref="tour_travel_management.supplier_registrations_kanban_view"
+        />
+        <field name="view_mode">kanban,tree,form</field>
+        <field
+            name="search_view_id"
+            ref="tour_travel_management.supplier_registration_search_view"
+        />
+        <field name="context">{'default_supplier_rank': True,
+                               'default_registration_type': 'attraction'}</field>
+        <field name="domain">[('registration_type','=','attraction')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Registration
+              </p>
+        </field>
+    </record>
+    <!-- Action Of attraction Registration Kanban View -->
+    <record
+        id="action_kanban_attraction_registration"
+        model="ir.actions.act_window.view"
+    >
+        <field name="sequence" eval="2" />
+        <field name="view_mode">kanban</field>
+        <field
+            name="view_id"
+            ref="tour_travel_management.supplier_registrations_kanban_view"
+        />
+        <field name="act_window_id" ref="action_attraction_registration" />
+    </record>
+    <!-- Action Of attraction Registration Tree View -->
+    <record id="action_tree_attraction_registration" model="ir.actions.act_window.view">
+        <field name="sequence" eval="3" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="tour_travel_management.supplier_registration_tree" />
+        <field name="act_window_id" ref="action_attraction_registration" />
+    </record>
+    <!-- Action Of attraction Registration Form View -->
+    <record id="action_form_attraction_registration" model="ir.actions.act_window.view">
+        <field name="sequence" eval="4" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="attraction_supplier_registration_form_inherit" />
+        <field name="act_window_id" ref="action_attraction_registration" />
+    </record>
+    <menuitem
+        id="menu_attraction_configuration"
+        parent="tour_travel_management.menu_configuration"
+        sequence="35"
+        name="Attraction Configuration"
+    />
+    <menuitem
+        id="menu_attraction_registration"
+        parent="menu_attraction_configuration"
+        action="action_attraction_registration"
+        sequence="10"
+        name="Attraction Registration"
+    />
+    <!-- Tree view of Attraction Services-->
+    <record id="view_attraction_services_tree" model="ir.ui.view">
+        <field name="name">attraction.services.tree</field>
+        <field name="model">product.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="lst_price" string="Sales Price" />
+                <field name="standard_price" />
+            </tree>
+        </field>
+    </record>
+    <record id="action_attraction_service" model="ir.actions.act_window">
+        <field name="name">Attraction Services</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_attraction_services_tree" />
+        <field name="context">{'default_detailed_type': 'service',
+                               'default_type_travel_product': 'attraction'}</field>
+        <field name="domain">[('type_travel_product','=','attraction')]</field>
+    </record>
+    <menuitem
+        id="menu_attraction_services"
+        parent="menu_attraction_configuration"
+        action="action_attraction_service"
+        sequence="20"
+        name="Attraction Services"
+    />
+</odoo>

@@ -1,0 +1,1369 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tour_travel_meal_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 06:46+0000\n"
+"PO-Revision-Date: 2024-10-08 06:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_variant_count
+msgid "# Product Variants"
+msgstr "# Các biến thể sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid ""
+".\n"
+"            Contract Details are given below:"
+msgstr ""
+".\n"
+"            Chi tiết hợp đồng được đưa ra dưới đây:"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid ""
+".\n"
+"            The contract between us will be from"
+msgstr ""
+".\n"
+"            Hợp đồng giữa chúng tôi sẽ là từ"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid ""
+"<span>\n"
+"                            <b>Meal Details</b>\n"
+"                        </span>"
+msgstr ""
+"<span>\n"
+"                            <b>Chi tiết bữa ăn</b>\n"
+"                        </span>"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid ""
+"<span>\n"
+"                        <b>Contract Details</b>\n"
+"                    </span>"
+msgstr ""
+"<span>\n"
+"                        <b>Chi tiết hợp đồng</b>\n"
+"                    </span>"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid ""
+"<span>\n"
+"                <b>Kind Regards</b>\n"
+"            </span>\n"
+"            ,\n"
+"            <br/>"
+msgstr ""
+"<span>\n"
+"                <b>Trân trọng</b>\n"
+"            </span>\n"
+"            ,\n"
+"            <br/>"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid ""
+"<strong>\n"
+"                        .............................................\n"
+"                    </strong>"
+msgstr ""
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "<strong>Customer signature</strong>"
+msgstr "<strong>Chữ ký của khách hàng</strong>"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "<strong>Manager Signature</strong>"
+msgstr "<strong>Chữ ký của người quản lý</strong>"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__description_sale
+msgid ""
+"A description of the Product that you want to communicate to your customers."
+" This description will be copied to every Sales Order, Delivery Order and "
+"Customer Invoice/Credit Note"
+msgstr ""
+"Mô tả về Sản phẩm mà bạn muốn truyền đạt đến khách hàng của mình."
+"Mô tả này sẽ được sao chép vào mọi Đơn đặt hàng bán, Lệnh giao hàng và "
+"Hóa đơn/Giấy ghi có của khách hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__detailed_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"Sản phẩm có thể lưu trữ là sản phẩm mà bạn quản lý kho. Ứng dụng Hàng tồn kho phải được cài đặt.\n"
+"Sản phẩm tiêu dùng là sản phẩm mà kho không được quản lý.\n"
+"Dịch vụ là sản phẩm phi vật chất mà bạn cung cấp."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__account_tag_ids
+msgid "Account Tags"
+msgstr "Thẻ tài khoản"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__active
+msgid "Active"
+msgstr "Hành động"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_ids
+msgid "Activities"
+msgstr "Các hoạt động"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Hoạt động Ngoại lệ Trang trí"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_state
+msgid "Trạng thái hoạt động"
+msgstr ""
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Add a meal"
+msgstr "Thêm một bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Add a note"
+msgstr "Thêm một ghi chú"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Add a section"
+msgstr "Thêm một phần"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__additional_product_tag_ids
+msgid "Additional Product Tags"
+msgstr "Thẻ sản phẩm bổ sung"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__all_product_tag_ids
+msgid "All Product Tag"
+msgstr "Tất cả sản phẩm Tag"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng đính kèm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_template_attribute_value_ids
+msgid "Attribute Values"
+msgstr "Giá trị thuộc tính"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__barcode
+msgid "Barcode"
+msgstr "Mã vạch"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__can_image_1024_be_zoomed
+msgid "Can Image 1024 be zoomed"
+msgstr "Có thể phóng to hình ảnh 1024 không?"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__can_image_variant_1024_be_zoomed
+msgid "Can Variant Image 1024 be zoomed"
+msgstr "Có thể phóng to hình ảnh Variant Image 1024 không?"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__purchase_ok
+msgid "Can be Purchased"
+msgstr "Có thể mua được"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__sale_ok
+msgid "Can be Sold"
+msgstr "Có thể bán được"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__city_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_tour_registration_line__city_id
+msgid "City"
+msgstr "Thành phố"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__color
+msgid "Color Index"
+msgstr "Chỉ số màu"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__combination_indices
+msgid "Combination Indices"
+msgstr "Các chỉ số kết hợp"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__package_contract_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__contract_id
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__purchase_method
+msgid "Control Policy"
+msgstr "Chính sách kiểm soát"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__standard_price
+msgid "Cost"
+msgstr "Chi phí"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__cost_currency_id
+msgid "Cost Currency"
+msgstr "Loại tiền tệ của chi phí"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__cost_price
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__cost_price
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.package_contract_meal_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Cost Price"
+msgstr "Giá thành"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.actions.act_window,help:tour_travel_meal_management.action_meal_registrations
+msgid "Create a new Registration"
+msgstr "Tạo một Đăng ký mới"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__create_uid
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__create_uid
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__create_date
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__create_date
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__create_date
+msgid "Created on"
+msgstr "Được tạo ra vào"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__currency_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__currency_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__partner_ref
+msgid "Customer Ref"
+msgstr "Giới thiệu khách hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__taxes_id
+msgid "Customer Taxes"
+msgstr "Thuế khách hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__date
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_tour_registration_line__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid "Day"
+msgstr "Ngày"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__day_selection
+msgid "Days Selection"
+msgstr "Lựa chọn ngày"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__supplier_taxes_id
+msgid "Default taxes used when buying the product."
+msgstr "Thuế mặc định được sử dụng khi mua sản phẩm."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__taxes_id
+msgid "Default taxes used when selling the product."
+msgstr "Thuế mặc định được sử dụng khi bán sản phẩm."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Đơn vị đo lường mặc định được sử dụng cho tất cả các hoạt động kho."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__uom_po_id
+msgid ""
+"Default unit of measure used for purchase orders. It must be in the same "
+"category as the default unit of measure."
+msgstr ""
+"Đơn vị đo lường mặc định được sử dụng cho đơn đặt hàng mua. Đơn vị này phải cùng loại"
+" với đơn vị đo lường mặc định."
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Delivered"
+msgstr "Đã giao hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__description
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__name
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_package_form
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Disc.%"
+msgstr "% CK"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__display_name
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__display_name
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__display_type
+msgid "Display Type"
+msgstr "Loại hiển thị"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_document_ids
+msgid "Documents"
+msgstr "Tài liệu"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_document_count
+msgid "Documents Count"
+msgstr "Số lượng tài liệu"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__property_account_expense_id
+msgid "Expense Account"
+msgstr "Tài khoản chi phí"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__priority
+msgid "Favorite"
+msgstr "Yêu thích"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__fiscal_country_codes
+msgid "Fiscal Country Codes"
+msgstr "Mã quốc gia tài chính"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font awesome ví dụ fa-tasks"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__packaging_ids
+msgid "Gives the different ways to package the same product."
+msgstr "Cung cấp những cách khác nhau để đóng gói cùng một sản phẩm."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__sequence
+msgid "Gives the sequence order when displaying a product list"
+msgstr "Cung cấp thứ tự trình tự khi hiển thị danh sách sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__id
+msgid "ID"
+msgstr ""
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng để chỉ hoạt động ngoại lệ."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, bạn sẽ cần chú ý đến tin nhắn mới."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__message_has_error
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn sẽ có lỗi gửi."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__service_to_purchase
+msgid ""
+"If ticked, each time you sell this product through a SO, a RfQ is "
+"automatically created to buy the product. Tip: don't forget to set a vendor "
+"on the product."
+msgstr ""
+"Nếu được chọn, mỗi lần bạn bán sản phẩm này thông qua SO, một RfQ sẽ được "
+"tự động tạo ra để mua sản phẩm. Mẹo: đừng quên thiết lập nhà cung cấp "
+"cho sản phẩm."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__active
+msgid ""
+"If unchecked, it will allow you to hide the product without removing it."
+msgstr ""
+"Nếu bỏ chọn, bạn có thể ẩn sản phẩm mà không cần phải gỡ bỏ nó."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_1920
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_1024
+msgid "Image 1024"
+msgstr "Hình ảnh 1024"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_128
+msgid "Image 128"
+msgstr "Hình ảnh 128"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_256
+msgid "Image 256"
+msgstr "Hình ảnh 256"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_512
+msgid "Image 512"
+msgstr "Hình ảnh 512"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__property_account_income_id
+msgid "Income Account"
+msgstr "Tài khoản thu nhập"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_package_form
+msgid "Information"
+msgstr "Thông tin"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__default_code
+msgid "Internal Reference"
+msgstr "Tham chiếu nội bộ"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__barcode
+msgid "International Article Number used for product identification."
+msgstr "Mã số sản phẩm quốc tế được sử dụng để nhận dạng sản phẩm."
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Invoiced"
+msgstr "Đã xuất hóa đơn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__invoice_policy
+msgid "Invoicing Policy"
+msgstr "Chính sách lập hóa đơn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_is_follower
+msgid "Is Follower"
+msgstr "Là Người Theo Dõi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__is_product_variant
+msgid "Is Product Variant"
+msgstr "Là biến thể sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_partner__is_restaurant
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_users__is_restaurant
+msgid "Is Restaurant"
+msgstr "Là Nhà hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__has_configurable_attributes
+msgid "Is a configurable product"
+msgstr "Là một sản phẩm có thể cấu hình"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__property_account_income_id
+msgid ""
+"Keep this field empty to use the default value from the product category."
+msgstr ""
+"Giữ trường này trống để sử dụng giá trị mặc định từ danh mục sản phẩm."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__property_account_expense_id
+msgid ""
+"Keep this field empty to use the default value from the product category. If"
+" anglo-saxon accounting with automated valuation method is configured, the "
+"expense account on the product category will be used."
+msgstr ""
+"Giữ trường này trống để sử dụng giá trị mặc định từ danh mục sản phẩm. Nếu"
+" kế toán anglo-saxon với phương pháp định giá tự động được cấu hình, "
+"tài khoản chi phí trên danh mục sản phẩm sẽ được sử dụng."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__write_uid
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__write_uid
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__write_date
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__write_date
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__service_type
+msgid ""
+"Manually set quantities on order: Invoice based on the manually entered quantity, without creating an analytic account.\n"
+"Timesheets on contract: Invoice based on the tracked hours on the related timesheet.\n"
+"Create a task and track hours: Create a task on the sales order validation and track the work hours."
+msgstr ""
+"Đặt số lượng theo đơn hàng theo cách thủ công: Hóa đơn dựa trên số lượng nhập theo cách thủ công, mà không cần tạo tài khoản phân tích.\n"
+"Bảng chấm công theo hợp đồng: Hóa đơn dựa trên số giờ được theo dõi trên bảng chấm công liên quan.\n"
+"Tạo nhiệm vụ và theo dõi giờ: Tạo nhiệm vụ trên xác thực đơn hàng bán hàng và theo dõi giờ làm việc."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__meal_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__meal_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract__meal_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract_line__meal_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_sale_order_line__meal_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__product_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_tour_registration_line__meal_id
+#: model:ir.model.fields.selection,name:tour_travel_meal_management.selection__package_contract__package_contract_type__meal
+msgid "Meal"
+msgstr "Bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.actions.act_window,name:tour_travel_meal_management.act_display_meal_contract
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract_line__meal_package_contract_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_partner__meal_contract_count
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_users__meal_contract_count
+msgid "Meal Contract"
+msgstr "Hợp đồng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract__meal_contract_lines_ids
+msgid "Meal Contract Lines"
+msgstr "Dòng hợp đồng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_partner__meal_contract_ids
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_users__meal_contract_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_supplier_registration_form_inherit
+msgid "Meal Contracts"
+msgstr "Hợp đồng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "Meal Cost Price"
+msgstr "Giá bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract__meal_package_ids
+msgid "Meal Information"
+msgstr "Thông tin bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract_line__meal_line_currency_id
+msgid "Meal Line Currency"
+msgstr "Tiền tệ của dòng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_sale_order__meal_line_ids
+msgid "Meal Lines"
+msgstr "Dòng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid "Meal Name"
+msgstr "Tên bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_tour_registration_line__meal_sale_id
+msgid "Meal Order"
+msgstr "Đặt món ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.actions.act_window,name:tour_travel_meal_management.action_meal_package
+#: model:ir.model,name:tour_travel_meal_management.model_meal_package
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__meal_package_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract_line__meal_package_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__meal_package_id
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_tour_registration_line__meal_package_id
+#: model:ir.ui.menu,name:tour_travel_meal_management.meal_package_menu
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_package_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_supplier_registration_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.package_contract_meal_form_inherit
+msgid "Meal Package"
+msgstr "Gói bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_meal_packages_line
+msgid "Meal Package Line"
+msgstr "Dòng Gói bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_sale_order_template__meal_package_line_ids
+msgid "Meal Package Lines"
+msgstr "Dòng Gói bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_partner__meal_package_line_ids
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_res_users__meal_package_line_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.package_contract_meal_form_inherit
+msgid "Meal Packages"
+msgstr "Gói bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid "Meal Price"
+msgstr "Giá bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_tour_registration_line__meal_qty
+msgid "Meal Qty"
+msgstr "Số lượng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract_line__meal_package_qty
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid "Meal Quantity"
+msgstr "Số lượng bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.actions.act_window,name:tour_travel_meal_management.action_meal_registrations
+#: model:ir.model,name:tour_travel_meal_management.model_res_partner
+#: model:ir.ui.menu,name:tour_travel_meal_management.meal_meal_menu
+msgid "Meal Registration"
+msgstr "Liên hệ"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "Meal Sales Price"
+msgstr "Đăng ký bữa ăn"
+
+#. module: tour_travel_meal_management
+#. odoo-python
+#: code:addons/tour_travel_meal_management/models/sale_order.py:0
+#, python-format
+msgid "Meal date should be greater than current date!"
+msgstr "Ngày ăn phải sau ngày hiện tại!"
+
+#. module: tour_travel_meal_management
+#. odoo-python
+#: code:addons/tour_travel_meal_management/models/sale_order.py:0
+#, python-format
+msgid "Meal date should in between Arrival/Departure date!"
+msgstr "Ngày dùng bữa phải nằm giữa ngày Đến/Ngày Khởi hành!"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_sale_order_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Meals"
+msgstr "Bữa ăn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__purchase_line_warn_msg
+msgid "Message for Purchase Order Line"
+msgstr "Tin nhắn cho Dòng lệnh mua hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__sale_line_warn_msg
+msgid "Message for Sales Order Line"
+msgstr "Tin nhắn cho Dòng lệnh mua"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự kiện Lịch hoạt động tiếp theo"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót cho hoạt động tiếp theo"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields.selection,name:tour_travel_meal_management.selection__template_meal_package_line__display_type__line_note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số lượng tin nhắn yêu cầu hành động"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi gửi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__pricelist_item_count
+msgid "Number of price rules"
+msgstr "Số lượng quy tắc giá"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__purchase_method
+msgid ""
+"On ordered quantities: Control bills based on ordered quantities.\n"
+"On received quantities: Control bills based on received quantities."
+msgstr ""
+"Đối với số lượng đã đặt hàng: Kiểm soát hóa đơn dựa trên số lượng đã đặt hàng.\n"
+"Đối với số lượng đã nhận: Kiểm soát hóa đơn dựa trên số lượng đã nhận."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__optional_product_ids
+msgid "Optional Products"
+msgstr "Sản phẩm tùy chọn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__optional_product_ids
+msgid ""
+"Optional Products are suggested whenever the customer hits *Add to Cart* "
+"(cross-sell strategy, e.g. for computers: warranty, software, etc.)."
+msgstr ""
+"Các sản phẩm tùy chọn được gợi ý bất cứ khi nào khách hàng nhấp vào *Thêm vào giỏ hàng* "
+"(chiến lược bán chéo, ví dụ đối với máy tính: bảo hành, phần mềm, v.v.)."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__invoice_policy
+msgid ""
+"Ordered Quantity: Invoice quantities ordered by the customer.\n"
+"Delivered Quantity: Invoice quantities delivered to the customer."
+msgstr ""
+"Số lượng đã đặt hàng: Số lượng hóa đơn do khách hàng đặt hàng.\n"
+"Số lượng đã giao: Số lượng hóa đơn đã giao cho khách hàng."
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_package_contract
+msgid "Package Contract"
+msgstr "Hợp đồng trọn gói"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_package_contract_line
+msgid "Package Contract Line"
+msgstr "Gói hợp đồng Dòng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_package_itinerary
+msgid "Package Itinerary"
+msgstr "Hành trình trọn gói"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__list_price
+msgid "Price at which the product is sold to customers."
+msgstr "Giá bán sản phẩm cho khách hàng."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_variant_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__attribute_line_ids
+msgid "Product Attributes"
+msgstr "Thuộc tính sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_catalog_product_is_in_sale_order
+msgid "Product Catalog Product Is In Sale Order"
+msgstr "Danh mục sản phẩm Sản phẩm đang được bán Đặt hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__categ_id
+msgid "Product Category"
+msgstr "Danh mục sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__packaging_ids
+msgid "Product Packages"
+msgstr "Gói sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_tmpl_id
+msgid "Product Template"
+msgstr "Mẫu sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_tag_ids
+msgid "Product Template Tags"
+msgstr "Thẻ mẫu sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_tooltip
+msgid "Product Tooltip"
+msgstr "Chú giải sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__detailed_type
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_variant_ids
+msgid "Products"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_properties
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__description_purchase
+msgid "Purchase Description"
+msgstr "Mô tả mua hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__purchase_line_warn
+msgid "Purchase Order Line Warning"
+msgstr "Cảnh báo dòng lệnh mua hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__uom_po_id
+msgid "Purchase UoM"
+msgstr "ĐVT Mua"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__purchased_product_qty
+msgid "Purchased"
+msgstr "Đã mua"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__qty
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.package_contract_meal_form_inherit
+msgid "Qty"
+msgstr "Số lượng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__meal_qty
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__rating_ids
+msgid "Ratings"
+msgstr "Xếp hạng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__expense_policy
+msgid "Re-Invoice Expenses"
+msgstr "Chi phí lập lại hóa đơn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__visible_expense_policy
+msgid "Re-Invoice Policy visible"
+msgstr "Chính sách lập hóa đơn lại có thể nhìn thấy"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__code
+msgid "Reference"
+msgstr "Tham khảo"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__activity_user_id
+msgid "Responsible User"
+msgstr "Người sử dụng chịu trách nhiệm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_itinerary__meal_ids
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__meal_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_supplier_registration_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "Restaurant"
+msgstr "Nhà hàng"
+
+#. module: tour_travel_meal_management
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_01
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_04
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_07
+msgid ""
+"Restaurant : The Modern Restaurant,Dubai\n"
+"Food Type: Breakfast"
+msgstr ""
+"Nhà hàng: Nhà hàng hiện đại, Dubai\n"
+"Loại thực phẩm: Bữa sáng"
+
+#. module: tour_travel_meal_management
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_03
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_06
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_09
+msgid ""
+"Restaurant : The Modern Restaurant,Dubai\n"
+"Food Type: Dinner"
+msgstr ""
+"Nhà hàng: Nhà hàng hiện đại, Dubai\và"
+"Loại thực phẩm: Bữa tối"
+
+#. module: tour_travel_meal_management
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_02
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_05
+#: model:template.meal.package.line,name:tour_travel_meal_management.package_meal_line_08
+msgid ""
+"Restaurant : The Modern Restaurant,Dubai\n"
+"Food Type: Lunch"
+msgstr ""
+"Nhà hàng: Nhà hàng hiện đại, Dubai\n"
+"Loại thực phẩm: Bữa trưa"
+
+#. module: tour_travel_meal_management
+#: model:ir.ui.menu,name:tour_travel_meal_management.meal_configuration_menu
+msgid "Restaurant Configuration"
+msgstr "Cấu hình nhà hàng"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid "Restaurant Name"
+msgstr "Tên nhà hàng"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "Restaurant:"
+msgstr "Nhà hàng:"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi tin nhắn SMS"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__sale_order_templete_id
+msgid "Sale Order"
+msgstr "Đơn bán hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__description_sale
+msgid "Sales Description"
+msgstr "Mô tả bán hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_sale_order_line
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__sale_line_warn
+msgid "Sales Order Line"
+msgstr "Dòng đơn bán hàng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__list_price
+msgid "Sales Price"
+msgstr "Giá bán"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__lst_price
+msgid "Sales Price"
+msgstr "Giá bán"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields.selection,name:tour_travel_meal_management.selection__template_meal_package_line__display_type__line_section
+msgid "Section"
+msgstr "Lựa Chọn"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__purchase_line_warn
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__sale_line_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"Chọn tùy chọn \"Cảnh báo\" sẽ thông báo cho người dùng bằng tin nhắn, "
+"Chọn \"Chặn tin nhắn\" sẽ đưa ra ngoại lệ bằng tin nhắn và "
+"chặn luồng. Tin nhắn phải được viết vào trường tiếp theo."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__sequence
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__sequence
+msgid "Sequence"
+msgstr "Trình tự"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__sales_count
+msgid "Sold"
+msgstr "Đã bán"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Ngày đến hạn đã qua\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Đã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_quotation_tour_restaurant_inherit
+msgid "Sub Total"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__service_to_purchase
+msgid "Subcontract Service"
+msgstr "Dịch vụ hợp đồng phụ"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__price_subtotal
+msgid "Subtotal"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__supplier_id
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__account_tag_ids
+msgid ""
+"Tags to be set on the base and tax journal items created for this product."
+msgstr ""
+"Các thẻ sẽ được gắn trên các mục nhật ký thuế và cơ sở được tạo cho sản phẩm này."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__tax_string
+msgid "Tax String"
+msgstr "Chuỗi thuế"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "Team"
+msgstr "Đội"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_template_meal_package_line__display_type
+msgid "Technical field for UX purpose."
+msgstr "Lĩnh vực kỹ thuật dành cho mục đích UX."
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_template_meal_package_line
+msgid "Template Meal Package Line"
+msgstr "Dòng gói bữa ăn mẫu"
+
+#. module: tour_travel_meal_management
+#. odoo-python
+#: code:addons/tour_travel_meal_management/models/sale_order.py:0
+#, python-format
+msgid "The date should be in between the Arrival/Departure date!"
+msgstr "Ngày này phải nằm giữa ngày Đến/Ngày Đi!"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__lst_price
+msgid ""
+"The sale price is managed from the product template. Click on the 'Configure"
+" Variants' button to set the extra attribute prices."
+msgstr ""
+"Giá bán được quản lý từ mẫu sản phẩm. Nhấp vào nút 'Cấu hình"
+"Biến thể' để đặt giá thuộc tính bổ sung."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__price_extra
+msgid "This is the sum of the extra price of all attributes"
+msgstr "Đây là tổng giá trị tăng thêm của tất cả các thuộc tính"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.actions.act_window,help:tour_travel_meal_management.act_display_meal_contract
+msgid "This vendor has no contract. Create a new Contract"
+msgstr "Nhà cung cấp này không có hợp đồng. Tạo hợp đồng mới"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_sale_order_template
+msgid "Tour Package"
+msgstr "Gói du lịch"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_sale_order
+msgid "Tour Registration"
+msgstr "Đăng ký tham quan"
+
+#. module: tour_travel_meal_management
+#: model:ir.model,name:tour_travel_meal_management.model_tour_registration_line
+msgid "Tour Registration Line"
+msgstr "Dòng đăng ký tour"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__service_type
+msgid "Track Service"
+msgstr "Dịch vụ theo dõi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__type_travel_product
+msgid "Travel Product Type"
+msgstr "Loại sản phẩm du lịch"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__type
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__package_contract_type
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract__package_contract_type
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_package_contract_line__package_contract_type
+msgid "Type"
+msgstr "Kiểu"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ được ghi lại."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_packages_line__unit_price
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_template_meal_package_line__price_unit
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__uom_id
+msgid "Unit of Measure"
+msgstr "Đơn vị đo lường"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__uom_name
+msgid "Unit of Measure Name"
+msgstr "Tên đơn vị đo lường"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.tour_registration_form
+msgid "UoM"
+msgstr "ĐVT"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__valid_product_template_attribute_line_ids
+msgid "Valid Product Attribute Lines"
+msgstr "Dòng thuộc tính sản phẩm hợp lệ"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__expense_policy
+msgid ""
+"Validated expenses and vendor bills can be re-invoiced to a customer at its "
+"cost or sales price."
+msgstr ""
+"Chi phí đã xác thực và hóa đơn của nhà cung cấp có thể được xuất hóa đơn lại cho khách hàng theo "
+"giá thành hoặc giá bán."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__standard_price
+msgid ""
+"Value of the product (automatically computed in AVCO).\n"
+"        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
+"        Used to compute margins on sale orders."
+msgstr ""
+"Giá trị của sản phẩm (tự động tính toán trong AVCO).\n"
+"        Được sử dụng để định giá sản phẩm khi chi phí mua không được biết (ví dụ: điều chỉnh hàng tồn kho).\n"
+"        Được sử dụng để tính biên lợi nhuận trên đơn đặt hàng bán."
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_variant_1920
+msgid "Variant Image"
+msgstr "Hình ảnh biến thể"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_variant_1024
+msgid "Variant Image 1024"
+msgstr "Hình ảnh biến thể 1024"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_variant_128
+msgid "Variant Image 128"
+msgstr "Hình ảnh biến thể 128"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_variant_256
+msgid "Variant Image 256"
+msgstr "Hình ảnh biến thể 256"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__image_variant_512
+msgid "Variant Image 512"
+msgstr "Hình ảnh biến thể 512"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__price_extra
+msgid "Variant Price Extra"
+msgstr "Giá biến thể thêm"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__variant_seller_ids
+msgid "Variant Seller"
+msgstr "Người bán biến thể"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__product_template_variant_value_ids
+msgid "Variant Values"
+msgstr "Giá trị biến thể"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__supplier_taxes_id
+msgid "Vendor Taxes"
+msgstr "Thuế nhà cung cấp"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__seller_ids
+msgid "Vendors"
+msgstr "Nhà cung cấp"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__volume
+msgid "Volume"
+msgstr "Thể tích"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__volume_uom_name
+msgid "Volume unit of measure label"
+msgstr "Nhãn đơn vị đo thể tích"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "We hereby declare that you have done contract with our Restaurant"
+msgstr "Chúng tôi xin tuyên bố rằng bạn đã ký hợp đồng với Nhà hàng của chúng tôi"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,help:tour_travel_meal_management.field_meal_package__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp của trang web"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__weight
+msgid "Weight"
+msgstr "Khối lượng"
+
+#. module: tour_travel_meal_management
+#: model:ir.model.fields,field_description:tour_travel_meal_management.field_meal_package__weight_uom_name
+msgid "Weight unit of measure label"
+msgstr "Nhãn đơn vị đo lường trọng lượng"
+
+#. module: tour_travel_meal_management
+#. odoo-python
+#: code:addons/tour_travel_meal_management/models/package_contract.py:0
+#, python-format
+msgid "You can not have same package in contract lines"
+msgstr "Bạn không thể có cùng một gói trong các dòng hợp đồng"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.meal_package_form
+msgid "ex.South Indian Food"
+msgstr "ví dụ: Thực phẩm Nam Ấn Độ"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "in"
+msgstr "trong"
+
+#. module: tour_travel_meal_management
+#: model_terms:ir.ui.view,arch_db:tour_travel_meal_management.report_agreement_template_meal
+msgid "to"
+msgstr "đến"

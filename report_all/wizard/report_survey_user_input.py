@@ -20,8 +20,9 @@ class PurchaseReport(models.TransientModel):
     don_vi = fields.Char(string='Don_vi', required=False)
     sum_partner = fields.Integer(string='Sum_partner', required=False)
     sum_survey = fields.Integer(string='Sum_survey', required=False)
-    records_survey_user_input =fields.Many2many(comodel_name='survey.user_input', string='records_survey_user_input')
+    records_survey_user_input = fields.Many2many(comodel_name='survey.user_input', string='records_survey_user_input')
     name_survey = fields.Many2one('survey.survey', string='Tên Cuộc thi', required=True)
+    records_tong_hop_diem = fields.Many2many(comodel_name='tong.hop.diem', string='records_tong_hop_diem')
 
     # lay ban ghi khong trung partner_id
     def get_unique_partner_survey_user_input(self):
@@ -38,9 +39,12 @@ class PurchaseReport(models.TransientModel):
 
         # Tìm kiếm tất cả các bản ghi survey.user_input theo survey_id và sắp xếp dựa trên thứ tự
         records_survey_user_input = self.env['survey.user_input'].search(
-            [('survey_id', '=', self.name_survey.id)], order=order
+            [('survey_id', '=', self.name_survey.id),
+             ('test_entry', '!=', True)
+             ], order=order
         )
-
+        records_tong_hop_diem = self.env['tong.hop.diem'].search(
+            [('cuoc_thi', '=', self.name_survey.id)])
         # Khởi tạo dictionary để lưu các partner_id đã gặp
         unique_partners = {}
 
@@ -51,7 +55,7 @@ class PurchaseReport(models.TransientModel):
                 unique_partners[record.partner_id.id] = record
                 unique_records |= record
 
-        return unique_records
+        return unique_records, records_tong_hop_diem
 
     def create_report_survey_user_input(self):
         # Lấy thông tin từ name_survey
@@ -60,7 +64,7 @@ class PurchaseReport(models.TransientModel):
 
         # Lấy các bản ghi không trùng lặp partner_id
 
-        records_survey_user_input = self.get_unique_partner_survey_user_input()
+        records_survey_user_input, records_tong_hop_diem = self.get_unique_partner_survey_user_input()
         self.records_survey_user_input = records_survey_user_input
         # Tổng số bản ghi partner_id
         self.sum_partner = len(records_survey_user_input)
@@ -74,7 +78,7 @@ class PurchaseReport(models.TransientModel):
 
         # Tính tổng của trường so_lan_lam từ các bản ghi records_survey_user_input
         self.sum_survey = sum(record.so_lan_lam for record in records_survey_user_input)
-
+        self.records_tong_hop_diem = records_tong_hop_diem
 
         action = self.env.ref('report_all.report_survey_user_input_py3o').report_action(self.id)
         return action

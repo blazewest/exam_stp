@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_attraction_service_line_manager,access.attraction.service.line.manager,model_attraction_service_line,tour_travel_management.group_tour_traveller_manager,1,1,1,1
+access_attraction_package_line_manager,access.attractione.package.line.manager,model_attraction_package_line,tour_travel_management.group_tour_traveller_manager,1,1,1,1
+access_attraction_package_line_user,access.attractione.attractionage.line.user,model_attraction_package_line,tour_travel_management.group_tour_traveller_user,1,1,1,1

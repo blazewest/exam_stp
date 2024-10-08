@@ -21,38 +21,46 @@ class CustomAuthSignupHome(AuthSignupHome):
         if not qcontext.get('token') and not qcontext.get('signup_enabled'):
             raise werkzeug.exceptions.NotFound()
 
-        if 'error' not in qcontext and request.httprequest.method == 'POST':
-            try:
-                # Lấy thông tin từ form đăng ký
-                qcontext['login'] = kw.get('login')
-                qcontext['password'] = kw.get('password')
-                qcontext['confirm_password'] = kw.get('confirm_password')
-                qcontext['name'] = kw.get('name')
-                qcontext['email'] = kw.get('email')
-                qcontext['cccd'] = kw.get('cccd')
-                qcontext['phone'] = kw.get('phone')
-                qcontext['province'] = kw.get('province')
-                qcontext['district'] = kw.get('district')
-                qcontext['ward'] = kw.get('ward')
-                qcontext['name_donvi_id'] = kw.get('name_donvi_id')
+        # Kiểm tra xem có lỗi nào trong quá trình đăng ký hay không
+        qcontext['error'] = None
 
-                # Thực hiện kiểm tra mật khẩu
-                if qcontext['password'] != qcontext['confirm_password']:
-                    qcontext['error'] = _("Mật khẩu không khớp, vui lòng nhập lại.")
-                    return request.render('auth_signup.signup', qcontext)
+        if request.httprequest.method == 'POST':
+            # Lấy thông tin từ form đăng ký
+            qcontext['login'] = kw.get('login')
+            qcontext['password'] = kw.get('password')
+            qcontext['confirm_password'] = kw.get('confirm_password')
+            qcontext['name'] = kw.get('name')
+            qcontext['email'] = kw.get('email')
+            qcontext['cccd'] = kw.get('cccd')
+            qcontext['phone'] = kw.get('phone')
+            qcontext['province'] = kw.get('province')
+            qcontext['district'] = kw.get('district')
+            qcontext['ward'] = kw.get('ward')
+            qcontext['name_donvi_id'] = kw.get('name_donvi_id')
 
-                # Thực hiện hành động dưới quyền `sudo` để bỏ qua các giới hạn về quyền
-                self.do_signup(qcontext)
+            # Thực hiện kiểm tra mật khẩu
+            if qcontext['password'] != qcontext['confirm_password']:
+                qcontext['error'] = _("Mật khẩu không khớp, vui lòng nhập lại.")
 
-                # Chuyển hướng đến trang đăng nhập sau khi đăng ký thành công
-                return self.web_login(*args, **kw)
+            # Kiểm tra xem tài khoản đã tồn tại hay chưa
+            if not qcontext['error']:
+                try:
+                    existing_user = request.env["res.users"].sudo().search(
+                        [("login", "=", qcontext.get("login"))]
+                    )
+                    if existing_user:
+                        qcontext["error"] = _("Đã có người dùng khác đăng ký bằng địa chỉ email này.")
 
-            except UserError as e:
-                qcontext['error'] = e.args[0]
-            except (SignupError, AssertionError) as e:
-                if request.env["res.users"].sudo().search([("login", "=", qcontext.get("login"))]):
-                    qcontext["error"] = _("Đã có người dùng khác đăng ký bằng địa chỉ email này.")
-                else:
+                    # Nếu không có lỗi nào, thực hiện tạo tài khoản mới
+                    if not qcontext['error']:
+                        # Thực hiện hành động dưới quyền `sudo` để bỏ qua các giới hạn về quyền
+                        self.do_signup(qcontext)
+                        # Chuyển hướng đến trang đăng nhập sau khi đăng ký thành công
+                        return self.web_login(*args, **kw)
+
+                except UserError as e:
+                    qcontext['error'] = e.args[0]
+                except (SignupError, AssertionError) as e:
                     _logger.warning("%s", e)
                     qcontext['error'] = _("Không thể tạo tài khoản mới.") + "\n" + str(e)
 
@@ -62,7 +70,7 @@ class CustomAuthSignupHome(AuthSignupHome):
             if user:
                 return request.redirect('/web/login?%s' % url_encode({'login': user.login, 'redirect': '/web'}))
 
-        # Render lại trang signup với context đã cập nhật
+        # Render lại trang signup với context đã cập nhật nếu có lỗi hoặc không phải là POST
         response = request.render('auth_signup.signup', qcontext)
         response.headers['X-Frame-Options'] = 'SAMEORIGIN'
         response.headers['Content-Security-Policy'] = "frame-ancestors 'self'"

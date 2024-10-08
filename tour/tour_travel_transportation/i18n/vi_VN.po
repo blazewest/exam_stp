@@ -1,0 +1,2815 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_tour_agency
+# 	* tour_travel_transportation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 07:48+0000\n"
+"PO-Revision-Date: 2024-10-08 07:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_variant_count
+msgid "# Product Variants"
+msgstr "# Biến thể sản phẩm"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid ""
+".\n"
+"            Contract Details are given below:"
+msgstr ""
+".\n"
+"            Chi tiết hợp đồng được đưa ra dưới đây:"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid ""
+".\n"
+"            The contract between us will be from"
+msgstr ""
+".\n"
+"            Hợp đồng giữa chúng ta sẽ là từ"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "100"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "15000"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "200"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.only_block_heading_snippet
+msgid "<b>A Good Heading Title</b>"
+msgstr "<b>Một tiêu đề hay</b>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "<b>Popular Packages</b>"
+msgstr "<b>Gói phổ biến</b>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "<b>Special Offers on flight packages</b>"
+msgstr "<b>Ưu đãi đặc biệt cho các gói chuyến bay</b>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid "<font class=\"text-black\" style=\"\">Activities</font>"
+msgstr "<font class=\"text-black\" style=\"\">Các hoạt động</font>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid "<font class=\"text-black\" style=\"\">Comfortable Journey</font>"
+msgstr "<font class=\"text-black\" style=\"\">Hành trình thoải mái</font>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid "<font class=\"text-black\" style=\"\">Luxuries Hotel</font>"
+msgstr "<font class=\"text-black\" style=\"\">Khách sạn Luxury</font>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid "<font class=\"text-black\" style=\"\">Travel Guide</font>"
+msgstr "<font class=\"text-black\" style=\"\">Hướng dẫn du lịch</font>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<i class=\"fa fa-facebook m-1\" contenteditable=\"false\">​</i>"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<i class=\"fa fa-instagram m-1\" contenteditable=\"false\">​</i>"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<i class=\"fa fa-linkedin m-1\" contenteditable=\"false\">​</i>"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "<i class=\"fa fa-plus\"/> Add Traveller"
+msgstr "<i class=\"fa fa-plus\"/> Thêm khách du lịch"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<i class=\"fa fa-twitter m-1\" contenteditable=\"false\">​</i>"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<i class=\"fa fa-youtube m-1\" contenteditable=\"false\">​</i>"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+msgid ""
+"<select id=\"time-period\" name=\"period\">\n"
+"                        <option value=\"all\">All</option>\n"
+"                        <option value=\"today\">Ongoing</option>\n"
+"                        <option value=\"last-week\">Last Week</option>\n"
+"                        <option value=\"last-month\">Last Month</option>\n"
+"                        <option value=\"custom-period\">Custom Period</option>\n"
+"                    </select>"
+msgstr ""
+"<select id=\"time-period\" name=\"period\">\n"
+"                        <option value=\"all\">Tất cả</option>\n"
+"                        <option value=\"today\">Đang diễn ra</option>\n"
+"                        <option value=\"last-week\">Tuần trước</option>\n"
+"                        <option value=\"last-month\">Tháng trước</option>\n"
+"                        <option value=\"custom-period\">Thời gian tùy chỉnh</option>\n"
+"                    </select>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid ""
+"<select name=\"gender\" class=\"form-control\" required=\"true\">\n"
+"                                                                    <option value=\"male\">Male</option>\n"
+"                                                                    <option value=\"female\">Female</option>\n"
+"                                                                    <option value=\"other\">Other</option>\n"
+"                                                                </select>"
+msgstr ""
+"<select name=\"gender\" class=\"form-control\" required=\"true\">\n"
+"                                                                    <option value=\"male\">Male</option>\n"
+"                                                                    <option value=\"female\">Nữ giới</option>\n"
+"                                                                    <option value=\"other\">Khác</option>\n"
+"                                                                </select>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<small class=\"s_share_title d-none\"><b>Follow us</b></small>"
+msgstr "<small class=\"s_share_title d-none\"><b>Theo dõi chúng tôi</b></small>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "<span aria-hidden=\"true\">&amp;times;</span>"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "<span class=\"heading_sub_txt\">Check and book now</span>"
+msgstr "<span class=\"heading_sub_txt\">Kiểm tra và đặt ngay</span>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.only_block_heading_snippet
+msgid ""
+"<span style=\"color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 13px; line-height: 18.5714px;\">Most Popular Subline of heading block</span>\n"
+"                            <br/>"
+msgstr ""
+"<span style=\"color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 13px; line-height: 18.5714px;\">Dòng phụ phổ biến nhất của khối tiêu đề</span>\n"
+"                            <br/>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid ""
+"<span>\n"
+"                                                        <b>Traveller's Details</b>\n"
+"                                                    </span>"
+msgstr ""
+"<span>\n"
+"                                                        <b>Chi tiết của khách du lịch</b>\n"
+"                                                    </span>"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid ""
+"<span>\n"
+"                            <b>Transportation Details</b>\n"
+"                        </span>"
+msgstr ""
+"<span>\n"
+"                            <b>Chi tiết về di chuyển</b>\n"
+"                        </span>"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid ""
+"<span>\n"
+"                        <b>Contract Details</b>\n"
+"                    </span>"
+msgstr ""
+"<span>\n"
+"                        <b>Chi tiết hợp đồng</b>\n"
+"                    </span>"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid ""
+"<span>\n"
+"                <b>Kind Regards</b>\n"
+"            </span>\n"
+"            ,\n"
+"            <br/>"
+msgstr ""
+"<span>\n"
+"                <b>Trân trọng</b>\n"
+"            </span>\n"
+"            ,\n"
+"            <br/>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "<span>Copyright &amp;copy;</span>"
+msgstr "<span>Bản quyền &amp;copy;</span>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid "<span>Lorem Ipsum is simply dummy text of the printing.</span>"
+msgstr "<span>Lorem Ipsum chỉ đơn giản là văn bản giả để in.</span>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "<span>Search</span>"
+msgstr "<span>Tìm kiếm</span>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "<span>Starting From</span>"
+msgstr "<span>Bắt đầu từ</span>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "<span>Total Price: <b class=\"total_price\">0.0</b></span>"
+msgstr "<span>Tổng giá: <b class=\"total_price\">0.0</b></span>"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "<span>per person*</span>"
+msgstr "<span>mỗi người*</span>"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid ""
+"<strong>\n"
+"                        .............................................\n"
+"                    </strong>"
+msgstr ""
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "<strong>Customer signature</strong>"
+msgstr "<strong>Chữ ký của khách hàng</strong>"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "<strong>Manager Signature</strong>"
+msgstr "<strong>Chữ ký của người quản lý</strong>"
+
+#. module: website_tour_agency
+#: model:mail.template,body_html:website_tour_agency.client_inquiry
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px;padding-bottom: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <!-- HEADER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                        <img src=\"/logo.png?company=%7B%7B%20object.company_id.id%20%7D%7D\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{ object.company_id.name }}\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- CONTENT -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                            Hello<br>\n"
+"                                            <p>One Inquiry is submitted from <t t-out=\"object.contact_name or ''\"></t>. Kindly check and get back to customer.</p>\n"
+"                                            <p>Following are the details of customer</p>\n"
+"                                            <p><b>Name:</b><t t-out=\"object.contact_name or ''\"></t></p>\n"
+"                                            <p><b>Email:</b><t t-out=\"object.email_from or ''\"></t></p>\n"
+"                                            <p><b>Contact No.:</b><t t-out=\"object.mobile or ''\"></t></p>\n"
+"                                            <p style=\"margin-top: 24px;\">\n"
+"                                                                <a href=\"/web#view_type=form&amp;id=%7B%7B%20object.id%20%7D%7D&amp;model=crm.lead\" style=\"background-color:#875A7B; padding: 10px; text-decoration: none; color: #fff; border-radius: 5px;\">\n"
+"                                                    View Inquiry\n"
+"                                                </a>\n"
+"                                                            </p>\n"
+"                                            <br><br>\n"
+"                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- FOOTER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>\n"
+"                                                </td>\n"
+"                                        </tr>\n"
+"                                        <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                        <t t-if=\"object.company_id.phone\">\n"
+"                                            <t t-out=\"object.company_id.phone\"></t>\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.email\">\n"
+"                                             <a href=\"'mailto:%s'%20%20%7B%7B%20object.company_id.email%20%7D%7D\" style=\"text-decoration:none; color: #454748;\"><t t-out=\"object.company_id.email\"></t></a> |\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.website\">\n"
+"                                             <a href=\"'%s'%20%20%7B%7B%20object.company_id.website%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                            <t t-out=\"object.company_id.website\"></t>\n"
+"                                        </a>\n"
+"                                        </t>\n"
+"                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px;padding-bottom: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <!-- HEADER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                        <img src=\"/logo.png?company=%7B%7B%20object.company_id.id%20%7D%7D\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{ object.company_id.name }}\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- CONTENT -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                            Xin chào<br>\n"
+"                                            <p>Một yêu cầu được gửi từ <t t-out=\"object.contact_name or ''\"></t>. Vui lòng kiểm tra và phản hồi lại khách hàng.</p>\n"
+"                                            <p>Sau đây là thông tin chi tiết của khách hàng</p>\n"
+"                                            <p><b>Tên:</b><t t-out=\"object.contact_name or ''\"></t></p>\n"
+"                                            <p><b>Email:</b><t t-out=\"object.email_from or ''\"></t></p>\n"
+"                                            <p><b>Số liên lạc:</b><t t-out=\"object.mobile or ''\"></t></p>\n"
+"                                            <p style=\"margin-top: 24px;\">\n"
+"                                                                <a href=\"/web#view_type=form&amp;id=%7B%7B%20object.id%20%7D%7D&amp;model=crm.lead\" style=\"background-color:#875A7B; padding: 10px; text-decoration: none; color: #fff; border-radius: 5px;\">\n"
+"                                                    Xem yêu cầu\n"
+"                                                </a>\n"
+"                                                            </p>\n"
+"                                            <br><br>\n"
+"                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- FOOTER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>\n"
+"                                                </td>\n"
+"                                        </tr>\n"
+"                                        <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                        <t t-if=\"object.company_id.phone\">\n"
+"                                            <t t-out=\"object.company_id.phone\"></t>\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.email\">\n"
+"                                             <a href=\"'mailto:%s'%20%20%7B%7B%20object.company_id.email%20%7D%7D\" style=\"text-decoration:none; color: #454748;\"><t t-out=\"object.company_id.email\"></t></a> |\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.website\">\n"
+"                                             <a href=\"'%s'%20%20%7B%7B%20object.company_id.website%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                            <t t-out=\"object.company_id.website\"></t>\n"
+"                                        </a>\n"
+"                                        </t>\n"
+"                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+
+#. module: website_tour_agency
+#: model:mail.template,body_html:website_tour_agency.registration_notification
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px;padding-bottom: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <!-- HEADER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                        <img src=\"/logo.png?company=%7B%7B%20object.company_id.id%20%7D%7D\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{ object.company_id.name }}\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- CONTENT -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                            Hello<br>\n"
+"                                            <p>One Package Registration is Requested from <t t-out=\"object.contact_name or ''\"></t>. Kindly check and get back to customer.</p>\n"
+"                                            <p>Following are the details of customer</p>\n"
+"                                            <p><b>Name:</b><t t-out=\"object.contact_name or ''\"></t></p>\n"
+"                                            <p><b>Email:</b><t t-out=\"object.email_from or ''\"></t></p>\n"
+"                                            <p><b>Contact No.:</b><t t-out=\"object.mobile or ''\"></t></p>\n"
+"                                            <p><b>Package Name:</b><t t-out=\"object.package_id.name or ''\"></t></p>\n"
+"                                            <p style=\"margin-top: 24px;\">\n"
+"                                                                <a t-att-href=\"'/web#view_type=form&amp;model=sale.order&amp;id=%s' % object.order_id.id\" style=\"background-color:#875A7B; padding: 10px; text-decoration: none; color: #fff; border-radius: 5px;\">\n"
+"                                                    View Registration\n"
+"                                                </a>\n"
+"                                                            </p>\n"
+"                                            <br><br>\n"
+"                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- FOOTER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>\n"
+"                                                </td>\n"
+"                                        </tr>\n"
+"                                        <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                        <t t-if=\"object.company_id.phone\">\n"
+"                                            <t t-out=\"object.company_id.phone\"></t>\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.email\">\n"
+"                                             <a href=\"'mailto:%s'%20%20%7B%7B%20object.company_id.email%20%7D%7D\" style=\"text-decoration:none; color: #454748;\"><t t-out=\"object.company_id.email\"></t></a> |\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.website\">\n"
+"                                             <a href=\"'%s'%20%20%7B%7B%20object.company_id.website%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                            <t t-out=\"object.company_id.website\"></t>\n"
+"                                        </a>\n"
+"                                        </t>\n"
+"                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px;padding-bottom: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <!-- HEADER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                        <img src=\"/logo.png?company=%7B%7B%20object.company_id.id%20%7D%7D\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{ object.company_id.name }}\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- CONTENT -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <div>\n"
+"                                            Xin chào<br>\n"
+"                                            <p>Một gói đăng ký được yêu cầu từ <t t-out=\"object.contact_name or ''\"></t>. Vui lòng kiểm tra và phản hồi lại khách hàng.</p>\n"
+"                                            <p>Sau đây là thông tin chi tiết của khách hàng</p>\n"
+"                                            <p><b>Tên:</b><t t-out=\"object.contact_name or ''\"></t></p>\n"
+"                                            <p><b>Email:</b><t t-out=\"object.email_from or ''\"></t></p>\n"
+"                                            <p><b>Số liên lạc:</b><t t-out=\"object.mobile or ''\"></t></p>\n"
+"                                            <p><b>Tên gói:</b><t t-out=\"object.package_id.name or ''\"></t></p>\n"
+"                                            <p style=\"margin-top: 24px;\">\n"
+"                                                                <a t-att-href=\"'/web#view_type=form&amp;model=sale.order&amp;id=%s' % object.order_id.id\" style=\"background-color:#875A7B; padding: 10px; text-decoration: none; color: #fff; border-radius: 5px;\">\n"
+"                                                    Xem Đăng ký\n"
+"                                                </a>\n"
+"                                                            </p>\n"
+"                                            <br><br>\n"
+"                                        </div>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <!-- FOOTER -->\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                    <t t-out=\"object.company_id.name or ''\"></t>\n"
+"                                                </td>\n"
+"                                        </tr>\n"
+"                                        <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                        <t t-if=\"object.company_id.phone\">\n"
+"                                            <t t-out=\"object.company_id.phone\"></t>\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.email\">\n"
+"                                             <a href=\"'mailto:%s'%20%20%7B%7B%20object.company_id.email%20%7D%7D\" style=\"text-decoration:none; color: #454748;\"><t t-out=\"object.company_id.email\"></t></a> |\n"
+"                                        </t>\n"
+"                                        <t t-if=\"object.company_id.website\">\n"
+"                                             <a href=\"'%s'%20%20%7B%7B%20object.company_id.website%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                            <t t-out=\"object.company_id.website\"></t>\n"
+"                                        </a>\n"
+"                                        </t>\n"
+"                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__description_sale
+msgid ""
+"A description of the Product that you want to communicate to your customers."
+" This description will be copied to every Sales Order, Delivery Order and "
+"Customer Invoice/Credit Note"
+msgstr ""
+"Mô tả về Sản phẩm mà bạn muốn truyền đạt đến khách hàng của mình."
+"Mô tả này sẽ được sao chép vào mọi Đơn đặt hàng bán, Lệnh giao hàng và "
+"Hóa đơn/Giấy ghi có của khách hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__detailed_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"Sản phẩm có thể lưu trữ là sản phẩm mà bạn quản lý kho. Ứng dụng Hàng tồn kho phải được cài đặt.\n"
+"Sản phẩm tiêu dùng là sản phẩm mà kho không được quản lý.\n"
+"Dịch vụ là sản phẩm phi vật chất mà bạn cung cấp."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__account_tag_ids
+msgid "Account Tags"
+msgstr "Thẻ tài khoản"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_needaction
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__active
+msgid "Active"
+msgstr "Tích cực"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_ids
+msgid "Activities"
+msgstr "Các hoạt động"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Hoạt động Ngoại lệ Trang trí"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,help:website_tour_agency.field_hotel_facilities__icon_class
+msgid "Add Font-awesome icon class"
+msgstr "Thêm lớp biểu tượng Font-awesome"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_sale_order_template_form_inherit
+msgid "Add a note"
+msgstr "Thêm một ghi chú"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_sale_order_template_form_inherit
+msgid "Add a section"
+msgstr "Thêm một lựa chọn"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_sale_order_template_form_inherit
+msgid "Add a transportation"
+msgstr "Thêm phương tiện di chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__additional_product_tag_ids
+msgid "Additional Product Tags"
+msgstr "Thẻ sản phẩm bổ sung"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Adult"
+msgstr "Người lớn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Age In Years"
+msgstr "Tuổi tính theo năm"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Age in Years"
+msgstr "Tuổi tính theo năm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__all_product_tag_ids
+msgid "All Product Tag"
+msgstr "Tất cả thẻ sản phẩm"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "Apply"
+msgstr "Áp dụng"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Apply for Country"
+msgstr "Áp dụng cho quốc gia"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Apply for Visa"
+msgstr "Nộp đơn xin Visa"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid ""
+"Are you sure you want\n"
+"                                                            to delete this record?"
+msgstr ""
+"Bạn có chắc chắn muốn\n"
+"                                                            xóa bản ghi này không?"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_attachment_count
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng đính kèm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_template_attribute_value_ids
+msgid "Attribute Values"
+msgstr "Giá trị thuộc tính"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__barcode
+msgid "Barcode"
+msgstr "Mã vạch"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Book your tour Now"
+msgstr "Đặt tour ngay bây giờ"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__can_image_1024_be_zoomed
+msgid "Can Image 1024 be zoomed"
+msgstr "Có thể phóng to hình ảnh 1024 không?"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__can_publish
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__can_publish
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__can_publish
+msgid "Can Publish"
+msgstr "Có thể xuất bản"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__can_image_variant_1024_be_zoomed
+msgid "Can Variant Image 1024 be zoomed"
+msgstr "Có thể phóng to hình ảnh Variant Image 1024 không?"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__purchase_ok
+msgid "Can be Purchased"
+msgstr "Có thể mua được"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__sale_ok
+msgid "Can be Sold"
+msgstr "Có thể bán được"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__capacity
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__capacity
+msgid "Capacity"
+msgstr "Dung tích"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Charges Summary"
+msgstr "Tóm tắt các khoản phí"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Child"
+msgstr "Đứa trẻ"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Close"
+msgstr "Đóng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__color
+msgid "Color Index"
+msgstr "Chỉ số màu"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__combination_indices
+msgid "Combination Indices"
+msgstr "Chỉ số kết hợp"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_layout
+msgid "Company name"
+msgstr "Tên Công ty"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid ""
+"Confirm\n"
+"                                                        &amp; Apply"
+msgstr ""
+"Xác nhận\n"
+"                                                        &amp; Áp dụng"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_default_inherit
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_thanks_travel
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_thanks_travel
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid "Contact us"
+msgstr "Liên hệ với chúng tôi"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__contract_id
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_supplier_registration_form_inherit
+msgid "Contracts"
+msgstr "Hợp đồng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__purchase_method
+msgid "Control Policy"
+msgstr "Chính sách kiểm soát"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__standard_price
+msgid "Cost"
+msgstr "Trị giá"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__cost_currency_id
+msgid "Cost Currency"
+msgstr "Đơn vị tiền tệ chi phí"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__cost_price
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__cost_price
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_package_contract_form_inherit
+msgid "Cost Price"
+msgstr "Giá thành"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.actions.act_window,help:tour_travel_transportation.action_transportation_registrations
+msgid "Create a new Registration"
+msgstr "Tạo một Đăng ký mới"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__create_uid
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__create_uid
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__create_uid
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__create_uid
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__create_date
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__create_date
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__create_date
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__create_date
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__create_date
+msgid "Created on"
+msgstr "Được tạo ra vào"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__currency_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__image
+msgid "Customer Image"
+msgstr "Hình ảnh khách hàng"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__name
+msgid "Customer Name"
+msgstr "Tên khách hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__partner_ref
+msgid "Customer Ref"
+msgstr "Giới thiệu khách hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__taxes_id
+msgid "Customer Taxes"
+msgstr "Thuế khách hàng"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "DD/MM/YYYY"
+msgstr ""
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__day_selection
+msgid "Days Selection"
+msgstr "Lựa chọn ngày"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__supplier_taxes_id
+msgid "Default taxes used when buying the product."
+msgstr "Thuế mặc định được sử dụng khi mua sản phẩm."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__taxes_id
+msgid "Default taxes used when selling the product."
+msgstr "Thuế mặc định được sử dụng khi bán sản phẩm."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Đơn vị đo lường mặc định được sử dụng cho tất cả các hoạt động kho."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__uom_po_id
+msgid ""
+"Default unit of measure used for purchase orders. It must be in the same "
+"category as the default unit of measure."
+msgstr ""
+"Đơn vị đo lường mặc định được sử dụng cho đơn đặt hàng mua. Đơn vị này phải cùng"
+" loại với đơn vị đo lường mặc định."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid ""
+"Delete Traveller's\n"
+"                                                        Detail"
+msgstr ""
+"Xóa khách du lịch\n"
+"                                                       Chi tiết"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+msgid "Delivered"
+msgstr "Đã giao hàng"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__name
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__description
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__description
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_vehicle_form
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__destination_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__destination_id
+msgid "Destination"
+msgstr "Điểm đến"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+msgid "Disc.%"
+msgstr "% CK"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__display_name
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__display_name
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__display_name
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__display_name
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__display_type
+msgid "Display Type"
+msgstr "Kiểu hiển thị"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_document_ids
+msgid "Documents"
+msgstr "Tài liệu"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_document_count
+msgid "Documents Count"
+msgstr "Tài liệu đếm"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Email"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Email*"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa
+msgid "Enquire For Visa"
+msgstr "Yêu cầu xin Visa"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Enquire Now"
+msgstr "Yêu cầu ngay"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Enter your details to get expert advise"
+msgstr "Nhập thông tin của bạn để nhận được lời khuyên từ chuyên gia"
+
+#. module: website_tour_agency
+#: model:ir.model.fields.selection,name:website_tour_agency.selection__res_partner__rating__5
+msgid "Excellent"
+msgstr "Xuất sắc"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__property_account_expense_id
+msgid "Expense Account"
+msgstr "Tài khoản chi phí"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Facilities"
+msgstr "Cơ sở"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_hotel_facilities__icon_class
+msgid "Facility Icon"
+msgstr "Biểu tượng cơ sở"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__priority
+msgid "Favorite"
+msgstr "Yêu thích"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__tour_name
+msgid "Feedback for"
+msgstr "Phản hồi cho"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__tour_name
+msgid ""
+"Feedback for tour,visa,\n"
+"                             transportation service"
+msgstr ""
+"Phản hồi cho tour du lịch, visa,\n"
+"                             dịch vụ di chuyển"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "Filter by Categories"
+msgstr "Lọc theo danh mục"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "Filters"
+msgstr "Bộ lọc"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__fiscal_country_codes
+msgid "Fiscal Country Codes"
+msgstr "Fiscal Country Codes"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_follower_ids
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_partner_ids
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font awesome ví dụ fa-tasks"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Gender"
+msgstr "Giới tính"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Gender*"
+msgstr "Giới tính*"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__packaging_ids
+msgid "Gives the different ways to package the same product."
+msgstr "Cung cấp những cách khác nhau để đóng gói cùng một sản phẩm."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__sequence
+msgid "Gives the sequence order when displaying a product list"
+msgstr "Cung cấp thứ tự trình tự khi hiển thị danh sách sản phẩm"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+msgid "Guide Names:"
+msgstr "Tên hướng dẫn:"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Happy Tourist"
+msgstr "Du lịch vui vẻ"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__has_message
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: website_tour_agency
+#: model:ir.model,name:website_tour_agency.model_hotel_facilities
+msgid "Hotel Facilities"
+msgstr "Cơ sở vật chất khách sạn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_registration_form_inherit_inherited
+msgid "Hotel Overview"
+msgstr "Tổng quan về khách sạn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Hotel Rooms"
+msgstr "Phòng khách sạn"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__id
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__id
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__id
+msgid "ID"
+msgstr ""
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_exception_icon
+msgid "Biểu tượng"
+msgstr ""
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng để chỉ hoạt động ngoại lệ."
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__message_needaction
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, bạn sẽ cần chú ý đến tin nhắn mới."
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__message_has_error
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__message_has_sms_error
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__message_has_error
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn sẽ có lỗi gửi."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__service_to_purchase
+msgid ""
+"If ticked, each time you sell this product through a SO, a RfQ is "
+"automatically created to buy the product. Tip: don't forget to set a vendor "
+"on the product."
+msgstr ""
+"Nếu được chọn, mỗi lần bạn bán sản phẩm này thông qua SO, một RfQ sẽ được "
+"tự động tạo ra để mua sản phẩm. Mẹo: đừng quên thiết lập nhà cung cấp "
+"cho sản phẩm."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__active
+msgid ""
+"If unchecked, it will allow you to hide the product without removing it."
+msgstr ""
+"Nếu bỏ chọn, bạn có thể ẩn sản phẩm mà không cần phải gỡ bỏ nó."
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_1920
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__image
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__image
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_1024
+msgid "Image 1024"
+msgstr "Hình ảnh 1024"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_128
+msgid "Image 128"
+msgstr "Hình ảnh 128"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_256
+msgid "Image 256"
+msgstr "Hình ảnh 256"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_512
+msgid "Image 512"
+msgstr "Hình ảnh 512"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__package_images
+msgid "Images"
+msgstr "Hình ảnh"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__property_account_income_id
+msgid "Income Account"
+msgstr "Tài khoản thu nhập"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_vehicle_form
+msgid "Information"
+msgstr "Thông tin"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid "Inquiry For Transportation"
+msgstr "Yêu cầu vận chuyển"
+
+#. module: website_tour_agency
+#: model:mail.template,name:website_tour_agency.client_inquiry
+msgid "Inquiry Notification"
+msgstr "Thông báo yêu cầu"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__default_code
+msgid "Internal Reference"
+msgstr "Tham chiếu nội bộ"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__barcode
+msgid "International Article Number used for product identification."
+msgstr "Mã số sản phẩm quốc tế được sử dụng để nhận dạng sản phẩm."
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+msgid "Invoiced"
+msgstr "Đã xuất hóa đơn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__invoice_policy
+msgid "Invoicing Policy"
+msgstr "Chính sách lập hóa đơn"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_is_follower
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_is_follower
+msgid "Is Follower"
+msgstr "Là Người Theo Dõi"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__is_product_variant
+msgid "Is Product Variant"
+msgstr "Là biến thể sản phẩm"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__is_published
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__is_published
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__is_published
+msgid "Is Published"
+msgstr "Đã được xuất bản"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__has_configurable_attributes
+msgid "Is a configurable product"
+msgstr "Là một sản phẩm có thể cấu hình"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid "It's time to start your adventure"
+msgstr "Đã đến lúc bắt đầu cuộc phiêu lưu của bạn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Itinerary"
+msgstr "Lịch trình"
+
+#. module: tour_travel_transportation
+#: model:transportation.package.line,name:tour_travel_transportation.package_transportation_line_01
+msgid ""
+"Journey : Dubai -> Dubai\n"
+"Journey Date: 2020-10-20\n"
+"Vehicle: Tempo Traveller"
+msgstr ""
+"Hành trình: Dubai -> Dubai\n"
+"Ngày hành trình: 2020-10-20\n"
+"Phương tiện: Tempo Traveller"
+
+#. module: tour_travel_transportation
+#: model:transportation.package.line,name:tour_travel_transportation.package_transportation_line_02
+msgid ""
+"Journey : Dubai -> Dubai\n"
+"Journey Date: 2020-10-22\n"
+"Vehicle: Bus"
+msgstr ""
+"Hành trình: Dubai -> Dubai\n"
+"Ngày hành trình: 2020-10-22\n"
+"Phương tiện: Xe buýt"
+
+#. module: tour_travel_transportation
+#: model:transportation.package.line,name:tour_travel_transportation.package_transportation_line_03
+msgid ""
+"Journey : Dubai -> Dubai\n"
+"Journey Date: 2020-10-23\n"
+"Vehicle: Innova"
+msgstr ""
+"Hành trình: Dubai -> Dubai\n"
+"Ngày hành trình: 2020-10-23\n"
+"Xe: Innova"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__journey_date
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__journey_date
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Journey Date"
+msgstr "Ngày hành trình"
+
+#. module: tour_travel_transportation
+#. odoo-python
+#: code:addons/tour_travel_transportation/models/sale_order.py:0
+#, python-format
+msgid "Journey Date should in between Arrival/Departure date!"
+msgstr "Ngày đi phải nằm giữa ngày đến/ngày đi!"
+
+#. module: tour_travel_transportation
+#. odoo-python
+#: code:addons/tour_travel_transportation/models/sale_order.py:0
+#, python-format
+msgid "Journey date should be greater than current date!"
+msgstr "Ngày hành trình phải lớn hơn ngày hiện tại!"
+
+#. module: tour_travel_transportation
+#. odoo-python
+#: code:addons/tour_travel_transportation/models/sale_order.py:0
+#, python-format
+msgid "Journey date should in between Arrival/Departure date!"
+msgstr "Ngày đi phải nằm giữa ngày Đến/Ngày Đi!"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__property_account_income_id
+msgid ""
+"Keep this field empty to use the default value from the product category."
+msgstr ""
+"Giữ trường này trống để sử dụng giá trị mặc định từ danh mục sản phẩm."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__property_account_expense_id
+msgid ""
+"Keep this field empty to use the default value from the product category. If"
+" anglo-saxon accounting with automated valuation method is configured, the "
+"expense account on the product category will be used."
+msgstr ""
+"Giữ trường này trống để sử dụng giá trị mặc định từ danh mục sản phẩm. Nếu"
+" kế toán anglo-saxon với phương pháp định giá tự động được cấu hình, "
+"tài khoản chi phí trên danh mục sản phẩm sẽ được sử dụng."
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__write_uid
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__write_uid
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__write_uid
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__write_uid
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__write_date
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__write_date
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__write_date
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__write_date
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_default_inherit
+msgid "Let's talk !"
+msgstr "Chúng ta hãy nói chuyện nhé!"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy"
+" text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem"
+" Ipsum is simply dummy text of the printing."
+msgstr ""
+"Lorem Ipsum chỉ đơn giản là văn bản giả của bản in. Lorem Ipsum chỉ đơn giản là văn bản giả"
+" văn bản của bản in. Lorem Ipsum chỉ đơn giản là văn bản giả của bản in. Lorem"
+" Ipsum chỉ đơn giản là văn bản giả của bản in."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.\n"
+"                            Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing."
+msgstr ""
+"Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.\n"
+"                            Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.our_service_snippet
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.\n"
+"                        Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing."
+msgstr ""
+"Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.\n"
+"                        Lorem Ipsum chỉ đơn giản là văn bản giả của bản in.Lorem Ipsum chỉ đơn giản là văn bản giả của bản in."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Make Your Tour Memorable and Safe With Us"
+msgstr "Hãy làm cho chuyến đi của bạn đáng nhớ và an toàn cùng chúng tôi"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__service_type
+msgid ""
+"Manually set quantities on order: Invoice based on the manually entered quantity, without creating an analytic account.\n"
+"Timesheets on contract: Invoice based on the tracked hours on the related timesheet.\n"
+"Create a task and track hours: Create a task on the sales order validation and track the work hours."
+msgstr ""
+"Đặt số lượng theo đơn hàng theo cách thủ công: Hóa đơn dựa trên số lượng nhập theo cách thủ công, mà không cần tạo tài khoản phân tích.\n"
+"Bảng chấm công theo hợp đồng: Hóa đơn dựa trên số giờ được theo dõi trên bảng chấm công liên quan.\n"
+"Tạo nhiệm vụ và theo dõi giờ: Tạo nhiệm vụ trên xác thực đơn hàng bán hàng và theo dõi giờ làm việc."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Meal Package"
+msgstr "Gói bữa ăn"
+
+#. module: website_tour_agency
+#: model:ir.model,name:website_tour_agency.model_res_partner
+msgid "Meal Registration"
+msgstr "Liên hệ"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__image_medium
+msgid "Medium-sized image"
+msgstr "Hình ảnh cỡ trung bình"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Message"
+msgstr "Tin nhắn"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_has_error
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__purchase_line_warn_msg
+msgid "Message for Purchase Order Line"
+msgstr "Tin nhắn cho Dòng lệnh mua hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__sale_line_warn_msg
+msgid "Message for Sales Order Line"
+msgstr "Tin nhắn cho Dòng lệnh bán hàng"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_ids
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Mobile"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Mobile*"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "More Details"
+msgstr "Chi tiết hơn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__name
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__name
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Name"
+msgstr "Tên"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Name*"
+msgstr "Tên*"
+
+#. module: website_tour_agency
+#: model:mail.template,subject:website_tour_agency.client_inquiry
+msgid "New Inquiry For {{ object.name }}"
+msgstr "Yêu cầu mới cho {{ object.name }}"
+
+#. module: website_tour_agency
+#: model:mail.template,subject:website_tour_agency.registration_notification
+msgid "New Registration For {{ object.name }}"
+msgstr "Đăng ký mới cho {{ object.name }}"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Next"
+msgstr "Kế tiếp"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự kiện Lịch hoạt động tiếp theo"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót cho hoạt động tiếp theo"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "No"
+msgstr "STT"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+msgid "No Record Found"
+msgstr "Không tìm thấy hồ sơ"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid "No of Adults"
+msgstr "Số người lớn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "No of Adults*"
+msgstr "Số người lớn*"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid "No of Children"
+msgstr "Số lượng trẻ em"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "No of Children*"
+msgstr "Số lượng trẻ em*"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "No of Infants*"
+msgstr "Số trẻ sơ sinh*"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+msgid "No of Vehicle"
+msgstr "Số lượng xe"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "No packages Found"
+msgstr "Không tìm thấy gói nào"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields.selection,name:tour_travel_transportation.selection__transportation_package_line__display_type__line_note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_needaction_counter
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Number of Vehicles"
+msgstr "Số lượng xe"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_has_error_counter
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__message_needaction_counter
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số lượng tin nhắn yêu cầu hành động"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__message_has_error_counter
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi gửi"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__pricelist_item_count
+msgid "Number of price rules"
+msgstr "Số lượng quy tắc giá"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Offers Exclusively for You"
+msgstr "Ưu đãi dành riêng cho bạn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__purchase_method
+msgid ""
+"On ordered quantities: Control bills based on ordered quantities.\n"
+"On received quantities: Control bills based on received quantities."
+msgstr ""
+"Đối với số lượng đã đặt hàng: Kiểm soát hóa đơn dựa trên số lượng đã đặt hàng.\n"
+"Đối với số lượng đã nhận: Kiểm soát hóa đơn dựa trên số lượng đã nhận."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__optional_product_ids
+msgid "Optional Products"
+msgstr "Sản phẩm tùy chọn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__optional_product_ids
+msgid ""
+"Optional Products are suggested whenever the customer hits *Add to Cart* "
+"(cross-sell strategy, e.g. for computers: warranty, software, etc.)."
+msgstr ""
+"Các sản phẩm tùy chọn được gợi ý bất cứ khi nào khách hàng nhấp vào *Thêm vào giỏ hàng* "
+"(chiến lược bán chéo, ví dụ đối với máy tính: bảo hành, phần mềm, v.v.)."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__invoice_policy
+msgid ""
+"Ordered Quantity: Invoice quantities ordered by the customer.\n"
+"Delivered Quantity: Invoice quantities delivered to the customer."
+msgstr ""
+"Số lượng đã đặt hàng: Số lượng hóa đơn do khách hàng đặt hàng.\n"
+"Số lượng đã giao: Số lượng hóa đơn đã giao cho khách hàng."
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_res_partner__description
+#: model:ir.model.fields,field_description:website_tour_agency.field_res_users__description
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Overview"
+msgstr "Tổng quan"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Package"
+msgstr "Gói"
+
+#. module: website_tour_agency
+#: model:ir.model,name:website_tour_agency.model_package_category
+msgid "Package Category Type"
+msgstr "Loại danh mục gói"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_package_contract
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__transportation_package_contract_id
+msgid "Package Contract"
+msgstr "Hợp đồng trọn gói"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_package_contract_line
+msgid "Package Contract Line"
+msgstr "Dong Gói hợp đồng"
+
+#. module: website_tour_agency
+#: model:ir.model,name:website_tour_agency.model_package_image
+msgid "Package Image"
+msgstr "Hình ảnh gói"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_package_itinerary
+msgid "Package Itinerary"
+msgstr "Hành trình trọn gói"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Package Price"
+msgstr "Giá gói"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__package_sale_id
+msgid "Package Sale"
+msgstr "Bán trọn gói"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+msgid "Package Selection:"
+msgstr "Lựa chọn gói:"
+
+#. module: website_tour_agency
+#: model:website.menu,name:website_tour_agency.menu_packages
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "Packages"
+msgstr "Gói"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Pax"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Place Explored"
+msgstr "Địa điểm đã khám phá"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Previous"
+msgstr "Trước"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Price"
+msgstr "Giá"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__list_price
+msgid "Price at which the product is sold to customers."
+msgstr "Giá bán sản phẩm cho khách hàng."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Price/Pax"
+msgstr ""
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_variant_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__attribute_line_ids
+msgid "Product Attributes"
+msgstr "Thuộc tính sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_catalog_product_is_in_sale_order
+msgid "Product Catalog Product Is In Sale Order"
+msgstr "Danh mục sản phẩm Sản phẩm đang được bán Đặt hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__categ_id
+msgid "Product Category"
+msgstr "Danh mục sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__packaging_ids
+msgid "Product Packages"
+msgstr "Gói sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_tmpl_id
+msgid "Product Template"
+msgstr "Mẫu sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_tag_ids
+msgid "Product Template Tags"
+msgstr "Thẻ mẫu sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_tooltip
+msgid "Product Tooltip"
+msgstr "Chú giải sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__detailed_type
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_variant_ids
+msgid "Products"
+msgstr "Sản phẩm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_properties
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_category_form_extend
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.sale_quotation_form_view_extend_for_website_packages
+msgid "Published"
+msgstr "Đã xuất bản"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__description_purchase
+msgid "Purchase Description"
+msgstr "Mô tả mua hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__purchase_line_warn
+msgid "Purchase Order Line Warning"
+msgstr "Cảnh báo dòng lệnh mua hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__uom_po_id
+msgid "Purchase UoM"
+msgstr "Mua UoM"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__purchased_product_qty
+msgid "Purchased"
+msgstr "Đã mua"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__qty
+msgid "Qty"
+msgstr "Số lượng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__qty
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_res_partner__rating
+#: model:ir.model.fields,field_description:website_tour_agency.field_res_users__rating
+msgid "Rating"
+msgstr "Xếp hạng"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__rating_ids
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__rating_ids
+msgid "Ratings"
+msgstr "Xếp hạng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__expense_policy
+msgid "Re-Invoice Expenses"
+msgstr "Chi phí lập lại hóa đơn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__visible_expense_policy
+msgid "Re-Invoice Policy visible"
+msgstr "Chính sách lập hóa đơn lại có thể nhìn thấy"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__code
+msgid "Reference"
+msgstr "Tham khảo"
+
+#. module: website_tour_agency
+#: model:mail.template,name:website_tour_agency.registration_notification
+msgid "Registration Notification"
+msgstr "Thông báo đăng ký"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_partner__registration_type
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_users__registration_type
+msgid "Registration Type"
+msgstr "Loại đăng ký"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "Remove Filters"
+msgstr "Xóa bộ lọc"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "Request for Package"
+msgstr "Yêu cầu gói hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr "Người sử dụng có trách nhiệm"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Return Date"
+msgstr "Return Date"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Return Date*"
+msgstr "Return Date*"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Room"
+msgstr "Phòng"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__is_seo_optimized
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__is_seo_optimized
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__is_seo_optimized
+msgid "SEO optimized"
+msgstr "Tối ưu hóa SEO"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__message_has_sms_error
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi tin nhắn SMS"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__sale_order_templete_id
+msgid "Sale Order"
+msgstr "Đơn bán hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__description_sale
+msgid "Sales Description"
+msgstr "Mô tả bán hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_sale_order_line
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__sale_line_warn
+msgid "Sales Order Line"
+msgstr "Dòng đơn bán hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__sales_price
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__list_price
+msgid "Sales Price"
+msgstr "Giá bán"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__lst_price
+msgid "Sales Price"
+msgstr "Giá bán"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Save"
+msgstr "Lưu"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_search_box
+msgid "Search..."
+msgstr "Tìm kiếm..."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields.selection,name:tour_travel_transportation.selection__transportation_package_line__display_type__line_section
+msgid "Section"
+msgstr "Lựa chọn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Select Group Package*"
+msgstr "Chọn Gói Nhóm*"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__purchase_line_warn
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__sale_line_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"Chọn tùy chọn \"Cảnh báo\" sẽ thông báo cho người dùng bằng tin nhắn, "
+"Chọn \"Chặn tin nhắn\" sẽ đưa ra ngoại lệ bằng tin nhắn và "
+"chặn luồng. Tin nhắn phải được viết vào trường tiếp theo."
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__seo_name
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__seo_name
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__seo_name
+msgid "Seo name"
+msgstr "Tên SEO"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__sequence
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__sequence
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__sequence
+msgid "Sequence"
+msgstr "Trình tự"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa
+msgid "Show more"
+msgstr "Hiển thị thêm"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_image__image_small
+msgid "Small Image"
+msgstr "Hình ảnh nhỏ"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__sales_count
+msgid "Sold"
+msgstr "Đã bán"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__source_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__source_id
+msgid "Source"
+msgstr "Nguồn"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Ngày đến hạn đã qua\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Đã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Sub Total"
+msgstr "Tổng cộng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__service_to_purchase
+msgid "Subcontract Service"
+msgstr "Dịch vụ thầu phụ"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Submit"
+msgstr "Gửi"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__price_subtotal
+msgid "Subtotal"
+msgstr "Tổng cộng"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Successful Tours"
+msgstr "Các chuyến du lịch thành công"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__account_tag_ids
+msgid ""
+"Tags to be set on the base and tax journal items created for this product."
+msgstr ""
+"Các thẻ sẽ được gắn trên các mục nhật ký thuế và cơ sở được tạo cho sản phẩm này."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__tax_string
+msgid "Tax String"
+msgstr "Chuỗi thuế"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "Team"
+msgstr "Đội"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_package_line__display_type
+msgid "Technical field for UX purpose."
+msgstr "Lĩnh vực kỹ thuật dành cho mục đích UX."
+
+#. module: website_tour_agency
+#: model:ir.model,name:website_tour_agency.model_testimonial_testimonial
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.testimonial_form_view
+msgid "Testimonial"
+msgstr "Chứng Thực"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.testimonial_tree_view
+msgid "Testimonial Tree"
+msgstr "Cây chứng thực"
+
+#. module: website_tour_agency
+#: model:ir.actions.act_window,name:website_tour_agency.action_testimonial
+#: model:ir.ui.menu,name:website_tour_agency.testimonial_menu
+msgid "Testimonials"
+msgstr "Chứng Thực"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_thanks_travel
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_thanks_travel
+msgid "Thank you!"
+msgstr "Cảm ơn!"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,help:website_tour_agency.field_package_category__website_url
+#: model:ir.model.fields,help:website_tour_agency.field_sale_order_template__website_url
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__website_url
+msgid "The full URL to access the document through the website."
+msgstr "URL đầy đủ để truy cập tài liệu thông qua trang web."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__lst_price
+msgid ""
+"The sale price is managed from the product template. Click on the 'Configure"
+" Variants' button to set the extra attribute prices."
+msgstr ""
+"Giá bán được quản lý từ mẫu sản phẩm. Nhấp vào nút 'Cấu hình"
+"Biến thể' để đặt giá thuộc tính bổ sung."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__price_extra
+msgid "This is the sum of the extra price of all attributes"
+msgstr "Đây là tổng giá trị tăng thêm của tất cả các thuộc tính"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa
+msgid ""
+"This property is 11 minutes walk from the beach. Situated 500 m from Bur "
+"Dubai's waterfront, the 4-star Capitol Hotel is a 5- minute drive from the "
+"World Trade Centre. It has a rooftop pool and offers spacious guestrooms "
+"with satellite TV. Dubai Mall is 10 minutes away by car. Hotel Capitol's "
+"spacious, carpeted guest rooms include a minibar and a seating area with "
+"sofa. The private bathrooms include luxury amenities and a bathrobe. Some "
+"rooms have a dining area and Executive Lounge access. Guests can enjoy "
+"Arabic dishes, shisha and live belly dancing in the rooftop Bazerkan "
+"restaurant. Hotel guests can also enjoy a relaxing massage, or visit the "
+"fitness centre which includes cardiovascular equipment. A tour desk is "
+"available to assist with car hire, and offers information on local "
+"attractions. Capitol Hotel is less than 3 km from the Gold Souk and Burjuman"
+" Mall. Dubai International Airport is a 15-minute drive away. The hotel "
+"offers 24-hour front desk service and free on-site private parking. We speak"
+" your language!"
+msgstr ""
+"Nơi nghỉ này cách bãi biển 11 phút đi bộ. Nằm cách Bur 500 m"
+"Bờ biển Dubai, Capitol Hotel 4 sao cách "
+"Trung tâm Thương mại Thế giới 5 phút lái xe. Nơi nghỉ có hồ bơi trên tầng thượng và cung cấp các phòng nghỉ rộng rãi "
+"có truyền hình vệ tinh. Trung tâm mua sắm Dubai cách đó 10 phút lái xe. Các phòng nghỉ rộng rãi, trải thảm của Capitol Hotel bao gồm minibar và khu vực tiếp khách với "
+"ghế sofa. Phòng tắm riêng có tiện nghi sang trọng và áo choàng tắm. Một số "
+"phòng có khu vực ăn uống và quyền lui tới Executive Lounge. Du khách có thể thưởng thức "
+"các món ăn Ả Rập, shisha và múa bụng trực tiếp tại nhà hàng Bazerkan trên tầng thượng "
+"của khách sạn. Du khách cũng có thể tận hưởng dịch vụ mát-xa thư giãn hoặc ghé thăm "
+"trung tâm thể dục có trang bị thiết bị hỗ trợ tim mạch. Bàn đặt tour "
+"có thể hỗ trợ dịch vụ cho thuê xe hơi và cung cấp thông tin về các điểm tham quan địa phương. Capitol Hotel cách Chợ Vàng và Trung tâm mua sắm Burjuman"
+" chưa đầy 3 km. Sân bay quốc tế Dubai là Cách đó 15 phút lái xe. Khách sạn "
+"cung cấp dịch vụ lễ tân 24 giờ và bãi đậu xe riêng miễn phí tại chỗ. Chúng tôi nói"
+" ngôn ngữ của bạn!"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.actions.act_window,help:tour_travel_transportation.act_display_transportation_contract
+msgid "This vendor has no contract. Create a new Contract"
+msgstr "Nhà cung cấp này không có hợp đồng. Tạo hợp đồng mới"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+msgid "Time Period:"
+msgstr "Khoảng thời gian:"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.dashboard_package
+msgid "To"
+msgstr "ĐẾN"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__capacity
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "Total Capacity"
+msgstr "Tổng Sức chứa"
+
+#. module: website_tour_agency
+#: model:ir.model,name:website_tour_agency.model_sale_order_template
+msgid "Tour Package"
+msgstr "Mẫu báo giá"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_sale_order
+msgid "Tour Registration"
+msgstr "Đơn bán hàng"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_tour_registration_line
+msgid "Tour Registration Line"
+msgstr "Dòng đăng ký tour"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Tourist Feedback"
+msgstr "Phản hồi của khách du lịch"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__service_type
+msgid "Track Service"
+msgstr "Dịch vụ theo dõi"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid "Transport"
+msgstr "Chuyên chở"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract__transportation_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__transportation_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_itinerary__transport_ids
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_sale_order_line__transportation_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__transportation_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__transportation_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__transportation_id
+#: model:ir.model.fields.selection,name:tour_travel_transportation.selection__package_contract__package_contract_type__transportation
+#: model:ir.model.fields.selection,name:tour_travel_transportation.selection__res_partner__registration_type__transportation
+#: model:website.menu,name:website_tour_agency.menu_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_package_contract_form_inherit
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_sale_order_template_form_inherit
+msgid "Transportation"
+msgstr "Vận tải"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Transportation Agency"
+msgstr "Cơ quan vận tải"
+
+#. module: tour_travel_transportation
+#: model:ir.ui.menu,name:tour_travel_transportation.transportation_configuration_menu
+msgid "Transportation Configuration"
+msgstr "Cấu hình vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.actions.act_window,name:tour_travel_transportation.act_display_transportation_contract
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_partner__transportation_contract_count
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_users__transportation_contract_count
+msgid "Transportation Contract"
+msgstr "Hợp đồng vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract__transportation_contract_line_ids
+msgid "Transportation Contract Lines"
+msgstr "Dòng hợp đồng vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_partner__transportation_contract_ids
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_users__transportation_contract_ids
+msgid "Transportation Contracts"
+msgstr "Hợp đồng vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__transportation_line_currency_id
+msgid "Transportation Line Currency"
+msgstr "Tiền tệ của tuyến vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_sale_order__transportation_line_ids
+msgid "Transportation Lines"
+msgstr "Tuyến vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__transportation_sale_id
+msgid "Transportation Order"
+msgstr "Lệnh vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_transportation_package_line
+msgid "Transportation Package Line"
+msgstr "Dòng Gói vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_sale_order_template__transportation_package_line_ids
+msgid "Transportation Package Lines"
+msgstr "Dòng Gói vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.actions.act_window,name:tour_travel_transportation.action_transportation_registrations
+#: model:ir.ui.menu,name:tour_travel_transportation.transportation_registration_menu
+msgid "Transportation Registration"
+msgstr "Đăng ký vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_transportation_vehicle
+msgid "Transportation Vehicle "
+msgstr "Phương tiện vận chuyển"
+
+#. module: tour_travel_transportation
+#: model:ir.model,name:tour_travel_transportation.model_transportation_vehicle_line
+msgid "Transportation Vehicle Line"
+msgstr "Dòng xe vận tải"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "Transportation:"
+msgstr "Vận tải:"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_inquiry
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Travel Date"
+msgstr "Ngày đi du lịch"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Travel Date*"
+msgstr "Ngày đi du lịch*"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Travel From"
+msgstr "Du lịch từ"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__type_travel_product
+msgid "Travel Product Type"
+msgstr "Loại sản phẩm du lịch"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Travel To"
+msgstr "Du lịch đến"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid ""
+"Traveller's\n"
+"                                                        Detail"
+msgstr ""
+"Người du lịch\n"
+"                                                        Chi tiết"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "Trending Destination"
+msgstr "Điểm đến thịnh hành"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract__package_contract_type
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__package_contract_type
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__type
+msgid "Type"
+msgstr "Kiểu"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ được ghi lại."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__unit_price
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__price_unit
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__unit_price
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__uom_id
+msgid "Unit of Measure"
+msgstr "Đơn vị đo lường"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__uom_name
+msgid "Unit of Measure Name"
+msgstr "Tên đơn vị đo lường"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.tour_registration_transportation_form
+msgid "UoM"
+msgstr "ĐVT"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__valid_product_template_attribute_line_ids
+msgid "Valid Product Attribute Lines"
+msgstr "Dòng thuộc tính sản phẩm hợp lệ"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__expense_policy
+msgid ""
+"Validated expenses and vendor bills can be re-invoiced to a customer at its "
+"cost or sales price."
+msgstr ""
+"Chi phí đã xác thực và hóa đơn của nhà cung cấp có thể được xuất hóa đơn lại cho khách hàng theo "
+"giá thành hoặc giá bán."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__standard_price
+msgid ""
+"Value of the product (automatically computed in AVCO).\n"
+"        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
+"        Used to compute margins on sale orders."
+msgstr ""
+"Giá trị của sản phẩm (tự động tính toán trong AVCO).\n"
+"        Được sử dụng để định giá sản phẩm khi chi phí mua không được biết (ví dụ: điều chỉnh hàng tồn kho).\n"
+"        Được sử dụng để tính biên lợi nhuận trên đơn đặt hàng bán."
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_variant_1920
+msgid "Variant Image"
+msgstr "Hình ảnh biến thể"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_variant_1024
+msgid "Variant Image 1024"
+msgstr "Hình ảnh biến thể 1024"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_variant_128
+msgid "Variant Image 128"
+msgstr "Hình ảnh biến thể 128"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_variant_256
+msgid "Variant Image 256"
+msgstr "Hình ảnh biến thể 256"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__image_variant_512
+msgid "Variant Image 512"
+msgstr "Hình ảnh biến thể 512"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__price_extra
+msgid "Variant Price Extra"
+msgstr "Giá biến thể thêm"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__variant_seller_ids
+msgid "Variant Seller"
+msgstr "Người bán biến thể"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__product_template_variant_value_ids
+msgid "Variant Values"
+msgstr "Giá trị biến thể"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__vehicle_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_package_line__vehicle_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_package_contract_form_inherit
+msgid "Vehicle"
+msgstr "Phương tiện giao thông"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "Vehicle Cost Price"
+msgstr "Giá thành xe"
+
+#. module: tour_travel_transportation
+#: model:ir.actions.act_window,name:tour_travel_transportation.action_transportation_vehicle
+#: model:ir.ui.menu,name:tour_travel_transportation.transportation_vehicle_menu
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_vehicle_form
+msgid "Vehicle Detail"
+msgstr "Chi tiết xe"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_vehicle_form
+msgid "Vehicle Name"
+msgstr "Tên xe"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__vehicle_number
+msgid "Vehicle Number"
+msgstr "Số xe"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Vehicle Price"
+msgstr "Giá xe"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_tour_registration_line__vehicle_qty
+msgid "Vehicle Qty"
+msgstr "Số lượng xe"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "Vehicle Sales Price"
+msgstr "Giá bán xe"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_package_contract_line__vehicle_id
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle_line__vehicle_id
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_quotation_tour_transport_inherit
+msgid "Vehicle Type"
+msgstr "Loại xe"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_partner__vehicle_line_ids
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_res_users__vehicle_line_ids
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_supplier_registration_form_inherit
+msgid "Vehicles"
+msgstr "Xe cộ"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__supplier_taxes_id
+msgid "Vendor Taxes"
+msgstr "Thuế nhà cung cấp"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__seller_ids
+msgid "Vendors"
+msgstr "Nhà cung cấp"
+
+#. module: website_tour_agency
+#: model:ir.model.fields.selection,name:website_tour_agency.selection__res_partner__rating__4
+msgid "Very Good"
+msgstr "Rất tốt"
+
+#. module: website_tour_agency
+#: model:website.menu,name:website_tour_agency.menu_visa
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.visa_inquiry
+msgid "Visa"
+msgstr ""
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_res_partner__website_visible
+#: model:ir.model.fields,field_description:website_tour_agency.field_res_users__website_visible
+msgid "Visible On Website"
+msgstr "Có thể nhìn thấy trên trang web"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__website_published
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__website_published
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_published
+msgid "Visible on current website"
+msgstr "Có thể nhìn thấy trên trang web hiện tại"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__volume
+msgid "Volume"
+msgstr "Thể tích"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__volume_uom_name
+msgid "Volume unit of measure label"
+msgstr "Nhãn đơn vị đo thể tích"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_thanks_travel
+msgid ""
+"We appreciate your interest. We will review your application and get back to"
+" you shortly."
+msgstr ""
+"Chúng tôi đánh giá cao sự quan tâm của bạn. Chúng tôi sẽ xem xét đơn đăng ký của bạn và phản hồi lại bạn "
+"trong thời gian sớm nhất."
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "We hereby declare that you have done contract with our Transportation"
+msgstr "Chúng tôi xin tuyên bố rằng bạn đã ký hợp đồng với Dịch vụ vận chuyển của chúng tôi"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_thanks_travel
+msgid "We will get back to you shortly."
+msgstr "Chúng tôi sẽ sớm phản hồi bạn."
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__website_message_ids
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__website_url
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__website_url
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_url
+msgid "Website URL"
+msgstr "URL trang web"
+
+#. modules: tour_travel_transportation, website_tour_agency
+#: model:ir.model.fields,help:tour_travel_transportation.field_transportation_vehicle__website_message_ids
+#: model:ir.model.fields,help:website_tour_agency.field_testimonial_testimonial__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp của trang web"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__website_meta_description
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__website_meta_description
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_meta_description
+msgid "Website meta description"
+msgstr "Mô tả meta của trang web"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__website_meta_keywords
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__website_meta_keywords
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Từ khóa meta của trang web"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__website_meta_title
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__website_meta_title
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_meta_title
+msgid "Website meta title"
+msgstr "Tiêu đề meta của trang web"
+
+#. module: website_tour_agency
+#: model:ir.model.fields,field_description:website_tour_agency.field_package_category__website_meta_og_img
+#: model:ir.model.fields,field_description:website_tour_agency.field_sale_order_template__website_meta_og_img
+#: model:ir.model.fields,field_description:website_tour_agency.field_testimonial_testimonial__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "Hình ảnh đồ thị mở trang web"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__weight
+msgid "Weight"
+msgstr "Trọng lượng"
+
+#. module: tour_travel_transportation
+#: model:ir.model.fields,field_description:tour_travel_transportation.field_transportation_vehicle__weight_uom_name
+msgid "Weight unit of measure label"
+msgstr "Nhãn đơn vị đo lường trọng lượng"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_default_inherit
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.transportation
+msgid ""
+"Write one or two paragraphs describing your product, services or a specific "
+"feature.<br/> To be successful your content needs to be useful to your "
+"readers."
+msgstr ""
+"Viết một hoặc hai đoạn văn mô tả sản phẩm, dịch vụ hoặc một "
+"tính năng cụ thể.<br/> Để thành công, nội dung của bạn cần phải hữu ích với "
+"người đọc."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "Yes"
+msgstr "Đúng"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.contactus_thanks_travel
+msgid "Your message has been sent successfully."
+msgstr "Tin nhắn của bạn đã được gửi thành công."
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_thanks_travel
+msgid "Your package application has been submitted successfully."
+msgstr "Đơn đăng ký gói dịch vụ của bạn đã được gửi thành công."
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.transportation_vehicle_form
+msgid "ex.Bus"
+msgstr "ví dụ: Xe buýt"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_facilities_form_inherited
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_facilities_tree_inherited
+msgid "fa fa-check-circle-o"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.hotel_details_page
+msgid "hotel"
+msgstr "khách sạn"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "image"
+msgstr "hình ảnh"
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "in"
+msgstr "trong"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_details
+msgid "or"
+msgstr "hoặc"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "package.name"
+msgstr ""
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.package_booking
+msgid "per person*"
+msgstr "mỗi người*"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.packages
+msgid "pic"
+msgstr "hình ảnh"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "testimoni.name"
+msgstr ""
+
+#. module: tour_travel_transportation
+#: model_terms:ir.ui.view,arch_db:tour_travel_transportation.report_agreement_template_transportation
+msgid "to"
+msgstr "đến"
+
+#. module: website_tour_agency
+#: model_terms:ir.ui.view,arch_db:website_tour_agency.custom_homepage
+msgid "travel stories from our happy customers"
+msgstr "những câu chuyện du lịch từ những khách hàng hài lòng của chúng tôi"
