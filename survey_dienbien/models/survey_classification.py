@@ -8,7 +8,7 @@ class SurveyClassification(models.Model):
     name = fields.Char(string='Tên phân loại', required=True)
     min_score = fields.Float(string='Điểm tối thiểu', required=True)
     max_score = fields.Float(string='Điểm tối đa', required=True)
-    survey_id = fields.Many2one('survey.survey', string='Bài kiểm tra', required=True)
+    survey_id = fields.Many2one('survey.survey', string='Bài kiểm tra', ondelete='cascade', required=True)
 
     @api.constrains('min_score', 'max_score', 'survey_id')
     def _check_score_range(self):
@@ -65,13 +65,14 @@ class SurveyClassification(models.Model):
         return res
 
     def _create_or_update_tong_hop_diem(self, record):
-        # Kiểm tra xem có bản ghi 'tong.hop.diem' nào tương ứng với 'survey.classification' hiện tại hay không
+        if not record.survey_id:
+            raise ValidationError("Phải có giá trị cho trường 'survey_id'.")
+
         tong_hop_diem = self.env['tong.hop.diem'].search([
             ('name', '=', record.name),
             ('cuoc_thi', '=', record.survey_id.id)
         ], limit=1)
 
-        # Nếu tồn tại bản ghi 'tong.hop.diem', cập nhật nó
         if tong_hop_diem:
             tong_hop_diem.write({
                 'name': record.name,
@@ -79,9 +80,9 @@ class SurveyClassification(models.Model):
                 'ghi_chu': f'{record.min_score} - {record.max_score}'
             })
         else:
-            # Nếu chưa tồn tại, tạo mới
             self.env['tong.hop.diem'].create({
                 'name': record.name,
                 'cuoc_thi': record.survey_id.id,
                 'ghi_chu': f'{record.min_score} - {record.max_score}'
             })
+
