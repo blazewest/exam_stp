@@ -6,9 +6,9 @@
             <field name="model">survey.survey</field>
             <field name="inherit_id" ref="survey.survey_survey_view_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='user_id']" position="before">
-                    <field name="name_donvi"/>
-                </xpath>
+<!--                <xpath expr="//field[@name='user_id']" position="before">-->
+<!--                    <field name="name_donvi"/>-->
+<!--                </xpath>-->
                 <xpath expr="//notebook" position="before">
                     <group>
                         <field name="is_percentage_based"/>

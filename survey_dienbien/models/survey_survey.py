@@ -36,7 +36,7 @@ class SurveySurvey(models.Model):
     classification_ids = fields.One2many(
         'survey.classification', 'survey_id', string='Xếp loại điểm'
     )
-    name_donvi = fields.Many2one('donvi', string='Đơn vị tổ chức')
+    # name_donvi = fields.Many2one('donvi', string='Đơn vị tổ chức')
 
     @api.constrains('bool_setting', 'limit_question', 'qty_de', 'qty_tb', 'qty_kho')
     def _check_question_settings(self):
