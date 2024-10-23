@@ -8,7 +8,7 @@ class SurveyClassification(models.Model):
     name = fields.Char(string='Tên phân loại', required=True)
     min_score = fields.Float(string='Điểm tối thiểu', required=True)
     max_score = fields.Float(string='Điểm tối đa', required=True)
-    survey_id = fields.Many2one('survey.survey', string='Bài kiểm tra', required=True, ondelete='cascade')
+    survey_id = fields.Many2one('survey.survey', string='Bài kiểm tra', required=True, ondelete='set null')
 
     @api.constrains('min_score', 'max_score', 'survey_id')
     def _check_score_range(self):
