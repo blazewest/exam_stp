@@ -35,7 +35,8 @@
                             <input type="text" id="cccd" name="cccd" class="form-control" required='1' placeholder="CMT/Căn cước"/>
                             <label for="phone">Số điện thoại</label>
                             <input type="text" id="phone" name="phone" class="form-control" required='1' placeholder="Số điện thoại"/>
-
+                            <label for="function">Chức vụ</label>
+                            <input type="text" id="function" name="function" class="form-control" required='1' placeholder="Chức vụ"/>
                             <t t-set="defaultFields" t-value="request.env['donvi'].search([])" />
                             <label for="name_donvi_id">Tên Đơn Vị</label>
                             <select id="name_donvi_id" name="name_donvi_id" class="o_input">

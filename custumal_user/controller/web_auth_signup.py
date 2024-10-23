@@ -37,6 +37,7 @@ class CustomAuthSignupHome(AuthSignupHome):
             qcontext['district'] = kw.get('district')
             qcontext['ward'] = kw.get('ward')
             qcontext['name_donvi_id'] = kw.get('name_donvi_id')
+            qcontext['function'] = kw.get('function')
 
             # Thực hiện kiểm tra mật khẩu
             if qcontext['password'] != qcontext['confirm_password']:

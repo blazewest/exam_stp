@@ -7,7 +7,7 @@
             <form string="Báo cáo Cuộc thi">
                 <sheet>
                     <group>
-                        <field name="name_survey" required="1"/>
+                        <field name="name_survey" required="1" context="{'active_test': False}"/>
                         <field name="sort" required="1"/>
                     </group>
                     <footer>

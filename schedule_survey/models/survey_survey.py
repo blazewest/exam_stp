@@ -114,7 +114,7 @@ class SurveySurvey(models.Model):
         self.write({'active': False})
         self.cron_status = 'done'
 
-    @api.model
+
     def unlink(self):
         for record in self:
             if record.cron_id:
