@@ -34,8 +34,7 @@ class SurveySurvey(models.Model):
     category_group_ids = fields.Many2many('category.question', string='Lĩnh vực câu hỏi')
     is_percentage_based = fields.Boolean(string="Xếp loại điểm theo %", default=True, help="Tích vào thì dựa theo % mà xếp loại, không tích thì dựa theo điểm số")
     classification_ids = fields.One2many(
-        'survey.classification', 'survey_id', string='Xếp loại điểm', ondelete='cascade'
-    )
+        'survey.classification', 'survey_id', string='Xếp loại điểm')
     name_donvi = fields.Many2one('donvi', string='Đơn vị tổ chức')
 
     @api.constrains('bool_setting', 'limit_question', 'qty_de', 'qty_tb', 'qty_kho')
