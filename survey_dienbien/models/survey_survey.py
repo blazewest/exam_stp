@@ -34,7 +34,8 @@ class SurveySurvey(models.Model):
     category_group_ids = fields.Many2many('category.question', string='Lĩnh vực câu hỏi')
     is_percentage_based = fields.Boolean(string="Xếp loại điểm theo %", default=True, help="Tích vào thì dựa theo % mà xếp loại, không tích thì dựa theo điểm số")
     classification_ids = fields.One2many(
-        'survey.classification', 'survey_id', string='Xếp loại điểm')
+        'survey.classification', 'survey_id', string='Xếp loại điểm'
+    )
     name_donvi = fields.Many2one('donvi', string='Đơn vị tổ chức')
 
     @api.constrains('bool_setting', 'limit_question', 'qty_de', 'qty_tb', 'qty_kho')
@@ -56,43 +57,43 @@ class SurveySurvey(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         # Tạo bản ghi trong survey.survey
-        survey = super(SurveySurvey, self).create(vals_list)
+        surveys = super(SurveySurvey, self).create(vals_list)
 
-        # Kiểm tra nếu chưa có dữ liệu xếp loại (classification_ids)
-        if not survey.classification_ids:
-            # Tạo các bản ghi mặc định cho trường classification_ids
-            default_classifications = [
-                {
-                    'name': 'Không đạt',
-                    'min_score': 0.0,
-                    'max_score': 49.9,
-                    'survey_id': survey.id
-                },
-                {
-                    'name': 'Trung bình',
-                    'min_score': 50.0,
-                    'max_score': 69.9,
-                    'survey_id': survey.id
-                },
-                {
-                    'name': 'Khá',
-                    'min_score': 70.0,
-                    'max_score': 99.4,
-                    'survey_id': survey.id
-                },
-                {
-                    'name': 'Xuất sắc',
-                    'min_score': 99.5,
-                    'max_score': 100.0,
-                    'survey_id': survey.id
-                }
-            ]
+        for survey in surveys:
+            # Kiểm tra nếu chưa có dữ liệu xếp loại (classification_ids)
+            if not survey.classification_ids:
+                # Tạo các bản ghi mặc định cho trường classification_ids
+                default_classifications = [
+                    {
+                        'name': 'Không đạt',
+                        'min_score': 0.0,
+                        'max_score': 49.9,
+                        'survey_id': survey.id  # Đảm bảo survey_id là hợp lệ
+                    },
+                    {
+                        'name': 'Trung bình',
+                        'min_score': 50.0,
+                        'max_score': 69.9,
+                        'survey_id': survey.id
+                    },
+                    {
+                        'name': 'Khá',
+                        'min_score': 70.0,
+                        'max_score': 99.4,
+                        'survey_id': survey.id
+                    },
+                    {
+                        'name': 'Xuất sắc',
+                        'min_score': 99.5,
+                        'max_score': 100.0,
+                        'survey_id': survey.id
+                    }
+                ]
 
-            # Tạo các bản ghi classification mặc định
-            for classification in default_classifications:
-                self.env['survey.classification'].create(classification)
+                # Tạo các bản ghi classification mặc định
+                self.env['survey.classification'].create(default_classifications)
 
-        return survey
+        return surveys
 
     def _prepare_survey_render_values(self, survey, answer, **kwargs):
         # Get the existing user responses for this answer
