@@ -4,7 +4,7 @@
     'summary': 'Module custumal user dien bien',
     'category': 'Tools',
     'author': 'Duy Hung',
-    'depends': ['base','survey_dienbien','website'],
+    'depends': ['base','website'],
     'data': [
         'security/ir.model.access.csv',
         # 'views/survey_question_views.xml',

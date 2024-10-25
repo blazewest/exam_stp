@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree view để hiển thị danh sách khảo sát và thông tin tổng quan -->
+    <record id="view_survey_award_tree" model="ir.ui.view">
+        <field name="name">survey.award.tree</field>
+        <field name="model">survey.award</field>
+        <field name="arch" type="xml">
+            <tree string="Giải thưởng">
+                <field name="survey_id"/>
+                <field name="sum_partner"/>
+                <field name="sum_exam"/>
+                <field name="list_don_vi"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view để hiển thị chi tiết thông tin khảo sát -->
+    <record id="view_survey_award_form" model="ir.ui.view">
+        <field name="name">survey.award.form</field>
+        <field name="model">survey.award</field>
+        <field name="arch" type="xml">
+            <form string="Giải thưởng">
+                <header>
+                    <button name="calculate_awards" string="Tính toán giải thưởng" type="object" class="btn btn-primary"/>
+                </header>
+                <sheet>
+
+                    <group>
+                         <group>
+                            <field name="survey_id" context="{'active_test': False}"/>
+                            <field name="scheduled_date"/>
+                            <field name="archived_date"/>
+                        </group>
+                        <group>
+                            <field name="sum_partner"/>
+                            <field name="sum_exam"/>
+                            <field name="time_limit"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Xếp hạng" name="award_result">
+                        <!-- Hiển thị kết quả bài thi -->
+                            <field name="award_result_ids" mode="tree" readonly="True" no_label="1">
+                                <tree string="Xếp hạng">
+                                    <field name="user_input_id"/>
+                                    <field name="partner_id"/>
+                                    <field name="name"/>
+                                    <field name="xep_loai"/>
+                                    <field name="scoring_percentage"/>
+                                    <field name="input_important"/>
+                                    <field name="end_datetime"/>
+                                    <field name="prize"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Thông tin đơn vị tham gia" name="donvi_thamgia">
+                        <!-- Hiển thị kết quả bài thi -->
+                            <field name="list_don_vi" mode="tree" readonly="True" no_label="1">
+                                <tree string="Units">
+                                    <field name="name"/>
+                                    <field name="total_exams"/>
+                                    <field name="total_participants"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Thông tin giải thưởng" name="award_info">
+                        <!-- Hiển thị kết quả bài thi -->
+                            <field name="award_ids" mode="tree" readonly="True" no_label="1">
+                                <tree string="Thông tin giải thưởng">
+                                    <field name="name"/>
+                                    <field name="qty_award"/>
+                                    <field name="remaining_qty_award"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action để mở view -->
+    <record id="action_survey_award" model="ir.actions.act_window">
+        <field name="name">Giải thưởng</field>
+        <field name="res_model">survey.award</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create the first survey award record
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu để điều hướng đến khảo sát -->
+    <menuitem id="menu_survey_award_root" name="Giải thưởng" sequence="10" action="action_survey_award" parent="survey.menu_survey_type_form1"/>
+</odoo>

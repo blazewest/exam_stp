@@ -11,6 +11,7 @@
                 <attribute name="create">true</attribute>
             </xpath>
             <xpath expr="//field[@name='question_type']" position="before">
+                <field name="important"/>
                 <field name="level_question"/>
                 <field name="category_group_ids" widget="many2many_tags"/>
             </xpath>

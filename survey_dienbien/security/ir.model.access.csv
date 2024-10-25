@@ -2,5 +2,9 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_category_survey_user,category.survey.user,model_category_question,base.group_user,1,1,1,1
 access_classification_survey_user,survey.classification.user,model_survey_classification,base.group_user,1,1,1,1
 access_tong_hop_diem,tong.hop.diem,model_tong_hop_diem,base.group_user,1,1,1,1
+access_award,award,model_award,base.group_user,1,1,1,1
+access_survey_award,survey.award,model_survey_award,base.group_user,1,1,1,1
+access_survey_award_result,survey.award.result,model_survey_award_result,base.group_user,1,1,1,1
+access_survey_award_donvi,survey.award.donvi,model_survey_award_donvi,base.group_user,1,1,1,1
 
 

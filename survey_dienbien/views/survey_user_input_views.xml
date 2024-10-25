@@ -8,11 +8,23 @@
             <field name="arch" type="xml">
 
                 <xpath expr="//group/group[1]/field[@name='test_entry']" position="after">
-                    <field name="diem_cao_nhat"/>
-                    <field name="so_lan_lam"/>
                     <field name="xep_loai"/>
-                </xpath>
+                    <field name="input_important"/>
 
+                </xpath>
+            </field>
+        </record>
+
+        <record id="survey_user_input_view_tree_db" model="ir.ui.view">
+            <field name="name">survey.user_input.inherit</field>
+            <field name="model">survey.user_input</field>
+            <field name="inherit_id" ref="survey.survey_user_input_view_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='scoring_percentage']" position="after">
+                    <field name="xep_loai" optional="show"/>
+<!--                    <field name="input_important"/>-->
+                </xpath>
             </field>
         </record>
     </data>

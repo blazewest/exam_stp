@@ -23,31 +23,30 @@
             </xpath>
         </template>
 
-<!--        <template id="survey_question_tracker" inherit_id="survey.survey_fill_form_in_progress">-->
-<!--    <xpath expr="//div[@class='o_survey_form_content_data d-none']" position="after">-->
-<!--        <div class="question-tracker-container">-->
-<!--            <div class="question-tracker">-->
-<!--                <h4>Câu hỏi</h4>-->
-<!--                <ul class="question-list">-->
-<!--                    <t t-foreach="survey.question_ids" t-as="question">-->
-<!--                        <li>-->
-<!--                            <span t-field="question.sequence"/>-->
-<!--                            &lt;!&ndash; Compare the question ID with the list of predefined question IDs &ndash;&gt;-->
-<!--                            <span t-if="question.id in answer.predefined_question_ids.ids" class="answered">✔</span>-->
-<!--                            <span t-if="question.id not in answer.predefined_question_ids.ids" class="not-answered">✖</span>-->
-<!--                        </li>-->
-<!--                    </t>-->
-<!--                </ul>-->
-<!--                &lt;!&ndash; Uncomment this block if you want to display the legend &ndash;&gt;-->
-<!--                <div class="legend">-->
-<!--                    <p><span class="answered">✔</span> Câu đã trả lời</p>-->
-<!--                    <p><span class="not-answered">✖</span> Câu chưa trả lời</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </xpath>-->
-<!--</template>-->
 
+    <template id="survey_fill_form_done_inherit" inherit_id="survey.survey_fill_form_done" name="Survey: Finished Inherit">
+        <!-- Chèn nút "Quay về trang chủ" sau đoạn "Congratulations, you have passed the test!" -->
+        <xpath expr="//div/div/div[2]/div[1]/t[1]/t[1]/div[1]" position="inside">
+            <t t-if="survey.is_attempts_limited">
+                    <t t-set="attempts_left" t-value="survey._get_number_of_attempts_lefts(answer.partner_id, answer.email, answer.invite_token)" />
+                    <t t-if="attempts_left > 0">
+                        <p><span>Số lần thử còn lại</span>: <span t-esc="attempts_left"></span></p>
+                        <p><a role="button" class="btn btn-primary btn-lg" t-att-href="'/survey/retry/%s/%s' % (survey.access_token, answer.access_token)">
+                        Thử lại</a></p>
+                    </t>
+                </t>
+                <t t-else="">
+                    <p><a role="button" class="btn btn-primary btn-lg" t-att-href="'/survey/retry/%s/%s' % (survey.access_token, answer.access_token)">
+                        Thử lại</a></p>
+                </t>
+            <div class="mt16">
+                <a href="/" class="btn btn-secondary btn-lg">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Quay về trang chủ
+                </a>
+            </div>
+        </xpath>
+    </template>
 
 
 
