@@ -85,9 +85,13 @@ class SurveyAward(models.Model):
             # Phân bổ giải thưởng dựa trên các bài thi đã sắp xếp
             self._allocate_awards(record, awards, sorted_user_inputs)
 
+            # Tạo bản ghi cho các đơn vị đã tham gia
+            self._create_don_vi_records(record, user_inputs)
+
     def _clear_previous_results(self, record):
-        """Xóa kết quả xếp loại cũ"""
+        """Xóa kết quả xếp loại cũ và đơn vị cũ"""
         record.award_result_ids.unlink()
+        record.list_don_vi.unlink()
 
     def _reset_award_quantities(self, record):
         """Khôi phục lại số lượng giải thưởng về giá trị ban đầu"""
@@ -148,6 +152,37 @@ class SurveyAward(models.Model):
                 available_qty -= 1
                 award.write({'remaining_qty_award': available_qty})
 
+    def _create_don_vi_records(self, record, user_inputs):
+        """Tạo bản ghi cho các đơn vị đã tham gia dựa trên bài thi của các đối tác"""
+        # Tạo một từ điển để lưu thông tin các đơn vị từ các bài thi (partner_id.name_donvi_id)
+        don_vi_map = {}
+
+        for user_input in user_inputs:
+            don_vi = user_input.partner_id.name_donvi_id  # Lấy đơn vị của đối tác từ partner_id
+            if don_vi:  # Kiểm tra nếu đối tác có đơn vị
+                if don_vi.id not in don_vi_map:
+                    # Nếu đơn vị chưa tồn tại trong từ điển, tạo mới thông tin
+                    don_vi_map[don_vi.id] = {
+                        'don_vi': don_vi,
+                        'total_exams': 0,
+                        'total_participants': set()  # Dùng set để tránh trùng lặp người tham gia
+                    }
+
+                # Cập nhật tổng số bài thi của đơn vị này
+                don_vi_map[don_vi.id]['total_exams'] += 1
+
+                # Cập nhật người tham gia (không trùng lặp)
+                don_vi_map[don_vi.id]['total_participants'].add(user_input.partner_id.id)
+
+        # Tạo các bản ghi cho mỗi đơn vị đã thu thập được trong don_vi_map
+        for don_vi_data in don_vi_map.values():
+            self.env['survey.award.donvi'].create({
+                'survey_award_id': record.id,
+                'name': don_vi_data['don_vi'].id,
+                'total_exams': don_vi_data['total_exams'],
+                'total_participants': len(don_vi_data['total_participants'])  # Đếm số người không trùng lặp
+            })
+
 
 class SurveyAwardResult(models.Model):
     _name = 'survey.award.result'
@@ -173,26 +208,3 @@ class SurveyAwardDonVi(models.Model):
     total_exams = fields.Integer(string='Tổng số bài thi', compute='_compute_total_exams', store=True)
     total_participants = fields.Integer(string='Tổng số người thi', compute='_compute_total_participants', store=True)
 
-    @api.depends('survey_award_id')
-    def _compute_total_exams(self):
-        """Tính tổng số bài thi của đơn vị này."""
-        for record in self:
-            # Lấy các bài thi của đơn vị này từ survey.user_input
-            exams = self.env['survey.user_input'].search([
-                ('survey_id', '=', record.survey_award_id.survey_id.id),
-                ('partner_id.name_donvi_id', '=', record.name.id),
-                ('test_entry', '=', False)
-            ])
-            record.total_exams = len(exams)
-
-    @api.depends('survey_award_id')
-    def _compute_total_participants(self):
-        """Tính tổng số người tham gia từ đơn vị này (không tính trùng lặp)."""
-        for record in self:
-            # Lấy các participant_id không trùng lặp từ survey.user_input
-            participants = self.env['survey.user_input'].search([
-                ('survey_id', '=', record.survey_award_id.survey_id.id),
-                ('partner_id.name_donvi_id', '=', record.name.id),
-                ('test_entry', '=', False)
-            ]).mapped('partner_id')
-            record.total_participants = len(set(participants))

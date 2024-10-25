@@ -36,7 +36,7 @@ class ResUsers(models.Model):
         for user, vals in zip(users, vals_list):
             if user.partner_id:
                 user.partner_id.write({
-                    'name_donvi_id': vals.get('name_donvi_id', user.partner_id.name_donvi_id),
+                    'name_donvi_id': user.name_donvi_id,
                     'cccd': vals.get('cccd', user.partner_id.cccd),
                     'phone': vals.get('phone', user.partner_id.phone),
                     'function': vals.get('function', user.partner_id.function),
@@ -53,7 +53,7 @@ class ResUsers(models.Model):
         for user in self:
             if user.partner_id:
                 user.partner_id.write({
-                    'name_donvi_id': vals.get('name_donvi_id', user.partner_id.name_donvi_id),
+                    'name_donvi_id':  user.name_donvi_id,
                     'cccd': vals.get('cccd', user.partner_id.cccd),
                     'phone': vals.get('phone', user.partner_id.phone),
                     'function': vals.get('function', user.partner_id.function),
