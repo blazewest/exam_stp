@@ -62,64 +62,91 @@ class SurveyAward(models.Model):
         """Hàm tính toán xếp loại khi nhấn nút"""
         for record in self:
             # Xóa các kết quả xếp loại cũ
-            record.award_result_ids.unlink()
+            self._clear_previous_results(record)
 
-            # Khôi phục số lượng giải thưởng còn lại về giá trị ban đầu
-            for award in record.award_ids:
-                award.write({'remaining_qty_award': award.qty_award})
+            # Khôi phục lại số lượng giải thưởng ban đầu
+            self._reset_award_quantities(record)
 
-            # Lấy tất cả các bài thi (survey.user_input) của cuộc thi
-            user_inputs = self.env['survey.user_input'].search(
-                [('survey_id', '=', record.survey_id.id), ('test_entry', '=', False)])
+            # Lấy tất cả các bài thi hợp lệ
+            user_inputs = self._get_user_inputs(record)
 
             if not user_inputs:
                 continue  # Không có bài thi nào, bỏ qua cuộc thi này
 
-            # Lấy tất cả các giải thưởng từ cuộc thi
-            awards = record.award_ids.sorted(key=lambda a: a.priority_level)
+            # Lấy và sắp xếp danh sách các giải thưởng theo mức độ ưu tiên
+            awards = self._get_sorted_awards(record)
 
             if not awards:
                 continue  # Không có giải thưởng nào, bỏ qua
 
-            # Sắp xếp các bài thi dựa trên các tiêu chí đã nêu
-            sorted_user_inputs = sorted(user_inputs, key=lambda r: (
-                -r.scoring_percentage,  # Điểm số từ cao xuống thấp
-                abs(r.input_important - record.sum_partner),  # Gần nhất với tổng số người tham gia (sum_partner)
-                r.end_datetime or fields.Datetime.now()  # Thời gian nộp sớm nhất
-            ))
+            # Sắp xếp các bài thi dựa trên các tiêu chí
+            sorted_user_inputs = self._get_sorted_user_inputs(user_inputs, record)
 
             # Phân bổ giải thưởng dựa trên các bài thi đã sắp xếp
-            partner_award_count = {}  # Theo dõi số lượng giải mà mỗi partner đã nhận
-            for award in awards:
-                available_qty = award.remaining_qty_award
+            self._allocate_awards(record, awards, sorted_user_inputs)
+
+    def _clear_previous_results(self, record):
+        """Xóa kết quả xếp loại cũ"""
+        record.award_result_ids.unlink()
+
+    def _reset_award_quantities(self, record):
+        """Khôi phục lại số lượng giải thưởng về giá trị ban đầu"""
+        for award in record.award_ids:
+            award.write({'remaining_qty_award': award.qty_award})
+
+    def _get_user_inputs(self, record):
+        """Lấy tất cả các bài thi (survey.user_input) hợp lệ"""
+        return self.env['survey.user_input'].search(
+            [('survey_id', '=', record.survey_id.id), ('test_entry', '=', False)]
+        )
+
+    def _get_sorted_awards(self, record):
+        """Lấy và sắp xếp danh sách các giải thưởng theo mức độ ưu tiên"""
+        return record.award_ids.sorted(key=lambda a: a.priority_level)
+
+    def _get_sorted_user_inputs(self, user_inputs, record):
+        """Sắp xếp các bài thi dựa trên tiêu chí:
+        - Điểm số từ cao xuống thấp
+        - Giá trị input_important gần với sum_partner
+        - Thời gian nộp bài sớm nhất"""
+        return sorted(user_inputs, key=lambda r: (
+            -r.scoring_percentage,  # Điểm số từ cao xuống thấp
+            abs(r.input_important - record.sum_partner),  # Gần nhất với tổng số người tham gia
+            r.end_datetime or fields.Datetime.now()  # Thời gian nộp sớm nhất
+        ))
+
+    def _allocate_awards(self, record, awards, sorted_user_inputs):
+        """Phân bổ giải thưởng dựa trên các bài thi đã sắp xếp"""
+        partner_award_count = {}  # Theo dõi số lượng giải mà mỗi partner đã nhận
+        for award in awards:
+            available_qty = award.remaining_qty_award
+
+            if available_qty <= 0:
+                continue  # Nếu giải thưởng đã hết, bỏ qua
+
+            for user_input in sorted_user_inputs:
+                partner_id = user_input.partner_id.id
+
+                # Giới hạn mỗi người nhận tối đa 1 giải thưởng
+                if partner_award_count.get(partner_id, 0) >= 1:
+                    continue  # Người này đã nhận đủ 1 giải thưởng, bỏ qua
 
                 if available_qty <= 0:
-                    continue  # Nếu giải thưởng đã hết, bỏ qua
+                    break  # Không còn giải thưởng nào
 
-                for user_input in sorted_user_inputs:
-                    partner_id = user_input.partner_id.id
+                # Tạo bản ghi xếp loại cho bài thi
+                self.env['survey.award.result'].create({
+                    'survey_award_id': record.id,
+                    'user_input_id': user_input.id,
+                    'prize': dict(self.env['award'].fields_get(allfields=['name'])['name']['selection'])[award.name],
+                })
 
-                    # Giới hạn mỗi người nhận tối đa 1 giải thưởng
-                    if partner_award_count.get(partner_id, 0) >= 1:
-                        continue  # Người này đã nhận đủ 1 giải thưởng, bỏ qua
+                # Cập nhật số lượng giải thưởng mà người này đã nhận
+                partner_award_count[partner_id] = partner_award_count.get(partner_id, 0) + 1
 
-                    if available_qty <= 0:
-                        break  # Không còn giải thưởng nào
-
-                    # Tạo bản ghi xếp loại cho bài thi
-                    self.env['survey.award.result'].create({
-                        'survey_award_id': record.id,
-                        'user_input_id': user_input.id,
-                        'prize': dict(self.env['award'].fields_get(allfields=['name'])['name']['selection'])[
-                            award.name],
-                    })
-
-                    # Cập nhật số lượng giải thưởng mà người này đã nhận
-                    partner_award_count[partner_id] = partner_award_count.get(partner_id, 0) + 1
-
-                    # Giảm số lượng giải thưởng còn lại
-                    available_qty -= 1
-                    award.write({'remaining_qty_award': available_qty})
+                # Giảm số lượng giải thưởng còn lại
+                available_qty -= 1
+                award.write({'remaining_qty_award': available_qty})
 
 
 class SurveyAwardResult(models.Model):
